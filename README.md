@@ -1465,6 +1465,364 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 ![Alt text here](Image%20Files/GSIM_2_0_Exchange_Group.drawio.png)
 
 ### 4.2 Descriptive Information
+**Exchange Group**  is used to catalogue the information that is exchanged within and outside of a statistical organisation.
+
+For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.unece.org/display/clickablegsim/Exchange+Group),  **the main changes to the model are marked in red ** in the model diagram below, these include:
+
+- GSIM information class added: 1) _Register;_ 2) _Exchange Specification_; 3) _Dissemination Instrument; _
+- GSIM information class removed: 1) _Administrative Register;_ 2) _Statistical Register_; 3) _Protocol _
+- GSIM information class renamed: _Exchange Instrument_ (previously _Exchange Channel _in GSIM v1.2)_ _
+
+**Data Harvest**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Data Harvest | Exchange | _Exchange Instrument_ to pass information between two sources, usually by a machine to machine mechanism | Examples of _Data Harvest_ include web scraper, API (e.g., to acquire data from administrative sources), scanner, sensor, etc. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Dissemination Instrument**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Dissemination Instrument | Exchange | _Exchange Instrument_ to disseminate information | Examples include: API or web services for data dissemination |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Exchange Instrument**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Exchange Instrument | Exchange | concrete and usable tool to exchange information  | The _Exchange Instrument_ is a tool to receive or send information and is used for external and internal purposes.Different _Exchange Instruments _are used for data acquisition and dissemination. An example of E_xchange instrument _for receiving information is _Questionnaire_. An example of _Exchange Instrument _for sending information is _Dissemination Instrument_. Additional _Exchange Instruments _can be added to the model as needed by individual organisations. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Direction | Direction of the _Exchange Instrument_: acquire or disseminate. | 1..1 | String |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Exchange Specification**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Exchange Specification | Exchange | outline or description specifying the design of the _Exchange Instrument_ | GSBPM Phase 2 (Design) results in an _Exchange Specification_ that specifies the design of the data acquisition or dissemination instruments (e.g., _Questionnaire_, web page). In GSBPM Phase 3 (Build), these instruments are built based on the tools. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Information Consumer**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Information Consumer | Exchange | _Role _that entails consuming data and information | The _Information Consumer_ accesses a set of information in a _Product _that is made available via a _Dissemination Instrument_. The _Information Consumer_ subscribes to the _Provision Agreement_, which sets out conditions of access. The _Information Consumer_ can be defined in a broad sense with a persona concept (group of Individuals) without specific details. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Information Provider**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Information Provider | Exchange | _Role _that entails providing data and information | An _Information Provider_ possesses sets of information (that it has acquired, for example by collecting or purchasing it) and is willing to supply that information (data or referential metadata) to the statistical organisation. The two parties use a _Provision Agreement_ to agree on the _Data Structure_ and _Referential Metadata Structure_ of the data to be exchanged via an _Exchange Instrument_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Instance Question**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Instance Question | Exchange | use of a _Question_ in a particular _Questionnaire_ | The _Instance Question_ is the use of a _Question_ in a particular _Questionnaire_ _Component_. This also includes the use of the _Question_ in a _Question Block_, which is a particular type of _Questionnaire Component_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Question Purpose | A description of the purpose of the question, whether the question has a specific expected function. | 0..1 | MultilingualText |
+| Question Text | The text which describes the information which is to be obtained. | 1..1 | MultilingualText |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Instance Question Block**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Instance Question Block | Exchange | use of a _Question Block_ in a particular _Questionnaire_ | The _Instance Question Block_ is the use of a _Question Block_ in a particular _Questionnaire Component_. This also includes the use of a _Question Block_ in another _Question Block_, as it is a particular type of _Questionnaire Component_.  |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Instance Statement**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Instance Statement | Exchange | use of a _Statement_ in a particular _Questionnaire or more specifically a Questionnaire Component_ | The _Instance Statement_ is the use of a _Statement_ in a particular _Questionnaire Component_. This also includes the use of the _Statement_ in a _Question Block_, which is a particular type of _Questionnaire Component_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Statement Text | The information, note, fact or instruction text making up the statement. | 0..1 | MultilingualText |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Output Specification**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Output Specification | Exchange | outline or description of how _Information Sets _are presented and arranged in _Products _for _Information Consumers_ | The _Output Specification_ specifies _Products_ and uses the _Presentations_ they contain. The _Output Specification_ may be fully defined during the design process (such as in a paper publication or a predefined web report), or may be a combination of designed specifications supplemented by user selections (such as in an online data query tool). |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Presentation**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Presentation | Exchange | way data and referential metadata are presented     | _Presentations _present data and referential metadata from _Information Sets_.  _Presentation_ can be used by an _Output Specification to specify how Information Set in Product is presented._
+
+_Presentation_ can be in different forms; e.g. tables, graphs, structured data files. Examples:
+- A table of data. Based on a _DataSet_, the related _Data Structure_ is used to label the column and row headings for the table. The _Data Set_ is used to populate the cells in the table. Reference metadata is used to populate footnotes and cell notes on the table. Confidentiality rules are applied to the _Data Set_ to suppress any disclosive cells.
+- A data file based on a standard (e.g. SDMX).
+- A PDF document describing a _Statistical Classification_.
+- Any structural metadata object expressed in a standard format (e.g. DDI 3.1 XML).
+- A list of _Products _or services (e.g. a product catalogue or a web services description language (WSDL) file).
+- A web page containing _Statistical Classifications_, descriptions of _Conceptual Variables_, etc.
+ |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Product**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Product | Exchange | package of content that can be disseminated as a whole      | A _Product_ packages _Information Sets_ for an _Information Consumer_. The _Product_ is generated according to _Output Specifications_, which define how the information from the_ Information Sets _are presented (via Presentations)  to the _Information Consumer_.A _Provision Agreement_ between the statistical organisation and the _Information Consumer_ governs the use of a _Product_ by the _Information Consumer_. The _Provision Agreement,_ which may be explicitly or implicitly agreed, provides the legal or other bases by which the two parties agree to exchange data. In many cases, dissemination _Provision Agreements_ are implicit in the terms of use published by the statistical organisation.For static _Products_ (e.g. paper publications), specifications are predetermined. For dynamic _Products_, aspects of specification could be determined by the_ Information Consumer_ at run time. Both cases result in _Output Specifications_ specifying _Information Set_ data or referential metadata that will be included within the _Product_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Provision Agreement**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Provision Agreement | Exchange | legal or other basis by which two parties agree to exchange data | A _Provision Agreement_ between the statistical organisation and the _Information Provider_ (acquisition) or the _Information Consumer _(dissemination) governs the use of _Exchange Instrument_. The _Provision Agreement_, which may be explicitly or implicitly agreed, provides the legal or other basis by which the two parties agree to exchange data. The parties also use the _Provision Agreement_ to agree the Information _Structure_ of the information to be exchanged. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Question**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Question | Exchange | text used to elicit a response for a _Conceptual Variable_     | A _Question_ may be a single question used to obtain a response, or may be a multiple question, a construct which links multiple sub-questions, each with their own response.A _Question_ also includes a relationship to the _Value Domain_ to document the associated response criteria for the question. A single response question will have one _Value Domain_ associated with it, while a 'multiple question' may have more than one _Value Domain_.A _Question_ should be designed with re-use in mind, as it can be used in multiple _Questionnaires._In a national implementation,_ Question _could be further subtyped into_: _
+- QuestionGrid, useful to model questions as grids/tables. It is actually a cube-like structure providing dimension information, labelling options, and response domains attached to one or more cells within the grid. For instance, a two-way table requesting to provide turnovers broken down by affiliates.
+- QuestionItem, a simple question that is necessarily one dimensional. For example: "How old are you?"
+ | Multiple Question |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Question Purpose | A description of the purpose of the question, whether the question has a specific expected function. | 0..1 | MultilingualText |
+| Question Text | The text which describes the information which is to be obtained. | 1..1 | MultilingualText |
+
+**Question Block**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Question Block | Exchange | set of _Questions, Statements_ or instructions which are used together | A Question Block should ideally be designed for reuse.  The _Question Block_ is a type of _Questionnaire Component_. A statistical organisation will often have a number of _Question Blocks_ which they reuse in a number of _Questionnaires_. Examples of_ Question Blocks_ include:
+- Household _Question Block_
+- Income _Question Block_
+- Employment _Question Block_
+ |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Questionnaire**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Questionnaire | Exchange | _Exchange Instrument _to elicit information from observation _Units_ | This is an example of a way statistical organisations acquire information (an _Exchange Instrument_). Each collection mode (e.g. in-person, CAPI (Computer-assisted personal interviewing), online Questionnaire) should be interpreted as a new _Questionnaire_ derived from the _Questionnaire Specification_. The _Questionnaire_ is a tool in which data is obtained. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Media | Description of the kind of media conceived for the use of the _Questionnaire_ (printed, electronic, etc.). | 1..1 | String |
+| Support Artifacts | A list of devices, software programs, storage media, gadgets or other tools needed to support the use of the _Questionnaire_. | 0..\* | String |
+| Survey | Information on the survey which the _Questionnaire_ will be used by. | 0..\* | String |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Questionnaire Component**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Questionnaire Component | Exchange | record of the flow of a _Questionnaire_ _Specification _and its use of _Questions, Question Blocks_ and _Statements_ | A _Questionnaire Component_ defines the structure of the _Questionnaire Specification_, as a combination of _Questions, Question Blocks_ and _Statements. _It is the class which groups together all the components of a_ Questionnaire.__A Questionnaire Component _is recursive, in that it can refer to other_ Questionnaire Components _and accompanying_ Questionnaire Logic _classes at a lower level. It is only at the top level where the_ Questionnaire Component _links to the_ Questionnaire Specification_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Component Sequence | The order in which _Instance Question_, and_ Instance Statement _appear in the _Questionnaire Component_. | 0..\* | Number |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Questionnaire Logic**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Questionnaire Logic | Exchange | management/control of the sequence of _Questions, Question Blocks_ and _Statements _based on factors such as the current location, the response to the previous questions etc., invoking navigation and validation _Rules_ to apply  |
+ | Routing |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Routing Information | Routing information, which will also use responses from _Rule_. | 1..\* | String |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Questionnaire Specification**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Questionnaire Specification | Exchange | _Exchange Specification _for _Questionnaire_ | This represents the complete questionnaire design, with a relationship to the top-level _Questionnaire Component_.There may be many different _Questionnaire Specifications_, for the same surveys, or tailored to individual observation _Units_ (respondents) so that there would be a different _Questionnaire Specification_ for each respondent. The design would also differ depending upon the specific mode of collection the _Questionnaire_ is designed for. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Register**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Register | Exchange | written and complete record containing regular entries of items and details on particular sets of objects | In official statistics, "statistical registers" and "adminisitrative registers" (registers maintained by other organisations, usually administrative data owners) are usually distinguished. In GSIM, the information class "Register" is used to describe both types because the attributes are more or less the same so from the information management point of view, they can be handled as one GSIM class.There is usually a purpose or authority for maintaining the _Register _and each object in the _Register _is described using a pre-defined set of characteristics. Examples include business and population registers as used by statistical organisations. Therefore, from statistical perspective, the _Register _can be interpreted as a set of objects for a given _Population_, updated on a regular basis, containing information on identification, accessibility of _Units _and other attributes. The _Register _contains the current and historical statuses of the _Population _and the causes, effects and sources of alterations in the _Population_.In order to better understand how the _Register _is used in GSIM, the use cases for the different scenarios are explained. These scenarios are:
+- _Register _as_ Information Set_ maintained and regularly updated by the statistical organisation.
+- _Register _as_ Information Set_ for survey frames/sample frames.
+- _Register _as_ Information Set_ for statistical _Products_.
+- _Register _as_ Information Set_ used as direct or auxiliary information for the production of statistics.
+- _Register _as_ Information Set_  as a source of administrative information obtained usually from external organisations.
+ |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Statement**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| Statement | Exchange | report of facts in a _Questionnaire_ | _Statements_ are often included to provide further explanation to respondents.Example: "The following questions are about your health".The class is also used to represent completion instructions for the interviewer or respondent. _Statement_ should be designed with re-use in mind as it can be used in numerous _Questionnaires_. | Interviewer InstructionInstruction |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Statement Text | The information, note, fact or instruction text making up the _Statement_. | 0..1 | MultilingualText |
+
+\* Attributes inherited from super-type(s) are not included here
 
 ## 5. Structures Group
 ### 5.1 Group Diagram
@@ -1472,3 +1830,360 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 ![Alt text here](Image%20Files/GSIM_2_0_Structures_Group.drawio.png)
 
 ### 5.2 Descriptive Information
+**Structure Group**  is used to structure information throughout the statistical process.
+
+For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.unece.org/display/clickablegsim/Structure+Group),  **the main changes to the model are marked in red ** in the model diagram below, these include:
+
+- GSIM information class added: _Information Structure_
+- GSIM information class removed: 1) _Dimensional Data Point_; 2) _Dimensional Data Set_; 3)_ Unit Data Point_; 4) _Unit Data Set _
+- GSIM information class names changed: _Data Record _(was called _Unit Data Record_ in v1.2)
+
+**Attribute Component**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Attribute Component | Structure | role given to a _Represented Variable_ in the context of a _Data Structure, _which supplies information other than identification or measures     | For example:
+- the embargo time (at which point the observation will be made publicly available)
+- the base period of the data in the series
+ |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Is Mandatory | When there is an attribute in a _Dimensional Data Structure_, this sets a status to indicate whether it is mandatory or optional to include it in that particular dimensional _Data Set._ | 0..1 | Boolean |
+| Attachment Level | The description of what _Level_ a certain attachment is at. For example, in SDMX this could be Data Set, Observation, Series, Group. | 0..1 | ControlledVocabulary |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Data Point**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Data Point | Structure | container for a single value of an _Instance Variable_     | A _Data Point_ is a cell or a placeholder for a value (_Datum_) it may contain (note that a data point could be empty).A field in a _Data Structure_ which corresponds to, for example, a cell in a table. The _Data Point_ is structural and distinct from the value (the _Datum_) that it holds. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Data Record**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Data Record | Structure | collection of _Data Points_ related to a given _Unit_ or _Population_ | For example (1212123, 48, American, United Kingdom) specifies the age (48) in years, the current citizenship (American), and the country of birth (United Kingdom) for a person with social security number 1212123. ** ** For the case of unit data, it can be structured by _Logical Record_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Data Resource**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Data Resource | Structure | organised collection of stored information made of one or more _Data Sets_     | _Data Resources_ are collections of data. _Data Resource_ is a specialization of an _Information Resource_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Data Set**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Data Set | Structure | organised collection of data     | _Data Sets_ could be used to organise a wide variety of content, including observation registers, time series, longitudinal data, survey data, rectangular data sets, event-history data, tables, data tables, registers, data cubes, data warehouses/marts and matrixes.An example of a population unit _Data Set_ (microdata) could be a collection of three Data Records (1212123, 48, American, United Kingdom), (1212111, 38, Hungarian, United Kingdom), and (1212317, 51, Canadian, Mexico), each containing the social security number, age, citizenship and country of birth of an individual. An example of a population dimensional_ Data Set _(aggregate) could be a collection of three entries (Mexico, 2021, 130.3), (United Kingdom, 2021, 67.33), and (Italy, 2022, 60.24), each containing the name of the country, year of interest and population of the country in millions. | Database, data file, file, table |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Type | Type of_ Data Set_ (e.g., unit _Data Set_, dimensional _Data Set_) | 0..1 | ControlledVocabulary |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Data Structure**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Data Structure | Structure | structure of an organised collection of data (_Data Set_)     | The structure is described using _Data Structure Components_ that can be either _Attribute Components, Identifier Components_ or _Measure Components_. Examples for unit data include social security number, country of residence, age, citizenship, country of birth, where the social security number and the country of residence are both identifying components and the others are measured variables obtained directly or indirectly from the person (_Unit_). |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Data Structure Component**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Data Structure Component | Structure | role of the _Represented Variable_ in the context of a _Data Structure_     | A _Data Structure Component_ can be an _Attribute Component, Measure Component_ or an _Identifier Component_.
+- Example of _Attribute Component_: publication status of an observation such as provisional, revised.
+- Example of _Measure Component_: age and height of a person in a _Unit Data Set_ or number of citizens and number of households in a country in a _Data Set_ for multiple countries (dimensional _Data Set_).
+- Example of _Identifier Component_: personal identification number of a Swedish citizen for unit data or the name of a country in the European Union for dimensional data.
+ |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Dimensional Data Structure**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Dimensional Data Structure | Structure | structure of an organised collection of a dimensional data      | For example, (country, gender, number of citizens) where the country and gender are the _Identifier Component_ and the number of citizens is a _Measure Component_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Group | A composite association to one or more component lists. | 0..\* | String |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Identifier Component**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Identifier Component | Structure | role given to a _Represented Variable_ in the context of a _Data Structure _to identify the _Units_      | An _Identifier Component_ is a sub-class of _Data Structure Component_. The personal identification number of a Swedish citizen for unit data or the name of a country in the European Union for dimensional data. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Is Composite | Indicates if the key is composite. | 0..1 | Boolean |
+| Is Unique | Indicates if the key is unique. | 0..1 | Boolean |
+| Role | Specifies the type of id represented (entity, indicator, count, time, geography). | 0..1 | ControlledVocabulary |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Information Resource**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Information Resource | Structure | abstract notion that is any organised collection of information     | Statistical activity uses Information Resources to produce information. There currently are only two concrete sub-classes: _Data Resource_ and_ Referential Metadata Resource_. The _Information Resource_ allows the model to be extended to other types of resource. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Information Set**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Information Set | Structure | organised collection of statistical content      | Statistical organisations acquire, process, analyze and disseminate _Information Sets_, which contain data (_Data Sets_), referential metadata (_Referential Metadata Sets_), or potentially other types of statistical content, which could be included in additional types of _Information Set_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Information Structure**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Information Structure | Structure | describes the structure of an _Information Set_ |
+ |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Logical Record**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Logical Record | Structure |  set of attributes defined by _Unit Type_ describing a specific instance of a _Data Record_ which provides an additional relationship on top of _Data Structure_ | Logical Records provide an additional relationship on top of the _Data Structure_ (e.g., an individual is a part of family, information from record linkage)                 |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Measure Component**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Measure Component | Structure | role given to a _Represented Variable_ in the context of a _Data Structure_ to hold the observed/derived values for a particular _Unit_      | A _Measure Component_ is a sub-class of _Data Structure_ Component. For example, age and height of a person in a _Unit Data Set_ or number of citizens and number of households in a country in a _Data Set_ for multiple countries (dimensional _Data Set_). |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Record Relationship**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Record Relationship | Structure | description of relationships between _Logical Records_ within a _Unit Data Structure_     | _Record Relationship_ must have both a source _Logical Record_ and a target _Logical Record _in order to define the relationship. Example: Relationship between a person and household _Logical Records_ within a unit _Data Set_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Referential Metadata Attribute**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Referential Metadata Attribute | Structure | characteristic that describes or qualifies _Referential Metadata Subject    _ | A set of _Referential Metadata Attributes_ is structured by _Referential Metadata Structure_ to describe _Referential Metadata Subject_. Examples of _Referential Metadata Attributes_ can be _Represented Variables_ (e.g., "Accuracy", "Timeliness" when describing quality information) or other GSIM class (e.g., _Statistical Classification, Contact, Owner_).     |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Is Container | Boolean indicating whether or not this attribute actually will contain a value when reported in a metadata set. | 0..1 | Boolean |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Referential Metadata Content Item**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Referential Metadata Content Item | Structure | actual content for_ Referential Metadata Attribute  _   | _Referential Metadata Content Item_ can take different formats (e.g., text, number, value from a predefined codelist, table).     |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Referential Metadata Resource**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Referential Metadata Resource | Structure | organised collection of stored information consisting of one or more _Referential Metadata Sets_     | _Referential Metadata Resources_ are collections of structured information. This class is a specialization of an _Information Resource_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Referential Metadata Set**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Referential Metadata Set | Structure | organised collection of referential metadata for a given _Referential Metadata Subject Item_     |  Each _Referential Metadata Set _uses a_ Referential Metadata Structure _to define a structured list of_ Referential Metadata Attributes _for a given _Referential Metadata Subject Item_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Referential Metadata Structure**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Referential Metadata Structure | Structures | structure of an organised collection of referential metadata     | _A Referential Metadata Structure _defines a structured list of _Referential Metadata Attributes _for a given _Referential Metadata Subject_.Examples of _Referential Metadata Structure include structures for describing _quality information and methodologies information (e.g., ESS Standard for Quality Reports Structure) or characteristics of registers as well as a structure of documentation storing information necessarily for internal dataset management (e.g., GDPR status, existence of information on minor)).                | Metadata Structure Definition |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Referential Metadata Subject**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Referential Metadata Subject | Structure | subject for which an organised collection of referential metadata is reported     | The _Referential Metadata Subject_ identifies the subject of the metadata that can be reported using this _Referential Metadata Structure_. These subjects may be any GSIM information class on which organised set of metadata is needed, such as _Statistical Program, Data Set, Questionnaire _and_ Statistical Classification_.            |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Referential Metadata Subject Item**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Referential Metadata Subject Item | Structure | actual subject for which referential metadata is reported     | Examples are an actual _Product_ such as Balance of Payments and International Investment Position, Australia, June 2013, or a collection of_ Data Points _such_ _as_ _the _Data Points_ for a single region within a _Data Set_ covering all regions for a country. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Unit Data Structure**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Unit Data Structure | Structure | structure of an organised collection of unit data     | For example (social security number, country of residence, age, citizenship, country of birth) where the social security number and the country of residence are the identifying components (_Identifier Component_) and the others are measured variables obtained directly or indirectly from the person (_Unit_) and are_ Measure Components_ of the _Logical Record_. | File description, dataset description |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
