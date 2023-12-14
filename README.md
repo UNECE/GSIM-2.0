@@ -13,11 +13,7 @@ This is the GitHub repository for version 2.0 of the Generic Statistical Informa
 ### 1.2 Descriptive Information
 **Base Group**  provides features that are reusable by other classes to support functionality such as identity and versioning.
 
-For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.unece.org/display/clickablegsim/Base+Group),  **the main changes to the model are marked in red ** in the model diagram below, these include:
-
-- GSIM information class added:_ Software Agent_
-- GSIM information class removed: _Event Change Tuple_
-- Relationships added: between 1) _Change Event_ and _Process Step_; 2) _Change Event _to _Identifiable Artefact_, 3) _Identifiable Artefact_ and _Referential Metadata Subjec_t, 4) _Identifiable Artefact _and _Referential Metadata Attribute_
+The information classes defined within this group as as follows:
 
 **Administrative Details**
 
@@ -50,7 +46,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Agent | Base | someone or something that plays an active role in the lifecycle of an _Identifiable Artefact_ | An _Agent_ may be an _Individual_, an _Organisation_ (or part of it) or a _Software Agent_ that affects in some way an instance of a GSIM class. For example, an _Agent_ can play a role in the execution of a _Business Processes_ or in the way a _Statistical Classification_ (or a _Concept_) changes over time. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -64,7 +59,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Agent In Role | Base | An _Agent_ acting in a specific _Role_. | In the Organization Ontology from W3C _Agent In Role_ is called a "Post". |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes**
 
@@ -82,7 +76,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Change Event | Base | indication of the occurrence of a change to an _Identifiable Artefact_ | A_ Change Event _relates to the information class(es) that has(have) been affected. It can be applied to only one _Identifiable Artefact_ and result in one or more _Identifiable Artefact(s)_. On the other hand, a _Change Event _can be applied to more than one _Identifiable Artefact_ and result in only one _Identifiable Artefact_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes**
 
@@ -102,7 +95,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | Contact | Base | _Role_ in which Individual(s) is(are) responsible for providing additional information about an information class and/or its metadata, either directly or indirectly by linking to its source |
  |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -116,7 +108,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Change Event | Base | abstract class that comprises the basic attributes and associations needed for identification, naming and other documentation | All GSIM classes except _Administrative Details, Agent In Role, Change Event, Datum, Process Input_ (and its sub-types) and _Process Output_ (and its sub-types) are a sub-type of _Identifiable Artefact_. In SDMX, "Identifiable Artefact" is defined as "construct that contains structures capable of providing identity to an object". |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes**
 
@@ -140,7 +131,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | Individual | Base | person who acts, or is designated to act towards a specific purpose |
  |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -154,7 +144,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Maintainer | Base | _Role _in which a_ _unit or group of persons within the _Organisation_ is responsible for managing an information class and its metadata | A unit or group of persons with the role of _Maintainer_ is responsible for all administrative and operational issues relating to one or a set of information classes and its metadata (e.g. adding, modifying or deleting metadata about an information class). It is answerable to all stakeholders for all issues related to the information classes under its responsibility. A _Maintainer_ is not a decision-making body. Decisions are made collaboratively among the owners of the artefact. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -168,7 +157,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Organisation | Base | unique framework of authority within which a person or persons act, or are designated to act, towards some purpose | _Organisation _represents a collection of people organised together, often with hierarchical structures. Examples of _Organisation_: national statistics office, international agency |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -182,7 +170,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Owner | Base | _Role _in which a statistical office, authority or other organisation is responsible for defining, specifying, creating and making decisions about the maintenance of a class and/or its metadata | Some information classes may have several _Owners_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -196,7 +183,7 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Role | Base | function assumed by an _Agent_ | Part played by an _Individual_, an _Organisation_ (or part of it) or a _Software Agent_ in a particular situation. Examples: _Contact_, data steward, scheduler. _Role_ can be maintained by a controlled vocabulary (e.g. RASCI). |
  |
-| --- | --- | --- | --- | --- |
+
 
 **Attributes\***
 
@@ -209,7 +196,7 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
 | Software Agent | Base | software that carries out _Process Step _based on _Process Control_ | Examples: google bot | PROV "Software Agent", DDI "Machine" |
-| --- | --- | --- | --- | --- |
+
 
 **Attributes\***
 
@@ -223,10 +210,7 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 ### 2.2 Descriptive Information
 **Business Group**  is used to capture the designs and plans of statistical programmes, and the processes undertaken to deliver those programmes.
 
-For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.unece.org/display/clickablegsim/Business+Group),  **the main changes to the model are marked in red ** in the model diagram below, these include:
-
-- GSIM information class added: _Reference Document_
-- GSIM information class names changed: _Core Input _(was called _Transformable Input_ in v1.2), _Core Output _(was called _Transformed Output _in v1.2)
+The information classes defined within this group as as follows:
 
 **Assessment**
 
@@ -236,7 +220,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Assessment | Business | result of the analysis of the quality and effectiveness of any activity undertaken by a statistical organisation and recommendations on how these can be improved | An _Assessmen_t can be of a variety of types. One example may include a gap analysis, where a current state is determined along with what is needed to reach its target state. Alternatively, an _Assessment_ may compare current processes against a set of requirements, for example a new _Statistical Need_ or change in the operating environment.An _Assessment_ can use various classes as inputs, whether they are the main classes that the _Assessment_ is about or auxiliary classes that help accomplish the _Assessment_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -257,7 +240,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Business Case | Business | proposal for a body of work that will deliver outputs designed to achieve outcomes | A _Business Case_ is produced as a result of a detailed consideration of a _Change Definition_. It sets out a plan for how the change described by the _Change Definition_ can be achieved. A _Business Case_ usually comprises various evaluations. The _Business Case_ will specify the stakeholders that are impacted by the _Statistical Need_ or by the different solutions that are required to implement it.A _Business Case_ will provide the reasoning for undertaking a_ Statistical Support Activity _to initiate a new _Statistical Programme Design_ for an existing _Statistical Programme,_ or an entirely new _Statistical Programme_, as well as the details of the change proposed. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -279,7 +261,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Business Function | Business | activities undertaken by a statistical organisation to achieve its objectives | A _Business_ _Function_ delivers added value from a business point of view. It is delivered by bringing together people, processes and technology (resources), for a specific business purpose._Business Functions_ answer in a generic sense "What business purpose does this _Business Service _or_ Process Step_ serve?" (c.f. Business Process answers the question of "How?"). Through identifying the _Business Function_ associated with each _Business Service _or_ Process Step, _it increases the documentation of the use of the associated _Business Services_ and _Process Steps_, to enable future reuse.A _Business Function_ may be defined directly with descriptive text and/or through reference to an existing catalogue of _Business Functions_. The phases and sub-processes defined within GSBPM can be used as an internationally agreed basis for cataloguing high-level _Business Functions_. A catalogue might also include _Business Functions_ defined at a lower level than "sub-process". For example, "Identify and address outliers" might be catalogued as a lower level _Business Function_ with the "Review and validate" function (5.3) defined within GSBPM. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -293,7 +274,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Business Process | Business | structured and repeatable activity that performs one or more _Business Functions_ | For example, a particular _Statistical Programme Cycle_ might include several data acquisition activities, the corresponding editing activities for each acquisition and the production and dissemination of final outputs. Each of these may be considered separate _Business Processes_ for the _Statistical Programme Cycle_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -310,7 +290,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 - Counter at post office for interacting with postal workers
  |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -328,7 +307,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Change Definition | Business | structured, well-defined specification for a proposed change | A related class - the _Statistical Need_ - is a change expression as it has been received by an organisation. A _Statistical Need_ is a raw expression of a proposed change, and is not necessarily well-defined. A _Change Definition_ is created when a _Statistical Need_ is analysed by an organisation, and expresses the raw need in well-defined, structured terms.A _Change Definition_ does not assess the feasibility of the change or propose solutions to deliver the change - this role is satisfied by the _Business Case_ class. The precise structure or organisation of a _Change Definition_ can be further specified by rules or standards local to a given organisation. It also includes the specific_ Concepts_ to be measured and the _Population_ that is under consideration.Once a _Statistical Need_ has been received, the first step is to do the conceptual work to establish what it is we are trying to measure. The final output of this conceptual work is the _Change Definition._The next step is to assess how we are going to make the measurements - to design a solution and put forward a proposal for a body of work that will deliver on the requirements of the original _Statistical Need_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -342,7 +320,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Core Input | Business | essential input for the _Process Step Instance_ | Core _Input_ is a sub-type of _Process Input_. Producers of official statistics often conceptualise data (and sometimes metadata) flowing through the statistical _Business Process_, having statistical value added by each _Process Step_.The concept of Core _Input_ allows this notional flow of information through the production process to be traced, without confusing these inputs with other inputs - such as _Parameter Inputs_ and _Process Support Inputs_ that are controlling or influencing a particular _Process Step_ but do not "flow through the _Business Process_" in the same sense. Typical Core _Inputs_ are _Data Sets_ and structural metadata.  |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -356,7 +333,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Core Output | Business | key output of the _Process Step Instance_ | A Core _Output_ is a sub-type of _Process Output_. Typically a Core _Output_ is either a _Process Input_ to a subsequent _Process Step_ or it represents the final product from a statistical _Business Process_.In many cases a Core _Output_ may be readily identified as an updated ("value added") version of one or more Core_Inputs_ supplied to the _Process Step Instance_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -370,7 +346,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Environment Change | Business | requirement for change  that originates from a change in the operating environment of the statistical organisation | An _Environment Change_ reflects change in the context in which a statistical organisation operates. _Environment Changes_ can be of different origins and also take different forms. They can result from a precise event (budget cut, new legislation enforced) or from a progressive process (technical or methodological progress, application or tool obsolescence). Other examples of _Environment Changes_ include the availability of a new _Information Resource_, the opportunity for new collaboration between organisations, etc. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -389,7 +364,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Information Request | Business | _Statistical Need_ that is a request for new information for a particular purpose | An _Information Request_ is a special case of _Statistical Need_ that may come in an organised form, for example by specifying on which S_ubject Field_ the information is required. It may also be a more general request and require refinement by the statistical agency and formalised in a _Change Definition_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -408,7 +382,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Parameter Input | Business | _Process Input_ that specifies the run-time configuration used in a parameterised _Process Step Instance_ | _Parameter Inputs_ may be provided where _Rules_ and/or _Business Service_ interfaces associated with a particular _Process Step_ have been designed to be configurable based on _Process Input Specification_. Parameter Inputs are passed into the _Process Step Instance_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -428,7 +401,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Process Control | Business | set of decision points which determine the flow between the _Process Steps_ used to perform a _Business Process_ | The typical use of _Process Control_ is to determine what happens after a _Process Step_ is executed. The possible paths, and the decision criteria, associated with a _Process Control_ are specified as part of designing a production process, captured in a _Process Control Design_. There is typically a very close relationship between the design of a process and the design of a _Process Control_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -442,7 +414,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Process Control Design | Business | specification of the decision points required during the execution of a _Business Process_ | The design of a _Process Control_ typically takes place as part of the design of the process itself. This involves determining the conditional routing between the various sub-processes and services used by the executing process associated with the _Process_ _Control _and specified by the _Process Control Design._It is possible to define a _Process Control_ where the next step in the_ Process Step_ that will be executed is a fixed value rather than a "choice" between two or more possibilities. Where such a design would be appropriate, this feature allows, for example, initiation of a step in the  _Process Step_ representing the GSBPM Process Phase (5) to always lead to initiation of GSBPM sub-process Integrate Data (5.1) as the next step.This allows a process designer to divide a _Business Process_ into logical steps (for example, where each step performs a specific _Business Function_ through re-use of a _Business Service_) even if these Process Steps will always follow each other in the same order. In all cases, the _Process Control_ _Design_ defines and the _Process Control_ manages the flow between _Process Steps_, even where the flow is "trivial". _Process Design _is left to focus entirely on the design of the process itself, not sequencing between steps. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -456,7 +427,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Process Design | Business | specification of each _Process Step_ and description of their arrangement in a _Business Process_ needed to perform a _Business Function_ | A _Process Design_ is the design time specification of a _Process Step_ that is performed as part of a run-time _Business Service_. A _Process Step_ can be as big or small as the designer of a particular _Business Service_ chooses. From a design perspective, one _Process Step_ can contain "sub-steps", each of which is conceptualised as a (smaller) _Process Step_ in its own right. Each of those "sub-steps" may contain "sub-steps" within them and so on. It is a decision for the process designer to what extent to subdivide steps. At some level it will be appropriate to consider a _Process Step_ to be a discrete task without warranting further subdivision. At that level the _Process Step_ is designed to process particular _Process Inputs,_ according to a particular_ Process Method_, to produce particular _Process Output_s. The flow between a _Process Step _and any sub steps is managed via _Process Control_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -470,7 +440,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Process Execution Log | Business | _Process Output_ listing events generated by a _Process Step Instance_ | It may include data that was recorded during the real-time execution of the Process Step. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -493,7 +462,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Process Input | Business | instance of an information class supplied to a _Process Step Instance_ | _Process Input_ might include information that is used to produce outputs  (e.g. a _Data Set_), to control specific parameters of the process , and as reference to guide the process (e.g. a _Code List_). |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -507,7 +475,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Process Input Specification | Business | set of information classes that function as inputs to a_ Process Design_ | The _Process Input Specification_ enumerates the _Process Inputs_ required at the time a _Process Design_ is executed. For example, if five different _Process Inputs_ are required, the _Process Input Specification_ will describe each of the five inputs. For each required _Process Input_ the _Process Input Specification_ will record the type of information class (based on GSIM) which will be used as the _Process Input_ (example types might be a _Data Set_ or a _Statistical Classification_).The _Process Input_ to be provided at the time of _Process Step_ execution will then be a specific instance of the type of information classspecified by the _Process Input Specification_. For example, if a _Process Input Specification_ requires a _Data Set_ then the corresponding _Process Input_ provided at the time of _Process Step_ execution will be a particular _Data Set__ **.** _ |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -525,7 +492,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Process Method | Business | specification of the methodology which will be used to perform the work | The methodology specified by a _Process Method_ is independent from any choice of technologies and/or other tools which will be used to apply that technique in a particular instance. The definition of the methodology may, however, intrinsically require the application of specific _Rules_ (for example, mathematical or logical formulas). A _Process Method_ describes a particular method for performing a _Process Step._ |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -539,7 +505,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Process Metric | Business | _Process Output_ summarising some aspect or property of the execution | A _Process Metric_ is a sub-type of _Process Output_ which records information about the execution of a _Process Step_. For example, how long it took to complete execution of the _Process Step_ and what percentage of records in the Core _Input_ was updated by the _Process Step_ to produce the Core_Output_.One purpose for a _Process Metric_ may be to provide a quality measure related to the Core_ Output_. For example, a _Process Step_ with the _Business Function_ of imputing missing values is likely to result, as its Core_Output_, in a _Data Set_ where values that were missing previously have been imputed. Statistical quality measures, captured as _Process Metrics_ for that _Process Step_ may include a measure of how many records were imputed, and a measure of how much difference, statistically, the imputed values make to the dataset overall which can be also used as a part of a quality report associated with the Data Set produced. Another purpose for a _Process Metric_ may be to measure an aspect of the _Process Step_ which is not directly related to the Core_Output_ it produced. For example, a _Process Metric_ may record the time taken to complete the _Process Step_ or other forms of resource utilisation (for example, human and/or IT).Often these two kinds of _Process Metrics_ will be used in combination when seeking to, for example, monitor and tune a statistical _Business Process_ so its statistical outputs achieve the highest level of quality possible based on the time, staff and/or IT resources that are available. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -554,7 +519,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | Process Output | Business | instance of an information class produced by a _Process Step Instance_ |
  |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -568,7 +532,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Process Output Specification | Business | set of information classes that function as outputs of a _Process Design_ | The _Process Output Specification_ enumerates the _Process Outputs_ that are expected to be produced at the time a _Process Design_ is executed. For example, if five different _Process Outputs_ are expected, the _Process Output Specification_ will describe each of the five outputs. For each expected _Process Output_ the _Process Output Specification_ will record the type of information class (based on GSIM) which will be used as the _Process Output_ (Example types might be a _Data Set_ or a _Statistical Classification_).The _Process Output_ to be provided at the time of _Process Step_ execution will then be a specific instance of the type of information class specified by the _Process Output Specification_. For example, if a _Process Output Specification_ expects a _Data Set_ then the corresponding _Process Output _provided at the time of _Process Step_ execution will be a particular _Data Set_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -582,7 +545,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Process Pattern | Business | recommended set of _Process Designs_ that is highlighted for possible reuse | In a particular _Business Process_, some _Process Steps_ may be unique to that _Business Process_ while others may be applicable to other _Business Processes_. A _Process_ _Pattern_ can be seen as a reusable template. It is a means to accelerate design processes and to achieve sharing and reuse of design patterns which have proved effective. Reuse of _Process Patterns _can indicate the possibility_ _to reuse related _Business Services._By deciding to reuse a _Process Pattern_, a designer is actually reusing the pattern of _Process Designs_ and _Process Control Designs_ associated with that _Process Pattern_. They will receive a new instance of the Proce_ss Designs_ and _Process Control Designs_. If they then tailor their "instance" of the _Process Designs_ and _Process Control Designs_ to better meet their needs they will not change the definition of the reusable _Process Pattern_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -596,7 +558,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Process Step | Business | unit of work | A _Process Step_ implements the _Process Design_ specified in order to produce the outputs for which the _Process Step_ was designed. Each _Process Step_ is the use of a _Process Design_ in a particular context (e.g., within a specific _Business Process_). At the time of execution a _Process Step Instance_ specifies the actual instances of input classes (for example, specific _Data Sets_, specific _Conceptual Variables_) to be supplied. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -614,7 +575,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Process Step Instance | Business | executed step in a _Business Process_ specifying the actual inputs to and outputs from an occurrence of a _Process Step_ | Each _Process Step_ is the use of a _Process Design_ in a particular context (e.g. within a specific _Business Process_). At the time of execution a _Process Step Instance_ specifies the actual instances of input classes (for example, specific _Data Sets_, specific _Conceptual Variables_) to be supplied. Each _Process Step Instance_ may produce unique results even though the _Process Step_ remains constant.Even when the inputs remain the same, metrics such as the elapsed time to complete execution of the process step may vary from execution to execution. For this reason, each _Process Step Instance_ details of inputs and outputs for that instance of the implementation of the _Process Step_.In this way it is possible to trace the flow of execution of a _Business Process_ through all the _Process Steps_ which were involved. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -634,7 +594,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 - A repository or inventory of _Process Methods_ or software system / architecture that are approved in the _Organisation _that could be used as reference
  |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -653,7 +612,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Reference Document | Business | document that is used to support, inform and guide the _Business Processes_ | The examples of _Reference Documents_ include: methodological handbooks, standards, legislation, corporate policies/guideline and best practices. _Reference Documents_ are often unstructured and can be translated into _Rules _(e.g., quality requirements set by legislation can be written as a Rule). Note that documents can be physical (e.g., books) or electronical. The documents can be formal in terms of content (e.g., laws) or in terms of format (e.g., XML). |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -667,7 +625,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Rule | Business | mathematical or logical expression which can be evaluated to determine specific behavior | _Rules_ are of several types: they may be derived from methods to determine the control flow of a process when it is being designed and executed (e.g. imputation rules, edit rules); and they may be used to drive the logical flow of a questionnaire. There are many forms of _Rules_ and their purpose, character and expression can vary greatly. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -692,7 +649,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 
  In some cases, the _Statistical Need_ can result from the _Assessment_ of the quality, efficiency, etc. of an existing process.A Statistical Need may be of a variety of types including Environment Change or Information Request. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -716,7 +672,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 - Overseas Arrivals and Departures
 Related to the _Statistical Programme_ class, there are _Statistical Programme Design_ and _Statistical Programme Cycle_ classes that hold the detailed information about the design and conduct of the _Business Process_. A _Statistical Programme_ could take as inputs other _Statistical Programmes'_ outputs, e.g. national accounts. These activities are all carried out to generate _Products_.In the case of the traditional approach, an organisation has received a _Statistical Need_ and produced a _Change Definition_ and an approved _Business Case_. The _Business Case_ will specify either a change to the design or methodology of an existing _Statistical Programme_, which will result in a new _Statistical Programme Design_; or a change to one or more existing _Statistical Programmes_ (for example, to add an additional objective to the _Statistical Programme_); or result in a new _Statistical Programme_ being created.This does not include statistical support functions such as metadata management, data management (and other overarching GSBPM processes) and design functions. These activities are conducted as part of _Statistical Support Activity_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -740,7 +695,6 @@ Related to the _Statistical Programme_ class, there are _Statistical Programme D
 | --- | --- | --- | --- | --- |
 | Statistical Programme Cycle | Business | iteration of a _Statistical Programme_ for a given _Population_ | A _Statistical Programme Cycle_ documents the execution of an iteration of a _Statistical Programme_ according to the associated _Statistical Programme Design_ for a given _Population _(e.g., certain reference period, geography). It identifies the activities that are undertaken as a part of the cycle and the specific resources required and processes used and description of relevant methodological information used in this cycle defined by the _Statistical Programme Design_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -759,7 +713,6 @@ Related to the _Statistical Programme_ class, there are _Statistical Programme D
 | --- | --- | --- | --- | --- |
 | Statistical Programme Design | Business | specification of the set of activities undertaken to investigate characteristics of a given _Population_ | The _Statistical Programme Design _takes into account requirements such as resource, policy and compliance, specifies new processes, the use of existing ones and the description of relevant methodological information about that set of activities. It is a series of classes that provide the operational context in which a set of _Business Processes_ is conducted. A simple example is where a _Statistical Programme _relates to a single survey, for example, the Labour Force Survey. The _Statistical Programme _will have a series of _Statistical Programme Design _classes that describe the methodology and design used throughout the life of the survey. When a methodological change is made to the survey, a new _Statistical Programme Design_ is created to record the details of the new design. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -778,7 +731,6 @@ Related to the _Statistical Programme_ class, there are _Statistical Programme D
 | --- | --- | --- | --- | --- |
 | Statistical Support Activity | Business | activity that supports statistical production | This type of activity will include such functions as metadata management, data management, methodological research, and design functions. These activities correspond to the overarching processes in the GSBPM, and Corporate Support in GAMSO, as well as activities to create new or change existing _Statistical Programmes which are covered by GSBPM phase 1-3, _thus creating or updating _Statistical Programme Designs._ |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -799,10 +751,7 @@ Related to the _Statistical Programme_ class, there are _Statistical Programme D
 ### 3.2 Descriptive Information
 **Concept Group**  is used to define the meaning of information to provide an understanding of what the data are measuring.
 
-For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.unece.org/display/clickablegsim/Concept+Group),  **the main changes to the model are marked in red ** in the model diagram below, these include:
-
-- Relationship updated: 1) between _Data Point _and _Population _(this relationship existed between _Dimensional Data Point _in v1.2); 2) between _Data Point _and _Unit _(this relationship existed between _Unit Data Point _in v1.2); 3) "has measure/attribute/identifier" relationship between _Data Point _and _Instance Variable _replaced with "populates"
-- Composition relationship added from _Instance Variable_ to _Data Set_
+The information classes defined within this group as as follows:
 
 **Category**
 
@@ -811,7 +760,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
 | Category | Concept | _Concept_ whose role is to extensionally define and measure a characteristic     | _Categories _for the _Concept_ of sex include: Male, FemaleNote: An extensional definition is a description of a _Concept_ by enumerating all of its subordinate _Concepts_ under one criterion or sub-division.For example - the Noble Gases (in the periodic table) are extensionally defined by the set of elements including Helium, Neon, Argon, Krypton, Xenon, Radon. (ISO 1087-1) | class |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -825,7 +773,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Category Item | Concept | type of _Node _exclusive to a_ Category Set _that contains a single _Category  _ | A _Category Item_ contains the meaning of a _Category_ without any associated representation. (For example: "Male") |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -839,7 +786,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Category Set | Concept | type of _Node Set _for grouping _Categories _via _Category Items_ | The _Categories_ in a _Category Set_ typically have no assigned _Designations_ (_Codes_).For example: Male, Female |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -853,7 +799,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Classification Family | Concept | group of _Classification Series _based on a common Concept (e.g. economic activity)      | Different classification databases may use different types of _Classification Families_ and have different names for the families, as no standard has been agreed upon. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -868,7 +813,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | Classification Index | Concept | ordered list (e.g. alphabetical, in code order) of _Classification Index Entries_ | A _Classification Index_ shows the relationship between text found in statistical data sources (responses to survey questionnaires, administrative records) and one or more _Statistical Classifications_.  A _Classification Index_ may be used to assign the codes for _Classification Items_ to observations in acquisitions of statistical data.A _Statistical Classification_ is a subtype of _Node Set_. The relationship between _Statistical Classification_ and _Classification Index_ can also be extended to include the other _Node Set_ types - _Code List_ and _Category Set_.
  A _Classification Index_ can relate to one particular or to several _Statistical Classifications_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -888,7 +832,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Classification Index Entry | Concept | word or a short text (e.g. the name of a locality, an economic activity or an occupational title) describing a type of object/unit or object property to which a _Classification Item _applies, together with the code of the corresponding_ Classification Item_ | A _Classification Item_ is a subtype of _Node_. The relationship between _Classification Item_ and _Classification Index Entry_ can also be extended to include the other _Node_ types - _Code Item_ and _Category Item_.Each _Classification Index Entry_ typically refers to one item of the _Statistical Classification_. Although a _Classification Index Entry _may be associated with a _Classification Item_ at any _Level_ of a _Statistical Classification_, _Classification Index Entries_ are normally associated with items at the lowest _Level_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -907,7 +850,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Classification Item | Concept | type of _Node _exclusive to a _Statistical Classification_ that combines a _Category _at a certain _Level _with a _Code _that represents it.      | A _Classification Item _defines the content and borders of the associated _Category_.A _Unit _can be classified to one and only one item at each _Level _of a _Statistical Classification_._Categories _are used to create sub-populations and must be mutually exclusive when contained into a _Statistical Classification._ |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -929,7 +871,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Classification Series | Concept | ensemble of one or more _Statistical Classifications_, based on the same concept, and related to each other as versions or updates | Typically, these_ Statistical Classifications_ have the same name (e.g., ISIC or ISCO). |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -950,7 +891,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Code | Concept | _Designation_ for a _Category_     | _Codes_ are unique within their _Code List_. Example: M (Male) F (Female). |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -964,7 +904,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Code Item | Concept | type of _Node _exclusive to a_ Code List _that combines a _Category _with a _Code _that represents it     | A _Code Item_ combines the meaning of the included _Category_ with a _Code_ representation._Codes _are unique within their _Code List._ Example: M (Male) F (Female). |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -978,7 +917,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Code List | Concept | type of _Node Set _for grouping pairs of _Categories _and their _Codes _via _Code Items _  | Similar _Code Lists_ can be grouped together (via the "relates to" relationship inherited from _Node Set_).A _Code List_ provides a predefined set of permissible values for an _Enumerated Value Domain_ |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -993,7 +931,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | Concept | Concept | unit of thought differentiated by characteristics     |
  |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1011,7 +948,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Concept System | Concept | set of _Concepts_ structured by the relations among them   | Here are 2 examples 1) Concept of Sex: Male, Female, Other 2) ISIC (the list is too long to write down) |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1025,7 +961,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Conceptual Domain | Concept | set of valid _Concepts_ | The _Concepts_ can be described by either enumeration or by an expression. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1043,7 +978,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Correspondence Table | Concept | set of _Maps _between the_ Classification Items _of two _Statistical Classifications_ | These are typically: two versions from the same _Classification Series_; _Statistical Classifications_ from different_ Classification Series_; a variant and the version on which it is based; or, different versions of a variant. In the first and last examples, the _Correspondence Table_ facilitates comparability over time. Correspondence relationships are shown in both directions.A _Statistical Classification_ is a subtype of _Node Set_. The relationship between _Statistical Classification_ and _Correspondence Table_ can also be extended to include the other _Node Sets_ - _Code List_ and _Category Set_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1064,7 +998,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Datum | Concept | value | A _Datum_ is the actual instance of data that was acquired or derived. It is the value which populates a _Data Point_. A _Datum_ is the value found in a cell of a table. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1077,7 +1010,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
 | Described Conceptual Domain | Concept | _Conceptual Domain_ defined by an expression      | For example: all real numbers between 0 and 1. Described Conceptual Domain is a synonym for non-enumerated conceptual domain (source: GSIM) | Non-enumerated conceptual domain |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1091,7 +1023,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Described Value Domain | Concept | _Value Domain _defined by an expression | For example: all real decimal numbers between 0 and 1. Described Value Domain is a synonym for non-enumerated value domain (source: GSIM) |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1109,7 +1040,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Designation | Concept | association of a _Concept _with a sign that denotes it     | _Designation _is the name given to an object for identification.     . |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1123,7 +1053,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Enumerated Conceptual Domain | Concept | _Conceptual Domain_ expressed as a list of _Categories_     | For example, the Sex _Categorie_s: 'Male' and 'Female' |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1137,7 +1066,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Enumerated Value Domain | Concept | _Value Domain _expressed as a list of _Categories _and associated _Codes     _ | Example - Sex Codes \<m, male\>; \<f, female\>; \<o, other\>. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1155,7 +1083,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
  3) Endowment: Johns Hopkins has endowment of \<3, $1,000,000 and above\>,
  Yale has endowment of \<3, $1,000,000 and above\>, etc.It may include information about the source of the data. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1170,7 +1097,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | Level | Concept |
  | set of _Nodes _in a hierarchical _Node Set_ in which 1) each _Node _in the set is the same number of parent-child steps away from the root _Node_ in the hierarchy, and 2) the set is defined by a unifying _Concept_ |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1192,7 +1118,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Map | Concept | expression of the relation between a _Classification Item_ in a source _Statistical Classification_ and a corresponding _Classification Item_ in the target _Statistical Classification_     | The Map should specify whether the relationship between the two Classification Items is partial or complete. Depending on the relationship type of the Correspondence Table, there may be several Maps for a single source or target item.The use of _Correspondence Tables_ and _Maps_ can be extended to include all types of _Node_ and _Node Set_. This means that a _Correspondence Table_ could map between the items of _Statistical Classifications_, _Code Lists_ or _Category Sets_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1205,7 +1130,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
 | Measurement Type | Concept | The _Measurement Type_ defines the type of a measure e.g. mass or currency.       | The Measurement Type groups all Measurement Units, which can be converted into each other. A Measurement Type can have a standard Measurement Unit, which can be used for conversion between different Measurement Units.There need not be any standard _Measurement Unit_ for a given _Measurement Type_ e.g. currency. Each _Measurement Type_ has as a standard at most one _Measurement Unit_. | dimensionality(See ISO/IEC 11179-1 Ed 3, section 3.3.15, for a good explanation of dimensionality.) |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1219,7 +1143,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Measurement Unit | Concepts | metric for a measurement in terms of an official unit of measurement     | _Measurement Units is s a definite magnitude of a quantity, defined and adopted by convention or by law, that is used as a standard for measurement of the same kind of quantity. They _can be based on different _Measurement Types_ such as weight, height, currency, duration etc. _Measurement Units_ can be transformed into one another (e.g. kilometres into metres) if they refer to the same _Measurement Type_ (e.g. length). The conversion rule attribute can be used to include a multiplicative factor e.g. the non-standard _Measurement Unit_ '1000 kg' = 1000 x the standard _Measurement Unit_ 'kg'. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1238,7 +1161,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Node | Concepts | combination of a _Category_ and related attributes     | A _Node_ is created as a _Category_, _Code_ or _Classification Item_ for the purpose of defining the situation in which the _Category_ is being used. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1266,7 +1188,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 - \<o, other\>
  |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1284,7 +1205,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 - Universities in the world on 1 January 2023
  |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1304,7 +1224,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | Represented Variable | Concepts |      combination of a characteristic of a population to be measured and how that measure will be represented     | The measure applies to quantitative, categorical, and descriptive _Conceptual Variable_.Examples:
  The pair (Number of Employees, Integer), where "Number of Employees" is the characteristic of the population (_Conceptual Variable)_ and "Integer" is how that measure will be represented (_Substantive_ _Value Domain). _If the _Conceptual Variable_ is "Industry" and the_ Substantive Value Domain_ is "Level 1 of NACE 2007", the pair is (Industry, NACE 2007 - Level 1).The _Represented Variable _"Sex of Person [1,2,3]", has the _Conceptual Variable_ (Sex of Person) and the representation (1=Male, 2=Female, 3=Other). |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1318,7 +1237,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Sentinel Value Domain | Concepts | _Value Domain _containing sentinel values, i.e. processing-related special values       | A sentinel value is one used for processing and with no subject matter content, such as missing or refused._Sentinel Value Domains_ can be enumerated (listed) or described. A _Value Domain _expressed as a list of _Categories _for sentinel values or a description thereof. The scope and the meaning of the possible values are defined within the frame of the_ Conceptual Domain_ that the _Sentinel Value Domain_ is associated with.Separating the sentinel values from the substantive ones allows a large reduction in the number of _Value Domains_, and thus _Represented Variables_ and _Instance Variables_, that need to be maintained.Use of generic codes is recommended for _Concepts_ which appear in many, if not, all _Code Lists_, e.g. \<S\_X, Unspecified\>, \<S\_Z, Not applicable\>, \< S\_R, Refusal\>, \<S\_U, Unknown\> |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1332,7 +1250,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Statistical Classification  | Concept | hierarchically organised set of mutually exclusive and jointly exhaustive _Categories _that share the same or similar characteristics, used for meaningfully grouping the objects or units in the population of interest       | The _Categories_ are defined with reference to one or more characteristics of a particular population of units of observation. A _Statistical Classification_ may have a flat, linear structure or may be hierarchically structured, such that all _Categories_ at lower _Levels_ are sub-_Categories_ of _Categories_ at the next _Level_ up. _Categories_ in _Statistical Classifications_ are represented in the information model as _Classification Items_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1362,7 +1279,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
 | Subject Field | Concept | field of knowledge under which a set of _Concepts _and their _Designations_ is used | For example, labour market, environmental expenditure, tourism, etc. | subject area, theme |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1376,7 +1292,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Substantive Value Domain | Concept | _Value Domain _containing substantive values, where a substantive value is subject matter related       | A substantive value is one representing subject matter content, such as \<f, female\> in a gender classification.The scope and the meaning of the possible values are defined within the frame of the _Conceptual Domain_ that the_ Substantive Value Domain _is associated with.Example: \<0, Pre-primary\>, \<1, Primary\>, \<2, Lower secondary\>, \< 3, Upper secondary\>, \<4, Post-secondary non-tertiary\>, \<5, First stage of tertiary education\>, \<6, Second stage of tertiary education\> where the scope and meaning of the values are defined within _Categories_ for levels of education. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1394,7 +1309,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 - Individual US universities (e.g., Johns Hopkins, University of Maryland, Yale, etc.)
  |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1407,7 +1321,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
 | Unit Type | Concept | class or group of _Units _based on a single characteristic | A _Unit Type_ is used to describe a class or group of _Units_ based on a single characteristic, but with no specification of time and geography. For example, the _Unit Type_ of "Person" groups together a set of _Units_ based on the characteristic that they are 'Persons'.It concerns not only _Unit Types_ used in dissemination, but anywhere in the statistical process. E.g. using administrative data might involve the use of a fiscal unit. | Object class (ISO 11179) |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1421,7 +1334,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Universe | Concept | specialized _Unit Type_, but not by time or geography | The description statement of a _Universe_ is generally stated in inclusive terms such as "All persons with a university degree". Occasionally a _Universe_ is defined by what it excludes, i.e., "All persons except those with a university degree". In both cases, adding the condition of the university degree specializes persons, which is a Unit Type. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1435,7 +1347,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Value Domain | Concept | set of permissible values for a _Conceptual Variable_     | The values can be described by enumeration or by an expression. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1453,7 +1364,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 - Value of production
  |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1467,11 +1377,7 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 ### 4.2 Descriptive Information
 **Exchange Group**  is used to catalogue the information that is exchanged within and outside of a statistical organisation.
 
-For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.unece.org/display/clickablegsim/Exchange+Group),  **the main changes to the model are marked in red ** in the model diagram below, these include:
-
-- GSIM information class added: 1) _Register;_ 2) _Exchange Specification_; 3) _Dissemination Instrument; _
-- GSIM information class removed: 1) _Administrative Register;_ 2) _Statistical Register_; 3) _Protocol _
-- GSIM information class renamed: _Exchange Instrument_ (previously _Exchange Channel _in GSIM v1.2)_ _
+The information classes defined within this group as as follows:
 
 **Data Harvest**
 
@@ -1481,7 +1387,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Data Harvest | Exchange | _Exchange Instrument_ to pass information between two sources, usually by a machine to machine mechanism | Examples of _Data Harvest_ include web scraper, API (e.g., to acquire data from administrative sources), scanner, sensor, etc. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1495,7 +1400,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Dissemination Instrument | Exchange | _Exchange Instrument_ to disseminate information | Examples include: API or web services for data dissemination |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1509,7 +1413,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Exchange Instrument | Exchange | concrete and usable tool to exchange information  | The _Exchange Instrument_ is a tool to receive or send information and is used for external and internal purposes.Different _Exchange Instruments _are used for data acquisition and dissemination. An example of E_xchange instrument _for receiving information is _Questionnaire_. An example of _Exchange Instrument _for sending information is _Dissemination Instrument_. Additional _Exchange Instruments _can be added to the model as needed by individual organisations. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1527,7 +1430,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Exchange Specification | Exchange | outline or description specifying the design of the _Exchange Instrument_ | GSBPM Phase 2 (Design) results in an _Exchange Specification_ that specifies the design of the data acquisition or dissemination instruments (e.g., _Questionnaire_, web page). In GSBPM Phase 3 (Build), these instruments are built based on the tools. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1541,7 +1443,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Information Consumer | Exchange | _Role _that entails consuming data and information | The _Information Consumer_ accesses a set of information in a _Product _that is made available via a _Dissemination Instrument_. The _Information Consumer_ subscribes to the _Provision Agreement_, which sets out conditions of access. The _Information Consumer_ can be defined in a broad sense with a persona concept (group of Individuals) without specific details. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1555,7 +1456,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Information Provider | Exchange | _Role _that entails providing data and information | An _Information Provider_ possesses sets of information (that it has acquired, for example by collecting or purchasing it) and is willing to supply that information (data or referential metadata) to the statistical organisation. The two parties use a _Provision Agreement_ to agree on the _Data Structure_ and _Referential Metadata Structure_ of the data to be exchanged via an _Exchange Instrument_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1569,7 +1469,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Instance Question | Exchange | use of a _Question_ in a particular _Questionnaire_ | The _Instance Question_ is the use of a _Question_ in a particular _Questionnaire_ _Component_. This also includes the use of the _Question_ in a _Question Block_, which is a particular type of _Questionnaire Component_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1588,7 +1487,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Instance Question Block | Exchange | use of a _Question Block_ in a particular _Questionnaire_ | The _Instance Question Block_ is the use of a _Question Block_ in a particular _Questionnaire Component_. This also includes the use of a _Question Block_ in another _Question Block_, as it is a particular type of _Questionnaire Component_.  |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1602,7 +1500,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Instance Statement | Exchange | use of a _Statement_ in a particular _Questionnaire or more specifically a Questionnaire Component_ | The _Instance Statement_ is the use of a _Statement_ in a particular _Questionnaire Component_. This also includes the use of the _Statement_ in a _Question Block_, which is a particular type of _Questionnaire Component_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1620,7 +1517,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Output Specification | Exchange | outline or description of how _Information Sets _are presented and arranged in _Products _for _Information Consumers_ | The _Output Specification_ specifies _Products_ and uses the _Presentations_ they contain. The _Output Specification_ may be fully defined during the design process (such as in a paper publication or a predefined web report), or may be a combination of designed specifications supplemented by user selections (such as in an online data query tool). |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1643,7 +1539,6 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 - A web page containing _Statistical Classifications_, descriptions of _Conceptual Variables_, etc.
  |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1657,7 +1552,6 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 | --- | --- | --- | --- | --- |
 | Product | Exchange | package of content that can be disseminated as a whole      | A _Product_ packages _Information Sets_ for an _Information Consumer_. The _Product_ is generated according to _Output Specifications_, which define how the information from the_ Information Sets _are presented (via Presentations)  to the _Information Consumer_.A _Provision Agreement_ between the statistical organisation and the _Information Consumer_ governs the use of a _Product_ by the _Information Consumer_. The _Provision Agreement,_ which may be explicitly or implicitly agreed, provides the legal or other bases by which the two parties agree to exchange data. In many cases, dissemination _Provision Agreements_ are implicit in the terms of use published by the statistical organisation.For static _Products_ (e.g. paper publications), specifications are predetermined. For dynamic _Products_, aspects of specification could be determined by the_ Information Consumer_ at run time. Both cases result in _Output Specifications_ specifying _Information Set_ data or referential metadata that will be included within the _Product_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1671,7 +1565,6 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 | --- | --- | --- | --- | --- |
 | Provision Agreement | Exchange | legal or other basis by which two parties agree to exchange data | A _Provision Agreement_ between the statistical organisation and the _Information Provider_ (acquisition) or the _Information Consumer _(dissemination) governs the use of _Exchange Instrument_. The _Provision Agreement_, which may be explicitly or implicitly agreed, provides the legal or other basis by which the two parties agree to exchange data. The parties also use the _Provision Agreement_ to agree the Information _Structure_ of the information to be exchanged. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1687,7 +1580,6 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 - QuestionGrid, useful to model questions as grids/tables. It is actually a cube-like structure providing dimension information, labelling options, and response domains attached to one or more cells within the grid. For instance, a two-way table requesting to provide turnovers broken down by affiliates.
 - QuestionItem, a simple question that is necessarily one dimensional. For example: "How old are you?"
  | Multiple Question |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1710,7 +1602,6 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 - Employment _Question Block_
  |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1724,7 +1615,6 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 | --- | --- | --- | --- | --- |
 | Questionnaire | Exchange | _Exchange Instrument _to elicit information from observation _Units_ | This is an example of a way statistical organisations acquire information (an _Exchange Instrument_). Each collection mode (e.g. in-person, CAPI (Computer-assisted personal interviewing), online Questionnaire) should be interpreted as a new _Questionnaire_ derived from the _Questionnaire Specification_. The _Questionnaire_ is a tool in which data is obtained. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1744,7 +1634,6 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 | --- | --- | --- | --- | --- |
 | Questionnaire Component | Exchange | record of the flow of a _Questionnaire_ _Specification _and its use of _Questions, Question Blocks_ and _Statements_ | A _Questionnaire Component_ defines the structure of the _Questionnaire Specification_, as a combination of _Questions, Question Blocks_ and _Statements. _It is the class which groups together all the components of a_ Questionnaire.__A Questionnaire Component _is recursive, in that it can refer to other_ Questionnaire Components _and accompanying_ Questionnaire Logic _classes at a lower level. It is only at the top level where the_ Questionnaire Component _links to the_ Questionnaire Specification_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1762,7 +1651,6 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 | --- | --- | --- | --- | --- |
 | Questionnaire Logic | Exchange | management/control of the sequence of _Questions, Question Blocks_ and _Statements _based on factors such as the current location, the response to the previous questions etc., invoking navigation and validation _Rules_ to apply  |
  | Routing |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1780,7 +1668,6 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 | --- | --- | --- | --- | --- |
 | Questionnaire Specification | Exchange | _Exchange Specification _for _Questionnaire_ | This represents the complete questionnaire design, with a relationship to the top-level _Questionnaire Component_.There may be many different _Questionnaire Specifications_, for the same surveys, or tailored to individual observation _Units_ (respondents) so that there would be a different _Questionnaire Specification_ for each respondent. The design would also differ depending upon the specific mode of collection the _Questionnaire_ is designed for. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1800,7 +1687,6 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 - _Register _as_ Information Set_  as a source of administrative information obtained usually from external organisations.
  |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1814,7 +1700,6 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 | --- | --- | --- | --- | --- |
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | Statement | Exchange | report of facts in a _Questionnaire_ | _Statements_ are often included to provide further explanation to respondents.Example: "The following questions are about your health".The class is also used to represent completion instructions for the interviewer or respondent. _Statement_ should be designed with re-use in mind as it can be used in numerous _Questionnaires_. | Interviewer InstructionInstruction |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1832,11 +1717,7 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 ### 5.2 Descriptive Information
 **Structure Group**  is used to structure information throughout the statistical process.
 
-For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.unece.org/display/clickablegsim/Structure+Group),  **the main changes to the model are marked in red ** in the model diagram below, these include:
-
-- GSIM information class added: _Information Structure_
-- GSIM information class removed: 1) _Dimensional Data Point_; 2) _Dimensional Data Set_; 3)_ Unit Data Point_; 4) _Unit Data Set _
-- GSIM information class names changed: _Data Record _(was called _Unit Data Record_ in v1.2)
+The information classes defined within this group as as follows:
 
 **Attribute Component**
 
@@ -1849,7 +1730,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 - the base period of the data in the series
  |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1868,7 +1748,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Data Point | Structure | container for a single value of an _Instance Variable_     | A _Data Point_ is a cell or a placeholder for a value (_Datum_) it may contain (note that a data point could be empty).A field in a _Data Structure_ which corresponds to, for example, a cell in a table. The _Data Point_ is structural and distinct from the value (the _Datum_) that it holds. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1882,7 +1761,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Data Record | Structure | collection of _Data Points_ related to a given _Unit_ or _Population_ | For example (1212123, 48, American, United Kingdom) specifies the age (48) in years, the current citizenship (American), and the country of birth (United Kingdom) for a person with social security number 1212123. ** ** For the case of unit data, it can be structured by _Logical Record_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1896,7 +1774,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Data Resource | Structure | organised collection of stored information made of one or more _Data Sets_     | _Data Resources_ are collections of data. _Data Resource_ is a specialization of an _Information Resource_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1909,7 +1786,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
 | Data Set | Structure | organised collection of data     | _Data Sets_ could be used to organise a wide variety of content, including observation registers, time series, longitudinal data, survey data, rectangular data sets, event-history data, tables, data tables, registers, data cubes, data warehouses/marts and matrixes.An example of a population unit _Data Set_ (microdata) could be a collection of three Data Records (1212123, 48, American, United Kingdom), (1212111, 38, Hungarian, United Kingdom), and (1212317, 51, Canadian, Mexico), each containing the social security number, age, citizenship and country of birth of an individual. An example of a population dimensional_ Data Set _(aggregate) could be a collection of three entries (Mexico, 2021, 130.3), (United Kingdom, 2021, 67.33), and (Italy, 2022, 60.24), each containing the name of the country, year of interest and population of the country in millions. | Database, data file, file, table |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1927,7 +1803,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Data Structure | Structure | structure of an organised collection of data (_Data Set_)     | The structure is described using _Data Structure Components_ that can be either _Attribute Components, Identifier Components_ or _Measure Components_. Examples for unit data include social security number, country of residence, age, citizenship, country of birth, where the social security number and the country of residence are both identifying components and the others are measured variables obtained directly or indirectly from the person (_Unit_). |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1945,7 +1820,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 - Example of _Identifier Component_: personal identification number of a Swedish citizen for unit data or the name of a country in the European Union for dimensional data.
  |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1959,7 +1833,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Dimensional Data Structure | Structure | structure of an organised collection of a dimensional data      | For example, (country, gender, number of citizens) where the country and gender are the _Identifier Component_ and the number of citizens is a _Measure Component_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1977,7 +1850,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Identifier Component | Structure | role given to a _Represented Variable_ in the context of a _Data Structure _to identify the _Units_      | An _Identifier Component_ is a sub-class of _Data Structure Component_. The personal identification number of a Swedish citizen for unit data or the name of a country in the European Union for dimensional data. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -1997,7 +1869,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Information Resource | Structure | abstract notion that is any organised collection of information     | Statistical activity uses Information Resources to produce information. There currently are only two concrete sub-classes: _Data Resource_ and_ Referential Metadata Resource_. The _Information Resource_ allows the model to be extended to other types of resource. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -2011,7 +1882,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Information Set | Structure | organised collection of statistical content      | Statistical organisations acquire, process, analyze and disseminate _Information Sets_, which contain data (_Data Sets_), referential metadata (_Referential Metadata Sets_), or potentially other types of statistical content, which could be included in additional types of _Information Set_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -2026,7 +1896,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | Information Structure | Structure | describes the structure of an _Information Set_ |
  |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -2040,7 +1909,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Logical Record | Structure |  set of attributes defined by _Unit Type_ describing a specific instance of a _Data Record_ which provides an additional relationship on top of _Data Structure_ | Logical Records provide an additional relationship on top of the _Data Structure_ (e.g., an individual is a part of family, information from record linkage)                 |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -2054,7 +1922,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Measure Component | Structure | role given to a _Represented Variable_ in the context of a _Data Structure_ to hold the observed/derived values for a particular _Unit_      | A _Measure Component_ is a sub-class of _Data Structure_ Component. For example, age and height of a person in a _Unit Data Set_ or number of citizens and number of households in a country in a _Data Set_ for multiple countries (dimensional _Data Set_). |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -2068,7 +1935,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Record Relationship | Structure | description of relationships between _Logical Records_ within a _Unit Data Structure_     | _Record Relationship_ must have both a source _Logical Record_ and a target _Logical Record _in order to define the relationship. Example: Relationship between a person and household _Logical Records_ within a unit _Data Set_. |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -2082,7 +1948,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Referential Metadata Attribute | Structure | characteristic that describes or qualifies _Referential Metadata Subject    _ | A set of _Referential Metadata Attributes_ is structured by _Referential Metadata Structure_ to describe _Referential Metadata Subject_. Examples of _Referential Metadata Attributes_ can be _Represented Variables_ (e.g., "Accuracy", "Timeliness" when describing quality information) or other GSIM class (e.g., _Statistical Classification, Contact, Owner_).     |
  |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
@@ -2100,7 +1965,7 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Referential Metadata Content Item | Structure | actual content for_ Referential Metadata Attribute  _   | _Referential Metadata Content Item_ can take different formats (e.g., text, number, value from a predefined codelist, table).     |
  |
-| --- | --- | --- | --- | --- |
+
 
 **Attributes\***
 
@@ -2114,7 +1979,7 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Referential Metadata Resource | Structure | organised collection of stored information consisting of one or more _Referential Metadata Sets_     | _Referential Metadata Resources_ are collections of structured information. This class is a specialization of an _Information Resource_. |
  |
-| --- | --- | --- | --- | --- |
+
 
 **Attributes\***
 
@@ -2128,7 +1993,7 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Referential Metadata Set | Structure | organised collection of referential metadata for a given _Referential Metadata Subject Item_     |  Each _Referential Metadata Set _uses a_ Referential Metadata Structure _to define a structured list of_ Referential Metadata Attributes _for a given _Referential Metadata Subject Item_. |
  |
-| --- | --- | --- | --- | --- |
+
 
 **Attributes\***
 
@@ -2141,7 +2006,7 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
 | Referential Metadata Structure | Structures | structure of an organised collection of referential metadata     | _A Referential Metadata Structure _defines a structured list of _Referential Metadata Attributes _for a given _Referential Metadata Subject_.Examples of _Referential Metadata Structure include structures for describing _quality information and methodologies information (e.g., ESS Standard for Quality Reports Structure) or characteristics of registers as well as a structure of documentation storing information necessarily for internal dataset management (e.g., GDPR status, existence of information on minor)).                | Metadata Structure Definition |
-| --- | --- | --- | --- | --- |
+
 
 **Attributes\***
 
@@ -2155,7 +2020,7 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Referential Metadata Subject | Structure | subject for which an organised collection of referential metadata is reported     | The _Referential Metadata Subject_ identifies the subject of the metadata that can be reported using this _Referential Metadata Structure_. These subjects may be any GSIM information class on which organised set of metadata is needed, such as _Statistical Program, Data Set, Questionnaire _and_ Statistical Classification_.            |
  |
-| --- | --- | --- | --- | --- |
+
 
 **Attributes\***
 
@@ -2169,7 +2034,7 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | --- | --- | --- | --- | --- |
 | Referential Metadata Subject Item | Structure | actual subject for which referential metadata is reported     | Examples are an actual _Product_ such as Balance of Payments and International Investment Position, Australia, June 2013, or a collection of_ Data Points _such_ _as_ _the _Data Points_ for a single region within a _Data Set_ covering all regions for a country. |
  |
-| --- | --- | --- | --- | --- |
+
 
 **Attributes\***
 
@@ -2182,7 +2047,6 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
 | Unit Data Structure | Structure | structure of an organised collection of unit data     | For example (social security number, country of residence, age, citizenship, country of birth) where the social security number and the country of residence are the identifying components (_Identifier Component_) and the others are measured variables obtained directly or indirectly from the person (_Unit_) and are_ Measure Components_ of the _Logical Record_. | File description, dataset description |
-| --- | --- | --- | --- | --- |
 
 **Attributes\***
 
