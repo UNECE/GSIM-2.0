@@ -3,3 +3,4 @@ title: GSIM 2.0
 #description: blah
 #show_downloads: true
 theme: jekyll-theme-cayman
+sidebar: toc
