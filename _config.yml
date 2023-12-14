@@ -3,4 +3,8 @@ title: GSIM 2.0
 #description: blah
 #show_downloads: true
 theme: jekyll-theme-cayman
-sidebar: toc
+#sidebar: toc
+markdown: kramdown
+#* TOC
+#{:toc}
+#* Placeholder for Table of Content (Must not be removed) <newline> {:toc}
