@@ -221,6 +221,575 @@ For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.
 ![Alt text here](Image%20Files/GSIM_2_0_Business_Group.drawio.png)
 
 ### 2.2 Descriptive Information
+**Business Group**  is used to capture the designs and plans of statistical programmes, and the processes undertaken to deliver those programmes.
+
+For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.unece.org/display/clickablegsim/Business+Group),  **the main changes to the model are marked in red ** in the model diagram below, these include:
+
+- GSIM information class added: _Reference Document_
+- GSIM information class names changed: _Core Input _(was called _Transformable Input_ in v1.2), _Core Output _(was called _Transformed Output _in v1.2)
+
+**Assessment**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Assessment | Business | result of the analysis of the quality and effectiveness of any activity undertaken by a statistical organisation and recommendations on how these can be improved | An _Assessmen_t can be of a variety of types. One example may include a gap analysis, where a current state is determined along with what is needed to reach its target state. Alternatively, an _Assessment_ may compare current processes against a set of requirements, for example a new _Statistical Need_ or change in the operating environment.An _Assessment_ can use various classes as inputs, whether they are the main classes that the _Assessment_ is about or auxiliary classes that help accomplish the _Assessment_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Date Assessed | Date when the Assessment took place | 1..\* | Date |
+| Issues | Issues identified through the _Assessment_ | 0..\* | String |
+| Recommendations | Recommendations from the _Assessment_ | 0..\* | String |
+| Results | Results from the _Assessment_ | 0..\* | String |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Business Case**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Business Case | Business | proposal for a body of work that will deliver outputs designed to achieve outcomes | A _Business Case_ is produced as a result of a detailed consideration of a _Change Definition_. It sets out a plan for how the change described by the _Change Definition_ can be achieved. A _Business Case_ usually comprises various evaluations. The _Business Case_ will specify the stakeholders that are impacted by the _Statistical Need_ or by the different solutions that are required to implement it.A _Business Case_ will provide the reasoning for undertaking a_ Statistical Support Activity _to initiate a new _Statistical Programme Design_ for an existing _Statistical Programme,_ or an entirely new _Statistical Programme_, as well as the details of the change proposed. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Date Approved | Date when the _Business Case_ was approved | 0..1 | Date |
+| Date Initiated | Date when the _Business Case_ was initiated | 0..1 | Date |
+| Outcomes (objectives) | Outcomes (objectives) that the proposed work in the _Business Case _would achieve | 1..\* | String |
+| Outputs (deliverables) | Outputs (deliverables) that the proposed work in the _Business Case_ would deliver | 1..\* | String |
+| Type | E.g. new programme, permanent (indefinite) change to existing programme, temporary change to existing programme, cease programme. | 1..\* | ControlledVocabulary |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Business Function**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Business Function | Business | activities undertaken by a statistical organisation to achieve its objectives | A _Business_ _Function_ delivers added value from a business point of view. It is delivered by bringing together people, processes and technology (resources), for a specific business purpose._Business Functions_ answer in a generic sense "What business purpose does this _Business Service _or_ Process Step_ serve?" (c.f. Business Process answers the question of "How?"). Through identifying the _Business Function_ associated with each _Business Service _or_ Process Step, _it increases the documentation of the use of the associated _Business Services_ and _Process Steps_, to enable future reuse.A _Business Function_ may be defined directly with descriptive text and/or through reference to an existing catalogue of _Business Functions_. The phases and sub-processes defined within GSBPM can be used as an internationally agreed basis for cataloguing high-level _Business Functions_. A catalogue might also include _Business Functions_ defined at a lower level than "sub-process". For example, "Identify and address outliers" might be catalogued as a lower level _Business Function_ with the "Review and validate" function (5.3) defined within GSBPM. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Business Process**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Business Process | Business | structured and repeatable activity that performs one or more _Business Functions_ | For example, a particular _Statistical Programme Cycle_ might include several data acquisition activities, the corresponding editing activities for each acquisition and the production and dissemination of final outputs. Each of these may be considered separate _Business Processes_ for the _Statistical Programme Cycle_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Business Service**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Business Service | Business | means of performing a _Business Function_ | A _Business_ _Service_ may provide one means of accessing a particular _Business Function_. The operation of a _Business Service_ will perform one or more _Business Processes_.The explicitly defined interface of a _Business Service_ can be seen as representing a "service contract". If particular inputs are provided then the service will deliver particular outputs in compliance within specific parameters (for example, within a particular period of time).Note: The interface of a _Business Service_ is not necessarily IT based. For example, a typical postal service will have a number of service interfaces:
+- Public letter box for posting letters
+- Counter at post office for interacting with postal workers
+ |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Service Interface | Specifies how to communicate with the service. | 0..\* | String |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Change Definition**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Change Definition | Business | structured, well-defined specification for a proposed change | A related class - the _Statistical Need_ - is a change expression as it has been received by an organisation. A _Statistical Need_ is a raw expression of a proposed change, and is not necessarily well-defined. A _Change Definition_ is created when a _Statistical Need_ is analysed by an organisation, and expresses the raw need in well-defined, structured terms.A _Change Definition_ does not assess the feasibility of the change or propose solutions to deliver the change - this role is satisfied by the _Business Case_ class. The precise structure or organisation of a _Change Definition_ can be further specified by rules or standards local to a given organisation. It also includes the specific_ Concepts_ to be measured and the _Population_ that is under consideration.Once a _Statistical Need_ has been received, the first step is to do the conceptual work to establish what it is we are trying to measure. The final output of this conceptual work is the _Change Definition._The next step is to assess how we are going to make the measurements - to design a solution and put forward a proposal for a body of work that will deliver on the requirements of the original _Statistical Need_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Core Input**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Core Input | Business | essential input for the _Process Step Instance_ | Core _Input_ is a sub-type of _Process Input_. Producers of official statistics often conceptualise data (and sometimes metadata) flowing through the statistical _Business Process_, having statistical value added by each _Process Step_.The concept of Core _Input_ allows this notional flow of information through the production process to be traced, without confusing these inputs with other inputs - such as _Parameter Inputs_ and _Process Support Inputs_ that are controlling or influencing a particular _Process Step_ but do not "flow through the _Business Process_" in the same sense. Typical Core _Inputs_ are _Data Sets_ and structural metadata.  |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Core Output**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Core Output | Business | key output of the _Process Step Instance_ | A Core _Output_ is a sub-type of _Process Output_. Typically a Core _Output_ is either a _Process Input_ to a subsequent _Process Step_ or it represents the final product from a statistical _Business Process_.In many cases a Core _Output_ may be readily identified as an updated ("value added") version of one or more Core_Inputs_ supplied to the _Process Step Instance_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Environment Change**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Environment Change | Business | requirement for change  that originates from a change in the operating environment of the statistical organisation | An _Environment Change_ reflects change in the context in which a statistical organisation operates. _Environment Changes_ can be of different origins and also take different forms. They can result from a precise event (budget cut, new legislation enforced) or from a progressive process (technical or methodological progress, application or tool obsolescence). Other examples of _Environment Changes_ include the availability of a new _Information Resource_, the opportunity for new collaboration between organisations, etc. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Change Origin | Origin of the Environment Change (e.g. external, internal) | 1..1 | String |
+| Type | Type of the Environment Change (e.g. legal, method, software) | 1..\* | ControlledVocabulary |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Information Request**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Information Request | Business | _Statistical Need_ that is a request for new information for a particular purpose | An _Information Request_ is a special case of _Statistical Need_ that may come in an organised form, for example by specifying on which S_ubject Field_ the information is required. It may also be a more general request and require refinement by the statistical agency and formalised in a _Change Definition_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Coverage of Information Required | Coverage of the information required | 1..1 | String |
+| Date Information Required | Date when the information is required | 0..1 | Date |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Parameter Input**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Parameter Input | Business | _Process Input_ that specifies the run-time configuration used in a parameterised _Process Step Instance_ | _Parameter Inputs_ may be provided where _Rules_ and/or _Business Service_ interfaces associated with a particular _Process Step_ have been designed to be configurable based on _Process Input Specification_. Parameter Inputs are passed into the _Process Step Instance_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Data Type | The data type of the _Parameter Input_. | 1..1 | ControlledVocabulary |
+| Parameter Role | Used to convey the role of this parameter. For example - weight, upper threshold, agreement level. This will likely become a controlled vocabulary (maybe external to allow more timely maintenance). | 0..\* | String |
+| Parameter Value | The content of the parameter. | 1..1 | String |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Process Control**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Process Control | Business | set of decision points which determine the flow between the _Process Steps_ used to perform a _Business Process_ | The typical use of _Process Control_ is to determine what happens after a _Process Step_ is executed. The possible paths, and the decision criteria, associated with a _Process Control_ are specified as part of designing a production process, captured in a _Process Control Design_. There is typically a very close relationship between the design of a process and the design of a _Process Control_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Process Control Design**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Process Control Design | Business | specification of the decision points required during the execution of a _Business Process_ | The design of a _Process Control_ typically takes place as part of the design of the process itself. This involves determining the conditional routing between the various sub-processes and services used by the executing process associated with the _Process_ _Control _and specified by the _Process Control Design._It is possible to define a _Process Control_ where the next step in the_ Process Step_ that will be executed is a fixed value rather than a "choice" between two or more possibilities. Where such a design would be appropriate, this feature allows, for example, initiation of a step in the  _Process Step_ representing the GSBPM Process Phase (5) to always lead to initiation of GSBPM sub-process Integrate Data (5.1) as the next step.This allows a process designer to divide a _Business Process_ into logical steps (for example, where each step performs a specific _Business Function_ through re-use of a _Business Service_) even if these Process Steps will always follow each other in the same order. In all cases, the _Process Control_ _Design_ defines and the _Process Control_ manages the flow between _Process Steps_, even where the flow is "trivial". _Process Design _is left to focus entirely on the design of the process itself, not sequencing between steps. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Process Design**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Process Design | Business | specification of each _Process Step_ and description of their arrangement in a _Business Process_ needed to perform a _Business Function_ | A _Process Design_ is the design time specification of a _Process Step_ that is performed as part of a run-time _Business Service_. A _Process Step_ can be as big or small as the designer of a particular _Business Service_ chooses. From a design perspective, one _Process Step_ can contain "sub-steps", each of which is conceptualised as a (smaller) _Process Step_ in its own right. Each of those "sub-steps" may contain "sub-steps" within them and so on. It is a decision for the process designer to what extent to subdivide steps. At some level it will be appropriate to consider a _Process Step_ to be a discrete task without warranting further subdivision. At that level the _Process Step_ is designed to process particular _Process Inputs,_ according to a particular_ Process Method_, to produce particular _Process Output_s. The flow between a _Process Step _and any sub steps is managed via _Process Control_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Process Execution Log**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Process Execution Log | Business | _Process Output_ listing events generated by a _Process Step Instance_ | It may include data that was recorded during the real-time execution of the Process Step. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| End Time | The time the _Process Step Instance_ ended. | 0..1 | Date |
+| Log Code | The identifier for the event that occurred during the process execution. | 0..1 | String |
+| Log Message | The human readable message for the event that occurred during the process execution. | 0..1 | String |
+| Log Severity | The severity for the event that occurred during the process execution. | 0..1 | String |
+| Log Type | The type of event that occurred during process execution (for example, an error). | 0..1 | ControlledVocabulary |
+| Start Time | The time the _Process Step_ started. | 0..1 | Date |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Process Input**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Process Input | Business | instance of an information class supplied to a _Process Step Instance_ | _Process Input_ might include information that is used to produce outputs  (e.g. a _Data Set_), to control specific parameters of the process , and as reference to guide the process (e.g. a _Code List_). |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Process Input Specification**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Process Input Specification | Business | set of information classes that function as inputs to a_ Process Design_ | The _Process Input Specification_ enumerates the _Process Inputs_ required at the time a _Process Design_ is executed. For example, if five different _Process Inputs_ are required, the _Process Input Specification_ will describe each of the five inputs. For each required _Process Input_ the _Process Input Specification_ will record the type of information class (based on GSIM) which will be used as the _Process Input_ (example types might be a _Data Set_ or a _Statistical Classification_).The _Process Input_ to be provided at the time of _Process Step_ execution will then be a specific instance of the type of information classspecified by the _Process Input Specification_. For example, if a _Process Input Specification_ requires a _Data Set_ then the corresponding _Process Input_ provided at the time of _Process Step_ execution will be a particular _Data Set__ **.** _ |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Process Input Type | E.g., _Parameter Input, Process Support Input, CoreInput_. | 1..\* | ControlledVocabulary |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Process Method**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Process Method | Business | specification of the methodology which will be used to perform the work | The methodology specified by a _Process Method_ is independent from any choice of technologies and/or other tools which will be used to apply that technique in a particular instance. The definition of the methodology may, however, intrinsically require the application of specific _Rules_ (for example, mathematical or logical formulas). A _Process Method_ describes a particular method for performing a _Process Step._ |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Process Metric**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Process Metric | Business | _Process Output_ summarising some aspect or property of the execution | A _Process Metric_ is a sub-type of _Process Output_ which records information about the execution of a _Process Step_. For example, how long it took to complete execution of the _Process Step_ and what percentage of records in the Core _Input_ was updated by the _Process Step_ to produce the Core_Output_.One purpose for a _Process Metric_ may be to provide a quality measure related to the Core_ Output_. For example, a _Process Step_ with the _Business Function_ of imputing missing values is likely to result, as its Core_Output_, in a _Data Set_ where values that were missing previously have been imputed. Statistical quality measures, captured as _Process Metrics_ for that _Process Step_ may include a measure of how many records were imputed, and a measure of how much difference, statistically, the imputed values make to the dataset overall which can be also used as a part of a quality report associated with the Data Set produced. Another purpose for a _Process Metric_ may be to measure an aspect of the _Process Step_ which is not directly related to the Core_Output_ it produced. For example, a _Process Metric_ may record the time taken to complete the _Process Step_ or other forms of resource utilisation (for example, human and/or IT).Often these two kinds of _Process Metrics_ will be used in combination when seeking to, for example, monitor and tune a statistical _Business Process_ so its statistical outputs achieve the highest level of quality possible based on the time, staff and/or IT resources that are available. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Process Output**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Process Output | Business | instance of an information class produced by a _Process Step Instance_ |
+ |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Process Output Specification**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Process Output Specification | Business | set of information classes that function as outputs of a _Process Design_ | The _Process Output Specification_ enumerates the _Process Outputs_ that are expected to be produced at the time a _Process Design_ is executed. For example, if five different _Process Outputs_ are expected, the _Process Output Specification_ will describe each of the five outputs. For each expected _Process Output_ the _Process Output Specification_ will record the type of information class (based on GSIM) which will be used as the _Process Output_ (Example types might be a _Data Set_ or a _Statistical Classification_).The _Process Output_ to be provided at the time of _Process Step_ execution will then be a specific instance of the type of information class specified by the _Process Output Specification_. For example, if a _Process Output Specification_ expects a _Data Set_ then the corresponding _Process Output _provided at the time of _Process Step_ execution will be a particular _Data Set_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Process Pattern**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Process Pattern | Business | recommended set of _Process Designs_ that is highlighted for possible reuse | In a particular _Business Process_, some _Process Steps_ may be unique to that _Business Process_ while others may be applicable to other _Business Processes_. A _Process_ _Pattern_ can be seen as a reusable template. It is a means to accelerate design processes and to achieve sharing and reuse of design patterns which have proved effective. Reuse of _Process Patterns _can indicate the possibility_ _to reuse related _Business Services._By deciding to reuse a _Process Pattern_, a designer is actually reusing the pattern of _Process Designs_ and _Process Control Designs_ associated with that _Process Pattern_. They will receive a new instance of the Proce_ss Designs_ and _Process Control Designs_. If they then tailor their "instance" of the _Process Designs_ and _Process Control Designs_ to better meet their needs they will not change the definition of the reusable _Process Pattern_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Process Step**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Process Step | Business | unit of work | A _Process Step_ implements the _Process Design_ specified in order to produce the outputs for which the _Process Step_ was designed. Each _Process Step_ is the use of a _Process Design_ in a particular context (e.g., within a specific _Business Process_). At the time of execution a _Process Step Instance_ specifies the actual instances of input classes (for example, specific _Data Sets_, specific _Conceptual Variables_) to be supplied. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Is Comprehensive | Used to indicate whether this_ Process Step _has sub-_Process Steps_. | 0..1 | Boolean |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Process Step Instance**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Process Step Instance | Business | executed step in a _Business Process_ specifying the actual inputs to and outputs from an occurrence of a _Process Step_ | Each _Process Step_ is the use of a _Process Design_ in a particular context (e.g. within a specific _Business Process_). At the time of execution a _Process Step Instance_ specifies the actual instances of input classes (for example, specific _Data Sets_, specific _Conceptual Variables_) to be supplied. Each _Process Step Instance_ may produce unique results even though the _Process Step_ remains constant.Even when the inputs remain the same, metrics such as the elapsed time to complete execution of the process step may vary from execution to execution. For this reason, each _Process Step Instance_ details of inputs and outputs for that instance of the implementation of the _Process Step_.In this way it is possible to trace the flow of execution of a _Business Process_ through all the _Process Steps_ which were involved. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Process Support Input**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Process Support Input | Business | _Process Input_ that influences the work performed by the _Process Step Instance_ by providing additional information that affects the way _Core Input _is used | _Process Support Input_ is a sub-type of _Process Input_.
+- Examples of _Process Support Inputs_ could include:
+ A technical or methodological handbook which can be used as a reference to assist the work performed (e.g. data editing, coding and classification)
+- An auxiliary _Data Set_ which will influence imputation for, or editing of, a primary_ Data Set_ which has been submitted to the_ Process Step_ as the Core Input
+- A _Provision Agreement_ which can be used as a supporting document
+- A repository or inventory of _Process Methods_ or software system / architecture that are approved in the _Organisation _that could be used as reference
+ |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Data Type | The data type of the _Process Support Input._ | 0..1 | ControlledVocabulary |
+| Value | The content of the _Process Support Input_. | 0..1 | String |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Reference Document**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Reference Document | Business | document that is used to support, inform and guide the _Business Processes_ | The examples of _Reference Documents_ include: methodological handbooks, standards, legislation, corporate policies/guideline and best practices. _Reference Documents_ are often unstructured and can be translated into _Rules _(e.g., quality requirements set by legislation can be written as a Rule). Note that documents can be physical (e.g., books) or electronical. The documents can be formal in terms of content (e.g., laws) or in terms of format (e.g., XML). |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Rule**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Rule | Business | mathematical or logical expression which can be evaluated to determine specific behavior | _Rules_ are of several types: they may be derived from methods to determine the control flow of a process when it is being designed and executed (e.g. imputation rules, edit rules); and they may be used to drive the logical flow of a questionnaire. There are many forms of _Rules_ and their purpose, character and expression can vary greatly. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Algorithm | The rule expressed as an algorithm. | 0..1 | String |
+| Command Code | Structured information used by a system to process the instruction. | 0..\* | String |
+| Expression | The expression of the rule that is executed. | 0..1 | String |
+| Is System Executable | Whether the rule is formatted to be executed by a system, or is only documentary. | 0..1 | Boolean |
+| Rule Type | A type taken from a controlled vocabulary. For example: Input, Comparison, Imputation, Edit, Derivation, Recode | 0..1 | ControlledVocabulary |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Statistical Need**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Statistical Need | Business | requirement, request or other notification that will be considered by a statistical organisation. | The _Statistical Need_ is a proposed or imposed requirement, request or other notification as it has been received by a statistical organisation. A _Statistical Need_ is an expression of a requirement, and is not necessarily well-defined. A related class - _Change Definition_ - is created when a _Statistical Need_ is analysed by the organisation. _Change Definition_ expresses the raw need in well-defined, structured terms.
+ Once a _Statistical Need_ has been received, the first step is to do the conceptual work to establish what it is we are trying to measure. The final output of this conceptual work is the _Change Definition_.
+
+ In some cases, the _Statistical Need_ can result from the _Assessment_ of the quality, efficiency, etc. of an existing process.A Statistical Need may be of a variety of types including Environment Change or Information Request. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Is Met | Indicator for whether the request was met or unmet | 0..1 | Boolean |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Statistical Programme**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Statistical Programme | Business | set of activities to produce statistics on a given_ Universe_ within the context of_ Subject Fields_ | The _Statistical Programme_ provides the environmental context in which activities to produce statistics within a statistical organisation are conducted. _Statistical Programme_ will usually correspond to an ongoing activity such as a survey or output series covered by GSBPM phase 4-7. Some examples of _Statistical Programme_ are:
+- Labour Force Survey
+- Multipurpose Household Survey
+- National Accounts
+- Demography
+- Overseas Arrivals and Departures
+Related to the _Statistical Programme_ class, there are _Statistical Programme Design_ and _Statistical Programme Cycle_ classes that hold the detailed information about the design and conduct of the _Business Process_. A _Statistical Programme_ could take as inputs other _Statistical Programmes'_ outputs, e.g. national accounts. These activities are all carried out to generate _Products_.In the case of the traditional approach, an organisation has received a _Statistical Need_ and produced a _Change Definition_ and an approved _Business Case_. The _Business Case_ will specify either a change to the design or methodology of an existing _Statistical Programme_, which will result in a new _Statistical Programme Design_; or a change to one or more existing _Statistical Programmes_ (for example, to add an additional objective to the _Statistical Programme_); or result in a new _Statistical Programme_ being created.This does not include statistical support functions such as metadata management, data management (and other overarching GSBPM processes) and design functions. These activities are conducted as part of _Statistical Support Activity_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Budget | Estimate of expenditure | 0..1 | Number |
+| Date Ended | Date when the _Statistical Programme_ was ended | 0..1 | Date |
+| Date Initiated | Date when the _Statistical Programme_ was initiated | 0..1 | Date |
+| Legal Framework | Any legal framework (e.g., legal basis for the statistics to be produced by _Statistical Programme_) | 0..\* | String |
+| Legislative Reference | Any legislative materials, (e.g., parliamentary tabling documents) | 0..\* | String |
+| Source of Funding | Source of funding | 0..1 | String |
+| Programme Status | The current condition of the programme (e.g., New Proposal, Under Development, Current, Completed, Cancelled, Transferred to Another Organisation) | 1..1 | ControlledVocabulary |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Statistical Programme Cycle**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Statistical Programme Cycle | Business | iteration of a _Statistical Programme_ for a given _Population_ | A _Statistical Programme Cycle_ documents the execution of an iteration of a _Statistical Programme_ according to the associated _Statistical Programme Design_ for a given _Population _(e.g., certain reference period, geography). It identifies the activities that are undertaken as a part of the cycle and the specific resources required and processes used and description of relevant methodological information used in this cycle defined by the _Statistical Programme Design_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Reference Period End | End date of the reference period | 1..1 | Date |
+| Reference Period Start | Start date of the reference period | 1..1 | Date |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Statistical Programme Design**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Statistical Programme Design | Business | specification of the set of activities undertaken to investigate characteristics of a given _Population_ | The _Statistical Programme Design _takes into account requirements such as resource, policy and compliance, specifies new processes, the use of existing ones and the description of relevant methodological information about that set of activities. It is a series of classes that provide the operational context in which a set of _Business Processes_ is conducted. A simple example is where a _Statistical Programme _relates to a single survey, for example, the Labour Force Survey. The _Statistical Programme _will have a series of _Statistical Programme Design _classes that describe the methodology and design used throughout the life of the survey. When a methodological change is made to the survey, a new _Statistical Programme Design_ is created to record the details of the new design. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Conceptual Framework | Description of the conceptual framework for the _Statistical Programme _(e.g., SNA). | 0..\* | String |
+| Status | Extensible redefined list (e.g., New Proposal, Under Development, Current, Completed, Cancelled, Transferred to Another Organisation). | 1..1 | ControlledVocabulary |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Statistical Support Activity**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Statistical Support Activity | Business | activity that supports statistical production | This type of activity will include such functions as metadata management, data management, methodological research, and design functions. These activities correspond to the overarching processes in the GSBPM, and Corporate Support in GAMSO, as well as activities to create new or change existing _Statistical Programmes which are covered by GSBPM phase 1-3, _thus creating or updating _Statistical Programme Designs._ |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Date Ended | Date when the _Statistical Support Activity_ was ended. | 0..1 | Date |
+| Date Initiated | Date when the _Statistical Support Activity_ was initiated. | 0..1 | Date |
+| Significant Events | A description of the real-world events which lead to the creation of the _Statistical Support Activity._ | 0..1 | String |
+| Status | The current condition of the programme (e.g., New Proposal, Under Development, Current, Completed, Cancelled, Transferred to Another Organisation). | 1..1 | ControlledVocabulary |
+
+\* Attributes inherited from super-type(s) are not included here
 
 ## 3. Concepts Group
 ### 3.1 Group Diagram
