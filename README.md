@@ -11,6 +11,209 @@ This is the GitHub repository for version 2.0 of the Generic Statistical Informa
 ![Alt text here](Image%20Files/GSIM_2_0_Base_Group.drawio.png)
 
 ### 1.2 Descriptive Information
+**Base Group**  provides features that are reusable by other classes to support functionality such as identity and versioning.
+
+For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.unece.org/display/clickablegsim/Base+Group),  **the main changes to the model are marked in red ** in the model diagram below, these include:
+
+- GSIM information class added:_ Software Agent_
+- GSIM information class removed: _Event Change Tuple_
+- Relationships added: between 1) _Change Event_ and _Process Step_; 2) _Change Event _to _Identifiable Artefact_, 3) _Identifiable Artefact_ and _Referential Metadata Subjec_t, 4) _Identifiable Artefact _and _Referential Metadata Attribute_
+
+**Administrative Details**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Administrative Details | Base | extensions to the model based on an organisation's administrative needs | The _Administrative Details_ is designed to act as a 'placeholder' to allow for future extensions to the existing model. It allows for further information to be added about the _Administrative Details_ required to maintain the other information classes outlined by GSIM. |   |
+
+**Attributes**
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Administrative Status | Indicator for access to an item: under review, open for use, or removed. | 0..1 | ControlledVocabulary |
+| Alias | The alias or alia associated with the information class. | 0..\* | String |
+| Annotation | A comment or instruction which provides additional explanations about the information class and how to use it. | 0..\* | String |
+| Created Date | The date on which the information class was created. | 0..1 | Date |
+| Documentation | An official document or paper that has been published by an organisation. | 0..\* | String |
+| Last Updated Date | The date on which the information class was last changed. | 0..1 | Date |
+| Life Cycle Status | Indicator for the quality of an item: incomplete, valid, superseded, or retired. | 0..1 | ControlledVocabulary |
+| Url | Allows location of the information class. Distinct from the identification of the class as handled by the identifier attribute in _Identifiable Artefact_. | 0..\* | String |
+| Valid From | The start date included in the period during which the classis effective or valid. It is effective or valid from that date. | 0..1 | Date |
+| Valid To | The end date included in the period during which the information classis effective or valid. It is no longer effective or valid after that date. | 0..1 | Date |
+
+**Agent**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Agent | Base | someone or something that plays an active role in the lifecycle of an _Identifiable Artefact_ | An _Agent_ may be an _Individual_, an _Organisation_ (or part of it) or a _Software Agent_ that affects in some way an instance of a GSIM class. For example, an _Agent_ can play a role in the execution of a _Business Processes_ or in the way a _Statistical Classification_ (or a _Concept_) changes over time. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Agent in Role**
+
+**Definition**
+
+| **Object** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Agent In Role | Base | An _Agent_ acting in a specific _Role_. | In the Organization Ontology from W3C _Agent In Role_ is called a "Post". |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes**
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Description | The description of the information object. | 0..1 | MultilingualText |
+| --- | --- | --- | --- |
+| Name | A term which designates a concept, in this case an information object. The identifying name will be the preferred designation. There will be many terms to designate the same information object, such as synonyms and terms in other languages. | 1..1 | MultilingualText |
+
+**Change Event**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Change Event | Base | indication of the occurrence of a change to an _Identifiable Artefact_ | A_ Change Event _relates to the information class(es) that has(have) been affected. It can be applied to only one _Identifiable Artefact_ and result in one or more _Identifiable Artefact(s)_. On the other hand, a _Change Event _can be applied to more than one _Identifiable Artefact_ and result in only one _Identifiable Artefact_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes**
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Change Date | The date on which the _Change Event_ occurred. | 1..1 | Date |
+| --- | --- | --- | --- |
+| Change Type | The type of change that occurred during the _Change Event_. | 1..1 | String |
+| Identifier | The unique identifier of the _Change Event_ that is applied to an information class; assigned by the owner agency. | 1..1 | String |
+
+**Contact**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Contact | Base | _Role_ in which Individual(s) is(are) responsible for providing additional information about an information class and/or its metadata, either directly or indirectly by linking to its source |
+ |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Identifiable Artefact**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Change Event | Base | abstract class that comprises the basic attributes and associations needed for identification, naming and other documentation | All GSIM classes except _Administrative Details, Agent In Role, Change Event, Datum, Process Input_ (and its sub-types) and _Process Output_ (and its sub-types) are a sub-type of _Identifiable Artefact_. In SDMX, "Identifiable Artefact" is defined as "construct that contains structures capable of providing identity to an object". |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes**
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Description | The description of the information class. | 0..1 | MultilingualText |
+| --- | --- | --- | --- |
+| Id | The unique identifier of the information class; assigned by the owner agency. | 1..1 | String |
+| Local ID | This is an identifier in a given local context that uniquely references an information class. For example, Local ID could be a variable name in a dataset. | 0..1 | String |
+| Name | A term which designates a concept, in this case an information class. The identifying name will be the preferred designation. There will be many terms to designate the same information class, such as synonyms and terms in other languages. | 1..1 | MultilingualText |
+| Version | The version designator of the information class assigned by the owner agency. | 0..1 | String |
+| Version Date | The date on which the version was created.  | 0..1 | Date |
+| Version Rationale | The reason for making this version of the information class. | 0..1 | String |
+
+**Individual**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Individual | Base | person who acts, or is designated to act towards a specific purpose |
+ |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Maintainer**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Maintainer | Base | _Role _in which a_ _unit or group of persons within the _Organisation_ is responsible for managing an information class and its metadata | A unit or group of persons with the role of _Maintainer_ is responsible for all administrative and operational issues relating to one or a set of information classes and its metadata (e.g. adding, modifying or deleting metadata about an information class). It is answerable to all stakeholders for all issues related to the information classes under its responsibility. A _Maintainer_ is not a decision-making body. Decisions are made collaboratively among the owners of the artefact. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Organisation**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Organisation | Base | unique framework of authority within which a person or persons act, or are designated to act, towards some purpose | _Organisation _represents a collection of people organised together, often with hierarchical structures. Examples of _Organisation_: national statistics office, international agency |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Owner**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Owner | Base | _Role _in which a statistical office, authority or other organisation is responsible for defining, specifying, creating and making decisions about the maintenance of a class and/or its metadata | Some information classes may have several _Owners_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Role**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Role | Base | function assumed by an _Agent_ | Part played by an _Individual_, an _Organisation_ (or part of it) or a _Software Agent_ in a particular situation. Examples: _Contact_, data steward, scheduler. _Role_ can be maintained by a controlled vocabulary (e.g. RASCI). |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Software Agent**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Software Agent | Base | software that carries out _Process Step _based on _Process Control_ | Examples: google bot | PROV "Software Agent", DDI "Machine" |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
 
 ## 2. Business Group
 ### 2.1 Group Diagram
