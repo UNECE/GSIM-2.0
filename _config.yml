@@ -8,3 +8,7 @@ markdown: kramdown
 #* TOC
 #{:toc}
 #* Placeholder for Table of Content (Must not be removed) <newline> {:toc}
+kramdown:
+  ...
+  toc_levels: 2..6
+
