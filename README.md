@@ -797,6 +797,667 @@ Related to the _Statistical Programme_ class, there are _Statistical Programme D
 ![Alt text here](Image%20Files/GSIM_2_0_Concepts_Group.drawio.png)
 
 ### 3.2 Descriptive Information
+**Concept Group**  is used to define the meaning of information to provide an understanding of what the data are measuring.
+
+For the comparison with the [previous version of GSIM (v1.2)](https://statswiki.unece.org/display/clickablegsim/Concept+Group),  **the main changes to the model are marked in red ** in the model diagram below, these include:
+
+- Relationship updated: 1) between _Data Point _and _Population _(this relationship existed between _Dimensional Data Point _in v1.2); 2) between _Data Point _and _Unit _(this relationship existed between _Unit Data Point _in v1.2); 3) "has measure/attribute/identifier" relationship between _Data Point _and _Instance Variable _replaced with "populates"
+- Composition relationship added from _Instance Variable_ to _Data Set_
+
+**Category**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Category | Concept | _Concept_ whose role is to extensionally define and measure a characteristic     | _Categories _for the _Concept_ of sex include: Male, FemaleNote: An extensional definition is a description of a _Concept_ by enumerating all of its subordinate _Concepts_ under one criterion or sub-division.For example - the Noble Gases (in the periodic table) are extensionally defined by the set of elements including Helium, Neon, Argon, Krypton, Xenon, Radon. (ISO 1087-1) | class |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Category Item**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Category Item | Concept | type of _Node _exclusive to a_ Category Set _that contains a single _Category  _ | A _Category Item_ contains the meaning of a _Category_ without any associated representation. (For example: "Male") |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Category Set**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Category Set | Concept | type of _Node Set _for grouping _Categories _via _Category Items_ | The _Categories_ in a _Category Set_ typically have no assigned _Designations_ (_Codes_).For example: Male, Female |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Classification Family**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Classification Family | Concept | group of _Classification Series _based on a common Concept (e.g. economic activity)      | Different classification databases may use different types of _Classification Families_ and have different names for the families, as no standard has been agreed upon. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Classification Index**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Classification Index | Concept | ordered list (e.g. alphabetical, in code order) of _Classification Index Entries_ | A _Classification Index_ shows the relationship between text found in statistical data sources (responses to survey questionnaires, administrative records) and one or more _Statistical Classifications_.  A _Classification Index_ may be used to assign the codes for _Classification Items_ to observations in acquisitions of statistical data.A _Statistical Classification_ is a subtype of _Node Set_. The relationship between _Statistical Classification_ and _Classification Index_ can also be extended to include the other _Node Set_ types - _Code List_ and _Category Set_.
+ A _Classification Index_ can relate to one particular or to several _Statistical Classifications_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Coding Instructions  | Additional information which drives the coding process for all entries in a _Classification Index_. | 0..\*   | String |
+| Corrections | Summary description of corrections, which have occurred within the _Classification Index_. Corrections include changing the item code associated with a _Classification Index Entry_. | 0..1 | String |
+| Languages Available | A _Classification Index_ can exist in several languages. Indicates the languages available. If a _Classification Index_ exists in several languages, the number of entries in each language may be different, as the number of terms describing the same phenomenon can change from one language to another. However, the same phenomena should be described in each language. | 0..\* | String |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Classification Index Entry**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Classification Index Entry | Concept | word or a short text (e.g. the name of a locality, an economic activity or an occupational title) describing a type of object/unit or object property to which a _Classification Item _applies, together with the code of the corresponding_ Classification Item_ | A _Classification Item_ is a subtype of _Node_. The relationship between _Classification Item_ and _Classification Index Entry_ can also be extended to include the other _Node_ types - _Code Item_ and _Category Item_.Each _Classification Index Entry_ typically refers to one item of the _Statistical Classification_. Although a _Classification Index Entry _may be associated with a _Classification Item_ at any _Level_ of a _Statistical Classification_, _Classification Index Entries_ are normally associated with items at the lowest _Level_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Coding Instructions | Additional information which drives the coding process. Required when coding is dependent upon one or many other factors. | 0..\* | String |
+| Text | Text describing the type of object/unit or object property. | 1..\* | String |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Classification Item**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Classification Item | Concept | type of _Node _exclusive to a _Statistical Classification_ that combines a _Category _at a certain _Level _with a _Code _that represents it.      | A _Classification Item _defines the content and borders of the associated _Category_.A _Unit _can be classified to one and only one item at each _Level _of a _Statistical Classification_._Categories _are used to create sub-populations and must be mutually exclusive when contained into a _Statistical Classification._ |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Case Laws  | Refers to identifiers of one or more case law rulings related to the _Classification Item_. | 0..\* | MultilingualText |
+| Case Law Descriptions | Refers to descriptions of the case laws. | 0..\* | MultilingualText |
+| Case Law Dates | Refers to date of case laws. | 0..\* | Date |
+| Generated  | Indicates whether or not the item has been generated to make the level to which it belongs complete. | 0..1 | Boolean |
+| Linked Items | Items of other classification versions or variants with which the item is linked, either as source or target, through _Correspondence Tables_. | 0..\* | String |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Classification Series**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Classification Series | Concept | ensemble of one or more _Statistical Classifications_, based on the same concept, and related to each other as versions or updates | Typically, these_ Statistical Classifications_ have the same name (e.g., ISIC or ISCO). |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Context | _Classification Series_ can be designed in a specific context. | 0..1 | String |
+| Keywords | A _Classification Series_ can be associated with one or a number of keywords. | 0..\* | String |
+| Objects/Units Classified | A _Classification Series_ is designed to classify a specific type of object/unit according to a specific attribute. | 1..1 | String |
+| Subject Areas | Areas of statistics in which the _Classification Series_ is implemented. | 1..1 | String |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Code**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Code | Concept | _Designation_ for a _Category_     | _Codes_ are unique within their _Code List_. Example: M (Male) F (Female). |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Code Item**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Code Item | Concept | type of _Node _exclusive to a_ Code List _that combines a _Category _with a _Code _that represents it     | A _Code Item_ combines the meaning of the included _Category_ with a _Code_ representation._Codes _are unique within their _Code List._ Example: M (Male) F (Female). |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Code List**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Code List | Concept | type of _Node Set _for grouping pairs of _Categories _and their _Codes _via _Code Items _  | Similar _Code Lists_ can be grouped together (via the "relates to" relationship inherited from _Node Set_).A _Code List_ provides a predefined set of permissible values for an _Enumerated Value Domain_ |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Concept**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Concept | Concept | unit of thought differentiated by characteristics     |
+ |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Definition | Representation of a _Concept_ by a descriptive statement which serves to differentiate it from related _Concepts_. | 1..\* | MultilingualText |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Concept System**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Concept System | Concept | set of _Concepts_ structured by the relations among them   | Here are 2 examples 1) Concept of Sex: Male, Female, Other 2) ISIC (the list is too long to write down) |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Conceptual Domain**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Conceptual Domain | Concept | set of valid _Concepts_ | The _Concepts_ can be described by either enumeration or by an expression. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Sentinel | If true, the domain is sentinel (i.e. values used to represent a state in the processing life-cycle e.g. missing data), otherwise the domain is substantive (i.e. values used to represent an observation of some _Unit_ of interest). | 1..1 | Boolean |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Correspondence Table**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Correspondence Table | Concept | set of _Maps _between the_ Classification Items _of two _Statistical Classifications_ | These are typically: two versions from the same _Classification Series_; _Statistical Classifications_ from different_ Classification Series_; a variant and the version on which it is based; or, different versions of a variant. In the first and last examples, the _Correspondence Table_ facilitates comparability over time. Correspondence relationships are shown in both directions.A _Statistical Classification_ is a subtype of _Node Set_. The relationship between _Statistical Classification_ and _Correspondence Table_ can also be extended to include the other _Node Sets_ - _Code List_ and _Category Set_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Floating  | If the source and/or target _Statistical Classifications_ of a correspondence table are floating classifications, the date of the correspondence table must be noted. The correspondence table expresses the relationships between the two _Statistical Classifications_ as they existed on the date specified in the table. | 0..1  | String |
+| Relationship Type  | A correspondence can define a 1:1, 1:N, N:1 or M:N relationship between source and target items. | 0..1  | String |
+| Source Level | The correspondence is normally restricted to a certain Level in the source _Statistical Classification_. In this case, target items are assigned only to source items on the given level. If no level is indicated, target items can be assigned to any level of the source _Statistical Classification_. | 0..1  | String |
+| Target Level | The correspondence is normally restricted to a certain Level in the target _Statistical Classification_. In this case, source items are assigned only to target items on the given level. If no level is indicated, source items can be assigned to any level of the target _Statistical Classification_. | 0..\* | String |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Datum**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Datum | Concept | value | A _Datum_ is the actual instance of data that was acquired or derived. It is the value which populates a _Data Point_. A _Datum_ is the value found in a cell of a table. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Described Conceptual Domain**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Described Conceptual Domain | Concept | _Conceptual Domain_ defined by an expression      | For example: all real numbers between 0 and 1. Described Conceptual Domain is a synonym for non-enumerated conceptual domain (source: GSIM) | Non-enumerated conceptual domain |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Described Value Domain**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Described Value Domain | Concept | _Value Domain _defined by an expression | For example: all real decimal numbers between 0 and 1. Described Value Domain is a synonym for non-enumerated value domain (source: GSIM) |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Data Type |   | 1..1 | String |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Designation**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Designation | Concept | association of a _Concept _with a sign that denotes it     | _Designation _is the name given to an object for identification.     . |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Enumerated Conceptual Domain**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Enumerated Conceptual Domain | Concept | _Conceptual Domain_ expressed as a list of _Categories_     | For example, the Sex _Categorie_s: 'Male' and 'Female' |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Enumerated Value Domain**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Enumerated Value Domain | Concept | _Value Domain _expressed as a list of _Categories _and associated _Codes     _ | Example - Sex Codes \<m, male\>; \<f, female\>; \<o, other\>. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Instance Variable**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Instance Variable | Concept | use of a _Represented Variable_ within a _Data Set_     | The _Instance Variable_ is used to describe actual instances of data that have been acquired. Here are 3 examples:
+ 1) Gender: Dan Gillman has gender \<m, male\>, Arofan Gregory has gender\<m, male\>, etc.
+ 2) Number of employees: Microsoft has 90,000 employees; IBM has 433,000 employees, etc.
+ 3) Endowment: Johns Hopkins has endowment of \<3, $1,000,000 and above\>,
+ Yale has endowment of \<3, $1,000,000 and above\>, etc.It may include information about the source of the data. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Level**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Level | Concept |
+ | set of _Nodes _in a hierarchical _Node Set_ in which 1) each _Node _in the set is the same number of parent-child steps away from the root _Node_ in the hierarchy, and 2) the set is defined by a unifying _Concept_ |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Code Structure | Indicates how the code is constructed of numbers, letters and separators. | 0..1  | String |
+| Code Type  | Indicates whether the item code at the Level is alphabetical, numerical or alphanumerical. | 0..1  | ControlledVocabulary |
+| Dummy Code  | Rule for the construction of dummy codes from the codes of the next higher level (used when one or several categories are the same in two consecutive levels). | 0..1  | String |
+| Items  | An ordered list of the _Categories_ (_Classification Items_) that constitute the _Level_. | 1..\* | MultilingualText   |
+| Level Number | The number associated with the _Level_. _Levels_ are numbered consecutively starting with level 1 at the highest (most aggregated) _Level_. | 0..1 | Number  |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Map**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Map | Concept | expression of the relation between a _Classification Item_ in a source _Statistical Classification_ and a corresponding _Classification Item_ in the target _Statistical Classification_     | The Map should specify whether the relationship between the two Classification Items is partial or complete. Depending on the relationship type of the Correspondence Table, there may be several Maps for a single source or target item.The use of _Correspondence Tables_ and _Maps_ can be extended to include all types of _Node_ and _Node Set_. This means that a _Correspondence Table_ could map between the items of _Statistical Classifications_, _Code Lists_ or _Category Sets_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Measurement Type**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Measurement Type | Concept | The _Measurement Type_ defines the type of a measure e.g. mass or currency.       | The Measurement Type groups all Measurement Units, which can be converted into each other. A Measurement Type can have a standard Measurement Unit, which can be used for conversion between different Measurement Units.There need not be any standard _Measurement Unit_ for a given _Measurement Type_ e.g. currency. Each _Measurement Type_ has as a standard at most one _Measurement Unit_. | dimensionality(See ISO/IEC 11179-1 Ed 3, section 3.3.15, for a good explanation of dimensionality.) |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Measurement Unit**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Measurement Unit | Concepts | metric for a measurement in terms of an official unit of measurement     | _Measurement Units is s a definite magnitude of a quantity, defined and adopted by convention or by law, that is used as a standard for measurement of the same kind of quantity. They _can be based on different _Measurement Types_ such as weight, height, currency, duration etc. _Measurement Units_ can be transformed into one another (e.g. kilometres into metres) if they refer to the same _Measurement Type_ (e.g. length). The conversion rule attribute can be used to include a multiplicative factor e.g. the non-standard _Measurement Unit_ '1000 kg' = 1000 x the standard _Measurement Unit_ 'kg'. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Abbreviation | Abbreviation for the _Measurement Unit_ e.g. kg for kilograms | 0…\* | String |
+| Conversion Rule | Rule for conversion to the standard _Measurement Unit_, if this exists. | 0…1 | String |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Node**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Node | Concepts | combination of a _Category_ and related attributes     | A _Node_ is created as a _Category_, _Code_ or _Classification Item_ for the purpose of defining the situation in which the _Category_ is being used. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Aggregation Type | To define the parent/child relationship between Nodes, it tells us whether we are applying the part whole relationship, or the super/sub type relationships. | 0..1 | String |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Node Set**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Node Set | Concept | set of _Nodes_     | _Node Set_ is a kind of _Concept System_. Here are 2 examples:
+
+ 1) Sex _Categories_
+- Male
+- Female
+- Other
+2) Sex _Codes_
+- \<m, male\>
+- \<f, female\>
+- \<o, other\>
+ |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Population**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Measurement Unit | Concepts | total membership of a defined class of people, objects or events     | A _Population_ is used to describe the total membership of a group of people, objects or events based on characteristics, e.g. time and geographic boundaries.Here are 3 examples:
+- Adult persons in the Europe on 13 November 1956
+- Computer companies in the US at the end of 2012
+- Universities in the world on 1 January 2023
+ |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Geography | The geographical area to which the population is associated. | 0..1 | String |
+| Reference Period | The time period to which the population is associated. | 0..1 | Date |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Represented Variable**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Represented Variable | Concepts |      combination of a characteristic of a population to be measured and how that measure will be represented     | The measure applies to quantitative, categorical, and descriptive _Conceptual Variable_.Examples:
+ The pair (Number of Employees, Integer), where "Number of Employees" is the characteristic of the population (_Conceptual Variable)_ and "Integer" is how that measure will be represented (_Substantive_ _Value Domain). _If the _Conceptual Variable_ is "Industry" and the_ Substantive Value Domain_ is "Level 1 of NACE 2007", the pair is (Industry, NACE 2007 - Level 1).The _Represented Variable _"Sex of Person [1,2,3]", has the _Conceptual Variable_ (Sex of Person) and the representation (1=Male, 2=Female, 3=Other). |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Sentinel Value Domain**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Sentinel Value Domain | Concepts | _Value Domain _containing sentinel values, i.e. processing-related special values       | A sentinel value is one used for processing and with no subject matter content, such as missing or refused._Sentinel Value Domains_ can be enumerated (listed) or described. A _Value Domain _expressed as a list of _Categories _for sentinel values or a description thereof. The scope and the meaning of the possible values are defined within the frame of the_ Conceptual Domain_ that the _Sentinel Value Domain_ is associated with.Separating the sentinel values from the substantive ones allows a large reduction in the number of _Value Domains_, and thus _Represented Variables_ and _Instance Variables_, that need to be maintained.Use of generic codes is recommended for _Concepts_ which appear in many, if not, all _Code Lists_, e.g. \<S\_X, Unspecified\>, \<S\_Z, Not applicable\>, \< S\_R, Refusal\>, \<S\_U, Unknown\> |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Statistical Classification**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Statistical Classification  | Concept | hierarchically organised set of mutually exclusive and jointly exhaustive _Categories _that share the same or similar characteristics, used for meaningfully grouping the objects or units in the population of interest       | The _Categories_ are defined with reference to one or more characteristics of a particular population of units of observation. A _Statistical Classification_ may have a flat, linear structure or may be hierarchically structured, such that all _Categories_ at lower _Levels_ are sub-_Categories_ of _Categories_ at the next _Level_ up. _Categories_ in _Statistical Classifications_ are represented in the information model as _Classification Items_. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+| **Name** | **Description** | **Cardinality** | **Value Type** |
+| --- | --- | --- | --- |
+| Changes from Base Statistical Classification | Describes the relationship between the variant and its base _Statistical Classification_, including regroupings, aggregations added and extensions. | 0..1 | MultilingualText |
+| Changes from Previous Version or Update  | A summary description of the nature and content of changes from the preceding version or update. Specific changes are recorded in the _Classification Item_ object under the "Changes from previous version and updates" attribute. | 0..1 | MultilingualText |
+| Copyright  | _Statistical Classifications_ may have restricted copyrights. Such _Statistical Classifications_ might be excluded from downloading. Notes the copyright statement that should be displayed in official publications to indicate the copyright owner. | 0..\* | String |
+| Current | Indicates whether or not the _Statistical Classification_ is currently valid. | 0..1  | Boolean |
+| Derived From  | A _Statistical Classification_ can be derived from one of the classification versions of another _Classification Series_. The derived _Statistical_ _Classification_ can either inherit the structure of the classification version from which it is derived, usually adding more detail, or use a large part of its _Classification Items_, rearranging them in a different structure. Indicates the classification version from which the actual _Statistical Classification_ is derived. | 0..1  | String |
+| Floating  | Indicates if the _Statistical Classification_ is a floating classification. In a floating statistical classification, a validity period should be defined for all _Classification Items_ which will allow the display of the item structure and content at different points of time. | 0..1  | Boolean  |
+| Introduction | The introduction provides a detailed description of the _Statistical Classification_, the background for its creation or variant, the classification variable and objects/units classified, classification rules etc. | 0..1 | MultilingualText |
+| Languages Available  | A _Statistical Classification_ can exist in one or several languages. Indicates the languages available, whether the version is completely or partially translated, and which part is available in which language. | 0..\* | String |
+| Legal Base | Indicates that the _Statistical Classification_ is covered by a legal act or by some other formal agreement. | 0..\*  | MultilingualText |
+| Name Types  | A list of the defined types of alternative item names available for the _Statistical Classification_. Each name type refers to a list of alternative item names. | 0..\* | ControlledVocabulary |
+| Predecessor | For those _Statistical Classifications_ that are versions or updates, notes the preceding _Statistical Classification_ of which the actual _Statistical Classification_ is the successor. | 0..1  | String |
+| Successor  | Notes the _Statistical Classification_ that superceded the actual _Statistical Classification_. | 0..1  | String |
+| Update  | Indicates if the _Statistical Classification_ is an update. | 0..1  | Boolean  |
+| Updates Possible  | Indicates whether or not updates are allowed within the classification version i.e. without leading to a new version. Indicate here what structural changes, if any, are permissable within a version. Note whether _Classification Items_ can be added to the structure and whether they can be revalidated or invalidated. Such changes are more likely to be permissable in floating classifications. Also indicate whether changes to such things as _Classification Item_ names and explanatory notes that do not involve structural changes are permissible within a version. | 0..1  | Boolean |
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Subject Field**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Subject Field | Concept | field of knowledge under which a set of _Concepts _and their _Designations_ is used | For example, labour market, environmental expenditure, tourism, etc. | subject area, theme |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Substantive Value Domain**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Substantive Value Domain | Concept | _Value Domain _containing substantive values, where a substantive value is subject matter related       | A substantive value is one representing subject matter content, such as \<f, female\> in a gender classification.The scope and the meaning of the possible values are defined within the frame of the _Conceptual Domain_ that the_ Substantive Value Domain _is associated with.Example: \<0, Pre-primary\>, \<1, Primary\>, \<2, Lower secondary\>, \< 3, Upper secondary\>, \<4, Post-secondary non-tertiary\>, \<5, First stage of tertiary education\>, \<6, Second stage of tertiary education\> where the scope and meaning of the values are defined within _Categories_ for levels of education. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Unit**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Unit | Concept | entity for which information is sought and for which statistics are ultimately compiled | Here are 3 examples:
+- Individual US person (e.g., Arofan Gregory, Dan Gillman, Barack Obama, etc.)
+- Individual US computer companies (e.g., Microsoft, Apple, IBM, etc.)
+- Individual US universities (e.g., Johns Hopkins, University of Maryland, Yale, etc.)
+ |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Unit Type**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Unit Type | Concept | class or group of _Units _based on a single characteristic | A _Unit Type_ is used to describe a class or group of _Units_ based on a single characteristic, but with no specification of time and geography. For example, the _Unit Type_ of "Person" groups together a set of _Units_ based on the characteristic that they are 'Persons'.It concerns not only _Unit Types_ used in dissemination, but anywhere in the statistical process. E.g. using administrative data might involve the use of a fiscal unit. | Object class (ISO 11179) |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Universe**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Universe | Concept | specialized _Unit Type_, but not by time or geography | The description statement of a _Universe_ is generally stated in inclusive terms such as "All persons with a university degree". Occasionally a _Universe_ is defined by what it excludes, i.e., "All persons except those with a university degree". In both cases, adding the condition of the university degree specializes persons, which is a Unit Type. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Value Domain**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Value Domain | Concept | set of permissible values for a _Conceptual Variable_     | The values can be described by enumeration or by an expression. |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
+
+**Conceptual Variable**
+
+**Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Conceptual Variable | Concept | use of a Concept as a characteristic of_ Unit Type_ intended to be observed | The _Conceptual Variable_ combines the meaning of a _Concept_ with a _Unit Type_, to define the characteristic that is to be measured.Here are 3 examples:
+- Sex of person
+- Number of employees
+- Value of production
+ |
+ |
+| --- | --- | --- | --- | --- |
+
+**Attributes\***
+
+\* Attributes inherited from super-type(s) are not included here
 
 ## 4. Exchange Group
 ### 4.1 Group Diagram
