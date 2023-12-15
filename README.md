@@ -79,7 +79,7 @@ The information classes defined within this group as as follows:
 | --- | --- | --- | --- | --- |
 | Agent In Role | Base | An _Agent_ acting in a specific _Role_. | In the Organization Ontology from W3C _Agent In Role_ is called a "Post". |
 
-**Attributes**
+* **Attributes**
 
 | **Name** | **Description** | **Cardinality** | **Value Type** |
 | --- | --- | --- | --- |
@@ -95,7 +95,7 @@ The information classes defined within this group as as follows:
 | --- | --- | --- | --- | --- |
 | Change Event | Base | indication of the occurrence of a change to an _Identifiable Artefact_ | A _Change Event_ relates to the information class(es) that has(have) been affected. It can be applied to only one _Identifiable Artefact_ and result in one or more _Identifiable Artefact(s)_. On the other hand, a _Change Event_ can be applied to more than one _Identifiable Artefact_ and result in only one _Identifiable Artefact_.| |
 
-**Attributes**
+* **Attributes**
 
 | **Name** | **Description** | **Cardinality** | **Value Type** |
 | --- | --- | --- | --- |
@@ -124,7 +124,7 @@ The information classes defined within this group as as follows:
 | --- | --- | --- | --- | --- |
 | Change Event | Base | abstract class that comprises the basic attributes and associations needed for identification, naming and other documentation | All GSIM classes except _Administrative Details, Agent In Role, Change Event, Datum, Process Input_ (and its sub-types) and _Process Output_ (and its sub-types) are a sub-type of _Identifiable Artefact_. In SDMX, "Identifiable Artefact" is defined as "construct that contains structures capable of providing identity to an object". | |
 
-**Attributes**
+* **Attributes**
 
 | **Name** | **Description** | **Cardinality** | **Value Type** |
 | --- | --- | --- | --- |
@@ -1453,10 +1453,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Question | Exchange | text used to elicit a response for a _Conceptual Variable_     | A _Question_ may be a single question used to obtain a response, or may be a multiple question, a construct which links multiple sub-questions, each with their own response.A _Question_ also includes a relationship to the _Value Domain_ to document the associated response criteria for the question. A single response question will have one _Value Domain_ associated with it, while a 'multiple question' may have more than one _Value Domain_.A _Question_ should be designed with re-use in mind, as it can be used in multiple _Questionnaires._In a national implementation,_ Question _could be further subtyped into_: _
-- QuestionGrid, useful to model questions as grids/tables. It is actually a cube-like structure providing dimension information, labelling options, and response domains attached to one or more cells within the grid. For instance, a two-way table requesting to provide turnovers broken down by affiliates.
-- QuestionItem, a simple question that is necessarily one dimensional. For example: "How old are you?"
- | Multiple Question |
+| Question | Exchange | text used to elicit a response for a _Conceptual Variable_     | A _Question_ may be a single question used to obtain a response, or may be a multiple question, a construct which links multiple sub-questions, each with their own response.A _Question_ also includes a relationship to the _Value Domain_ to document the associated response criteria for the question. A single response question will have one _Value Domain_ associated with it, while a 'multiple question' may have more than one _Value Domain_.A _Question_ should be designed with re-use in mind, as it can be used in multiple _Questionnaires._In a national implementation,_ Question _could be further subtyped into_: _<br/>- QuestionGrid, useful to model questions as grids/tables. It is actually a cube-like structure providing dimension information, labelling options, and response domains attached to one or more cells within the grid. For instance, a two-way table requesting to provide turnovers broken down by affiliates.<br/>- QuestionItem, a simple question that is necessarily one dimensional. For example: "How old are you?" | Multiple Question |
 
 * **Attributes**
 
