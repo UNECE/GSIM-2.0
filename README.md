@@ -1085,7 +1085,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Measurement Unit | Concepts | metric for a measurement in terms of an official unit of measurement     | _Measurement Units is s a definite magnitude of a quantity, defined and adopted by convention or by law, that is used as a standard for measurement of the same kind of quantity. They _can be based on different _Measurement Types_ such as weight, height, currency, duration etc. _Measurement Units_ can be transformed into one another (e.g. kilometres into metres) if they refer to the same _Measurement Type_ (e.g. length). The conversion rule attribute can be used to include a multiplicative factor e.g. the non-standard _Measurement Unit_ '1000 kg' = 1000 x the standard _Measurement Unit_ 'kg'. | |
+| Measurement Unit | Concepts | metric for a measurement in terms of an official unit of measurement     | _Measurement Unit_ is a definite magnitude of a quantity, defined and adopted by convention or by law, that is used as a standard for measurement of the same kind of quantity. _Measurement Units_ can be based on different _Measurement Types_ such as weight, height, currency, duration etc. _Measurement Units_ can be transformed into one another (e.g. kilometres into metres) if they refer to the same _Measurement Type_ (e.g. length). The conversion rule attribute can be used to include a multiplicative factor e.g. the non-standard _Measurement Unit_ '1000 kg' = 1000 x the standard _Measurement Unit_ 'kg'. | |
 
 * **Attributes**
 
@@ -1500,13 +1500,13 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Questionnaire Component | Exchange | record of the flow of a _Questionnaire_ _Specification _and its use of _Questions, Question Blocks_ and _Statements_ | A _Questionnaire Component_ defines the structure of the _Questionnaire Specification_, as a combination of _Questions_, _Question Blocks_ and _Statements_. It is the class which groups together all the components of a_ Questionnaire.__A Questionnaire Component _is recursive, in that it can refer to other_ Questionnaire Components _and accompanying_ Questionnaire Logic _classes at a lower level. It is only at the top level where the_ Questionnaire Component _links to the_ Questionnaire Specification_. | |
+| Questionnaire Component | Exchange | record of the flow of a _Questionnaire Specification_ and its use of _Questions, Question Blocks_ and _Statements_ | A _Questionnaire Component_ defines the structure of the _Questionnaire Specification_, as a combination of _Questions_, _Question Blocks_ and _Statements_. It is the class which groups together all the components of a _Questionnaire_. A _Questionnaire Component_ is recursive, in that it can refer to other _Questionnaire Components_ and accompanying _Questionnaire Logic_ classes at a lower level. It is only at the top level where the _Questionnaire Component_ links to the _Questionnaire Specification_. | |
 
 * **Attributes**
 
 | **Name** | **Description** | **Cardinality** | **Value Type** |
 | --- | --- | --- | --- |
-| Component Sequence | The order in which _Instance Question_, and_ Instance Statement _appear in the _Questionnaire Component_. | 0..\* | Number |
+| Component Sequence | The order in which _Instance Question_, and _Instance Statement_ appear in the _Questionnaire Component_. | 0..\* | Number |
 
 \* Attributes inherited from super-type(s) are not included here
 
@@ -1516,8 +1516,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Questionnaire Logic | Exchange | management/control of the sequence of _Questions, Question Blocks_ and _Statements _based on factors such as the current location, the response to the previous questions etc., invoking navigation and validation _Rules_ to apply  |
- | Routing |
+| Questionnaire Logic | Exchange | management/control of the sequence of _Questions_, _Question Blocks_ and _Statements_ based on factors such as the current location, the response to the previous questions etc., invoking navigation and validation _Rules_ to apply  | | Routing |
 
 * **Attributes**
 
@@ -1533,7 +1532,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Questionnaire Specification | Exchange | _Exchange Specification _for _Questionnaire_ | This represents the complete questionnaire design, with a relationship to the top-level _Questionnaire Component_.There may be many different _Questionnaire Specifications_, for the same surveys, or tailored to individual observation _Units_ (respondents) so that there would be a different _Questionnaire Specification_ for each respondent. The design would also differ depending upon the specific mode of collection the _Questionnaire_ is designed for. | |
+| Questionnaire Specification | Exchange | _Exchange Specification_ for _Questionnaire_ | This represents the complete questionnaire design, with a relationship to the top-level _Questionnaire Component_.There may be many different _Questionnaire Specifications_, for the same surveys, or tailored to individual observation _Units_ (respondents) so that there would be a different _Questionnaire Specification_ for each respondent. The design would also differ depending upon the specific mode of collection the _Questionnaire_ is designed for. | |
 
 * **Attributes**
 
