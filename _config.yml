@@ -2,5 +2,6 @@ title: GSIM 2.0
 #logo: /website/img/unece.png
 #description: blah
 #show_downloads: true
-theme: jekyll-theme-documentation
+remote_theme: just-the-docs
+#theme: jekyll-theme-documentation
 
