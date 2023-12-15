@@ -36,7 +36,7 @@ This is the GitHub repository for version 2.0 of the Generic Statistical Informa
 
 The information classes defined within this group as as follows:
 
-#### **Administrative Details**
+#### Administrative Details
 
 **Definition**
 
