@@ -61,14 +61,14 @@ The information classes defined within this group as as follows:
 
 #### **Agent**
 
-**Definition**
+1. **Definition**
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
 | Agent | Base | someone or something that plays an active role in the lifecycle of an _Identifiable Artefact_ | An _Agent_ may be an _Individual_, an _Organisation_ (or part of it) or a _Software Agent_ that affects in some way an instance of a GSIM class. For example, an _Agent_ can play a role in the execution of a _Business Processes_ or in the way a _Statistical Classification_ (or a _Concept_) changes over time. |
  |
 
-**Attributes\***
+1. **Attributes\***
 
 \* Attributes inherited from super-type(s) are not included here
 
