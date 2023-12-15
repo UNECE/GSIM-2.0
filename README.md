@@ -2,34 +2,25 @@
 (UNDER CONSTRUCTION)
 
 This is the GitHub repository for version 2.0 of the Generic Statistical Information Model (GSIM)
+
 [1. Base Group](#1-Base-Group)
-
 [1.1 Group Diagram](#11-Group-Diagram)
-
 [1.2 Descriptive Information](#12-Descriptive-Information)
 
 [2. Business Group](#2-Business-Group)
-
 [2.1 Group Diagram](#21-Group-Diagram)
-
 [2.2 Descriptive Information](#22-Descriptive-Information)
 
 [3. Concepts Group](#3-Concepts-Group)
-
 [3.1 Group Diagram](#31-Group-Diagram)
-
 [3.2 Descriptive Information](#32-Descriptive-Information)
 
 [4. Exchange Group](#4-Exchange-Group)
-
 [4.1 Group Diagram](#41-Group-Diagram)
-
 [4.2 Descriptive Information](#42-Descriptive-Information)
 
 [5. Structures Group](#5-structures-group)
-
 [5.1 Group Diagram](#51-Group-Diagram)
-
 [5.2 Descriptive Information](#52-Descriptive-Information)
 
 
