@@ -93,8 +93,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Change Event | Base | indication of the occurrence of a change to an _Identifiable Artefact_ | A _Change Event_ relates to the information class(es) that has(have) been affected. It can be applied to only one _Identifiable Artefact_ and result in one or more _Identifiable Artefact(s)_. On the other hand, a _Change Event_ can be applied to more than one _Identifiable Artefact_ and result in only one _Identifiable Artefact_. |
- |
+| Change Event | Base | indication of the occurrence of a change to an _Identifiable Artefact_ | A _Change Event_ relates to the information class(es) that has(have) been affected. It can be applied to only one _Identifiable Artefact_ and result in one or more _Identifiable Artefact(s)_. On the other hand, a _Change Event_ can be applied to more than one _Identifiable Artefact_ and result in only one _Identifiable Artefact_.| |
 
 **Attributes**
 
@@ -595,12 +594,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Process Support Input | Business | _Process Input_ that influences the work performed by the _Process Step Instance_ by providing additional information that affects the way _Core Input _is used | _Process Support Input_ is a sub-type of _Process Input_.
-- Examples of _Process Support Inputs_ could include:
- A technical or methodological handbook which can be used as a reference to assist the work performed (e.g. data editing, coding and classification)
-- An auxiliary _Data Set_ which will influence imputation for, or editing of, a primary_ Data Set_ which has been submitted to the_ Process Step_ as the Core Input
-- A _Provision Agreement_ which can be used as a supporting document
-- A repository or inventory of _Process Methods_ or software system / architecture that are approved in the _Organisation _that could be used as reference
+| Process Support Input | Business | _Process Input_ that influences the work performed by the _Process Step Instance_ by providing additional information that affects the way _Core Input _is used | _Process Support Input_ is a sub-type of _Process Input_.<br/>- Examples of _Process Support Inputs_ could include: A technical or methodological handbook which can be used as a reference to assist the work performed (e.g. data editing, coding and classification)<br/>- An auxiliary _Data Set_ which will influence imputation for, or editing of, a primary_ Data Set_ which has been submitted to the_ Process Step_ as the Core Input<br/>- A _Provision Agreement_ which can be used as a supporting document<br/>- A repository or inventory of _Process Methods_ or software system / architecture that are approved in the _Organisation _that could be used as reference
 
 * **Attributes**
 
@@ -651,10 +645,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Statistical Need | Business | requirement, request or other notification that will be considered by a statistical organisation. | The _Statistical Need_ is a proposed or imposed requirement, request or other notification as it has been received by a statistical organisation. A _Statistical Need_ is an expression of a requirement, and is not necessarily well-defined. A related class - _Change Definition_ - is created when a _Statistical Need_ is analysed by the organisation. _Change Definition_ expresses the raw need in well-defined, structured terms.
- Once a _Statistical Need_ has been received, the first step is to do the conceptual work to establish what it is we are trying to measure. The final output of this conceptual work is the _Change Definition_.
-
- In some cases, the _Statistical Need_ can result from the _Assessment_ of the quality, efficiency, etc. of an existing process.A Statistical Need may be of a variety of types including Environment Change or Information Request.
+| Statistical Need | Business | requirement, request or other notification that will be considered by a statistical organisation. | The _Statistical Need_ is a proposed or imposed requirement, request or other notification as it has been received by a statistical organisation. A _Statistical Need_ is an expression of a requirement, and is not necessarily well-defined. A related class - _Change Definition_ - is created when a _Statistical Need_ is analysed by the organisation. _Change Definition_ expresses the raw need in well-defined, structured terms.<br/>Once a _Statistical Need_ has been received, the first step is to do the conceptual work to establish what it is we are trying to measure. The final output of this conceptual work is the _Change Definition_.<br/>In some cases, the _Statistical Need_ can result from the _Assessment_ of the quality, efficiency, etc. of an existing process.A Statistical Need may be of a variety of types including Environment Change or Information Request.
 
 * **Attributes**
 
@@ -670,13 +661,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Statistical Programme | Business | set of activities to produce statistics on a given_ Universe_ within the context of_ Subject Fields_ | The _Statistical Programme_ provides the environmental context in which activities to produce statistics within a statistical organisation are conducted. _Statistical Programme_ will usually correspond to an ongoing activity such as a survey or output series covered by GSBPM phase 4-7. Some examples of _Statistical Programme_ are:
-- Labour Force Survey
-- Multipurpose Household Survey
-- National Accounts
-- Demography
-- Overseas Arrivals and Departures
-Related to the _Statistical Programme_ class, there are _Statistical Programme Design_ and _Statistical Programme Cycle_ classes that hold the detailed information about the design and conduct of the _Business Process_. A _Statistical Programme_ could take as inputs other _Statistical Programmes'_ outputs, e.g. national accounts. These activities are all carried out to generate _Products_.In the case of the traditional approach, an organisation has received a _Statistical Need_ and produced a _Change Definition_ and an approved _Business Case_. The _Business Case_ will specify either a change to the design or methodology of an existing _Statistical Programme_, which will result in a new _Statistical Programme Design_; or a change to one or more existing _Statistical Programmes_ (for example, to add an additional objective to the _Statistical Programme_); or result in a new _Statistical Programme_ being created.This does not include statistical support functions such as metadata management, data management (and other overarching GSBPM processes) and design functions. These activities are conducted as part of _Statistical Support Activity_.
+| Statistical Programme | Business | set of activities to produce statistics on a given_ Universe_ within the context of_ Subject Fields_ | The _Statistical Programme_ provides the environmental context in which activities to produce statistics within a statistical organisation are conducted. _Statistical Programme_ will usually correspond to an ongoing activity such as a survey or output series covered by GSBPM phase 4-7. Some examples of _Statistical Programme_ are:<br/>- Labour Force Survey<br/>- Multipurpose Household Survey<br/>- National Accounts<br/>- Demography<br/>- Overseas Arrivals and Departures<br/>Related to the _Statistical Programme_ class, there are _Statistical Programme Design_ and _Statistical Programme Cycle_ classes that hold the detailed information about the design and conduct of the _Business Process_. A _Statistical Programme_ could take as inputs other _Statistical Programmes'_ outputs, e.g. national accounts. These activities are all carried out to generate _Products_.In the case of the traditional approach, an organisation has received a _Statistical Need_ and produced a _Change Definition_ and an approved _Business Case_. The _Business Case_ will specify either a change to the design or methodology of an existing _Statistical Programme_, which will result in a new _Statistical Programme Design_; or a change to one or more existing _Statistical Programmes_ (for example, to add an additional objective to the _Statistical Programme_); or result in a new _Statistical Programme_ being created.This does not include statistical support functions such as metadata management, data management (and other overarching GSBPM processes) and design functions. These activities are conducted as part of _Statistical Support Activity_.
 
 * **Attributes**
 
