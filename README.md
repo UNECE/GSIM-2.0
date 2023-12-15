@@ -1,21 +1,23 @@
 # GSIM-2.0
 (UNDER CONSTRUCTION)
 
-sidebar: toc
-
-markdown: kramdown
-
-* TOC
-  
-{:toc}
-
-* Placeholder for Table of Content (Must not be removed) <newline> {:toc}
-
-kramdown:
-  ...
-  toc_levels: 2..6
 
 This is the GitHub repository for version 2.0 of the Generic Statistical Information Model (GSIM)
+[1. Base Group](## 1. Base Group)
+[1.1 Group Diagram]()
+[1.2 Descriptive Information]()
+[2. Business Group]()
+[2.1 Group Diagram]()
+[2.2 Descriptive Information]()
+[3. Concepts Group]()
+[3.1 Group Diagram]()
+[3.2 Descriptive Information]()
+[4. Exchange Group]()
+[4.1 Group Diagram]()
+[4.2 Descriptive Information]()
+[5. Structures Group]()
+[5.1 Group Diagram]()
+[5.2 Descriptive Information]()
 
 ## 1. Base Group
 
