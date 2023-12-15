@@ -72,7 +72,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Agent in Role**
+#### **Agent in Role**
 
 **Definition**
 
@@ -89,7 +89,7 @@ The information classes defined within this group as as follows:
 | --- | --- | --- | --- |
 | Name | A term which designates a concept, in this case an information object. The identifying name will be the preferred designation. There will be many terms to designate the same information object, such as synonyms and terms in other languages. | 1..1 | MultilingualText |
 
-**Change Event**
+#### **Change Event**
 
 **Definition**
 
@@ -107,7 +107,7 @@ The information classes defined within this group as as follows:
 | Change Type | The type of change that occurred during the _Change Event_. | 1..1 | String |
 | Identifier | The unique identifier of the _Change Event_ that is applied to an information class; assigned by the owner agency. | 1..1 | String |
 
-**Contact**
+#### **Contact**
 
 **Definition**
 
@@ -121,7 +121,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Identifiable Artefact**
+#### **Identifiable Artefact**
 
 **Definition**
 
@@ -143,7 +143,7 @@ The information classes defined within this group as as follows:
 | Version Date | The date on which the version was created.  | 0..1 | Date |
 | Version Rationale | The reason for making this version of the information class. | 0..1 | String |
 
-**Individual**
+#### **Individual**
 
 **Definition**
 
@@ -157,7 +157,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Maintainer**
+#### **Maintainer**
 
 **Definition**
 
@@ -170,7 +170,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Organisation**
+#### **Organisation**
 
 **Definition**
 
@@ -183,7 +183,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Owner**
+#### **Owner**
 
 **Definition**
 
@@ -196,7 +196,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Role**
+#### **Role**
 
 **Definition**
 
@@ -210,7 +210,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Software Agent**
+#### **Software Agent**
 
 **Definition**
 
@@ -233,7 +233,7 @@ The information classes defined within this group as as follows:
 
 The information classes defined within this group as as follows:
 
-**Assessment**
+#### **Assessment**
 
 **Definition**
 
@@ -253,7 +253,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Business Case**
+#### **Business Case**
 
 **Definition**
 
@@ -274,7 +274,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Business Function**
+#### **Business Function**
 
 **Definition**
 
@@ -287,7 +287,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Business Process**
+#### **Business Process**
 
 **Definition**
 
@@ -300,7 +300,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Business Service**
+#### **Business Service**
 
 **Definition**
 
@@ -320,7 +320,8 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Change Definition**
+
+#### **Change Definition**
 
 **Definition**
 
@@ -333,7 +334,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Core Input**
+#### **Core Input**
 
 **Definition**
 
@@ -346,7 +347,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Core Output**
+#### **Core Output**
 
 **Definition**
 
@@ -359,7 +360,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Environment Change**
+#### **Environment Change**
 
 **Definition**
 
@@ -377,7 +378,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Information Request**
+#### **Information Request**
 
 **Definition**
 
@@ -395,7 +396,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Parameter Input**
+#### **Parameter Input**
 
 **Definition**
 
@@ -414,7 +415,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Process Control**
+#### **Process Control**
 
 **Definition**
 
@@ -427,7 +428,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Process Control Design**
+#### **Process Control Design**
 
 **Definition**
 
@@ -440,7 +441,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Process Design**
+#### **Process Design**
 
 **Definition**
 
@@ -453,7 +454,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Process Execution Log**
+#### **Process Execution Log**
 
 **Definition**
 
@@ -475,7 +476,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Process Input**
+#### **Process Input**
 
 **Definition**
 
@@ -488,7 +489,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Process Input Specification**
+#### **Process Input Specification**
 
 **Definition**
 
@@ -505,7 +506,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Process Method**
+#### **Process Method**
 
 **Definition**
 
@@ -518,7 +519,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Process Metric**
+#### **Process Metric**
 
 **Definition**
 
@@ -531,7 +532,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Process Output**
+#### **Process Output**
 
 **Definition**
 
@@ -545,7 +546,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Process Output Specification**
+#### **Process Output Specification**
 
 **Definition**
 
@@ -558,7 +559,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Process Pattern**
+#### **Process Pattern**
 
 **Definition**
 
@@ -571,7 +572,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Process Step**
+#### **Process Step**
 
 **Definition**
 
@@ -588,7 +589,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Process Step Instance**
+#### **Process Step Instance**
 
 **Definition**
 
@@ -601,7 +602,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Process Support Input**
+#### **Process Support Input**
 
 **Definition**
 
@@ -625,7 +626,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Reference Document**
+#### **Reference Document**
 
 **Definition**
 
@@ -638,7 +639,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Rule**
+#### **Rule**
 
 **Definition**
 
@@ -659,7 +660,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Statistical Need**
+#### **Statistical Need**
 
 **Definition**
 
@@ -679,7 +680,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Statistical Programme**
+#### **Statistical Programme**
 
 **Definition**
 
@@ -708,7 +709,7 @@ Related to the _Statistical Programme_ class, there are _Statistical Programme D
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Statistical Programme Cycle**
+#### **Statistical Programme Cycle**
 
 **Definition**
 
@@ -726,7 +727,7 @@ Related to the _Statistical Programme_ class, there are _Statistical Programme D
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Statistical Programme Design**
+#### **Statistical Programme Design**
 
 **Definition**
 
@@ -744,7 +745,7 @@ Related to the _Statistical Programme_ class, there are _Statistical Programme D
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Statistical Support Activity**
+#### **Statistical Support Activity**
 
 **Definition**
 
@@ -774,7 +775,7 @@ Related to the _Statistical Programme_ class, there are _Statistical Programme D
 
 The information classes defined within this group as as follows:
 
-**Category**
+#### **Category**
 
 **Definition**
 
@@ -786,7 +787,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Category Item**
+#### **Category Item**
 
 **Definition**
 
@@ -799,7 +800,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Category Set**
+#### **Category Set**
 
 **Definition**
 
@@ -812,7 +813,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Classification Family**
+#### **Classification Family**
 
 **Definition**
 
@@ -825,7 +826,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Classification Index**
+#### **Classification Index**
 
 **Definition**
 
@@ -845,7 +846,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Classification Index Entry**
+#### **Classification Index Entry**
 
 **Definition**
 
