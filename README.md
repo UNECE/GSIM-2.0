@@ -864,7 +864,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Classification Item**
+#### **Classification Item**
 
 **Definition**
 
@@ -885,7 +885,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Classification Series**
+#### **Classification Series**
 
 **Definition**
 
@@ -905,7 +905,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Code**
+#### **Code**
 
 **Definition**
 
@@ -918,7 +918,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Code Item**
+#### **Code Item**
 
 **Definition**
 
@@ -931,7 +931,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Code List**
+#### **Code List**
 
 **Definition**
 
@@ -944,7 +944,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Concept**
+#### **Concept**
 
 **Definition**
 
@@ -962,7 +962,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Concept System**
+#### **Concept System**
 
 **Definition**
 
@@ -975,7 +975,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Conceptual Domain**
+#### **Conceptual Domain**
 
 **Definition**
 
@@ -992,7 +992,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Correspondence Table**
+#### **Correspondence Table**
 
 **Definition**
 
@@ -1012,7 +1012,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Datum**
+#### **Datum**
 
 **Definition**
 
@@ -1025,7 +1025,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Described Conceptual Domain**
+#### **Described Conceptual Domain**
 
 **Definition**
 
@@ -1037,7 +1037,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Described Value Domain**
+#### **Described Value Domain**
 
 **Definition**
 
@@ -1054,7 +1054,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Designation**
+#### **Designation**
 
 **Definition**
 
@@ -1067,7 +1067,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Enumerated Conceptual Domain**
+#### **Enumerated Conceptual Domain**
 
 **Definition**
 
@@ -1080,7 +1080,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Enumerated Value Domain**
+#### **Enumerated Value Domain**
 
 **Definition**
 
@@ -1093,7 +1093,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Instance Variable**
+#### **Instance Variable**
 
 **Definition**
 
@@ -1110,7 +1110,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Level**
+#### **Level**
 
 **Definition**
 
@@ -1132,7 +1132,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Map**
+#### **Map**
 
 **Definition**
 
@@ -1145,7 +1145,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Measurement Type**
+#### **Measurement Type**
 
 **Definition**
 
@@ -1157,7 +1157,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Measurement Unit**
+#### **Measurement Unit**
 
 **Definition**
 
@@ -1175,7 +1175,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Node**
+#### **Node**
 
 **Definition**
 
@@ -1192,7 +1192,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Node Set**
+#### **Node Set**
 
 **Definition**
 
@@ -1215,7 +1215,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Population**
+#### **Population**
 
 **Definition**
 
@@ -1237,7 +1237,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Represented Variable**
+#### **Represented Variable**
 
 **Definition**
 
@@ -1251,7 +1251,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Sentinel Value Domain**
+#### **Sentinel Value Domain**
 
 **Definition**
 
@@ -1264,7 +1264,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Statistical Classification**
+#### **Statistical Classification**
 
 **Definition**
 
@@ -1294,7 +1294,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Subject Field**
+#### **Subject Field**
 
 **Definition**
 
@@ -1306,7 +1306,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Substantive Value Domain**
+#### **Substantive Value Domain**
 
 **Definition**
 
@@ -1319,7 +1319,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Unit**
+#### **Unit**
 
 **Definition**
 
@@ -1336,7 +1336,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Unit Type**
+#### **Unit Type**
 
 **Definition**
 
@@ -1348,7 +1348,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Universe**
+#### **Universe**
 
 **Definition**
 
@@ -1361,7 +1361,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Value Domain**
+#### **Value Domain**
 
 **Definition**
 
@@ -1374,7 +1374,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Conceptual Variable**
+#### **Conceptual Variable**
 
 **Definition**
 
@@ -1401,7 +1401,7 @@ The information classes defined within this group as as follows:
 
 The information classes defined within this group as as follows:
 
-**Data Harvest**
+#### **Data Harvest**
 
 **Definition**
 
@@ -1414,7 +1414,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Dissemination Instrument**
+#### **Dissemination Instrument**
 
 **Definition**
 
@@ -1427,7 +1427,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Exchange Instrument**
+#### **Exchange Instrument**
 
 **Definition**
 
@@ -1444,7 +1444,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Exchange Specification**
+#### **Exchange Specification**
 
 **Definition**
 
@@ -1457,7 +1457,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Information Consumer**
+#### **Information Consumer**
 
 **Definition**
 
@@ -1470,7 +1470,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Information Provider**
+#### **Information Provider**
 
 **Definition**
 
@@ -1483,7 +1483,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Instance Question**
+#### **Instance Question**
 
 **Definition**
 
@@ -1501,7 +1501,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Instance Question Block**
+#### **Instance Question Block**
 
 **Definition**
 
@@ -1514,7 +1514,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Instance Statement**
+#### **Instance Statement**
 
 **Definition**
 
@@ -1531,7 +1531,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Output Specification**
+#### **Output Specification**
 
 **Definition**
 
@@ -1544,7 +1544,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Presentation**
+#### **Presentation**
 
 **Definition**
 
@@ -1566,7 +1566,7 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Product**
+#### **Product**
 
 **Definition**
 
@@ -1579,7 +1579,7 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Provision Agreement**
+#### **Provision Agreement**
 
 **Definition**
 
@@ -1592,7 +1592,7 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Question**
+#### **Question**
 
 **Definition**
 
@@ -1612,7 +1612,7 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 | Question Purpose | A description of the purpose of the question, whether the question has a specific expected function. | 0..1 | MultilingualText |
 | Question Text | The text which describes the information which is to be obtained. | 1..1 | MultilingualText |
 
-**Question Block**
+#### **Question Block**
 
 **Definition**
 
@@ -1629,7 +1629,7 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Questionnaire**
+#### **Questionnaire**
 
 **Definition**
 
@@ -1648,7 +1648,7 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Questionnaire Component**
+#### **Questionnaire Component**
 
 **Definition**
 
@@ -1665,7 +1665,7 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Questionnaire Logic**
+#### **Questionnaire Logic**
 
 **Definition**
 
@@ -1682,7 +1682,7 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Questionnaire Specification**
+#### **Questionnaire Specification**
 
 **Definition**
 
@@ -1695,7 +1695,7 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Register**
+#### **Register**
 
 **Definition**
 
@@ -1714,7 +1714,7 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Statement**
+#### **Statement**
 
 **Definition**
 
