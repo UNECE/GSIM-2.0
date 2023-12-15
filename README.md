@@ -1741,7 +1741,7 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 
 The information classes defined within this group as as follows:
 
-**Attribute Component**
+#### **Attribute Component**
 
 **Definition**
 
@@ -1762,7 +1762,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Data Point**
+#### **Data Point**
 
 **Definition**
 
@@ -1775,7 +1775,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Data Record**
+#### **Data Record**
 
 **Definition**
 
@@ -1788,7 +1788,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Data Resource**
+#### **Data Resource**
 
 **Definition**
 
@@ -1801,7 +1801,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Data Set**
+#### **Data Set**
 
 **Definition**
 
@@ -1817,7 +1817,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Data Structure**
+#### **Data Structure**
 
 **Definition**
 
@@ -1830,7 +1830,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Data Structure Component**
+#### **Data Structure Component**
 
 **Definition**
 
@@ -1847,7 +1847,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Dimensional Data Structure**
+#### **Dimensional Data Structure**
 
 **Definition**
 
@@ -1864,7 +1864,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Identifier Component**
+#### **Identifier Component**
 
 **Definition**
 
@@ -1883,7 +1883,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Information Resource**
+#### **Information Resource**
 
 **Definition**
 
@@ -1896,7 +1896,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Information Set**
+#### **Information Set**
 
 **Definition**
 
@@ -1909,7 +1909,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Information Structure**
+#### **Information Structure**
 
 **Definition**
 
@@ -1923,7 +1923,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Logical Record**
+#### **Logical Record**
 
 **Definition**
 
@@ -1936,7 +1936,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Measure Component**
+#### **Measure Component**
 
 **Definition**
 
@@ -1949,7 +1949,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Record Relationship**
+#### **Record Relationship**
 
 **Definition**
 
@@ -1962,7 +1962,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Referential Metadata Attribute**
+#### **Referential Metadata Attribute**
 
 **Definition**
 
@@ -1979,7 +1979,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Referential Metadata Content Item**
+#### **Referential Metadata Content Item**
 
 **Definition**
 
@@ -1993,7 +1993,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Referential Metadata Resource**
+#### **Referential Metadata Resource**
 
 **Definition**
 
@@ -2007,7 +2007,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Referential Metadata Set**
+#### **Referential Metadata Set**
 
 **Definition**
 
@@ -2021,7 +2021,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Referential Metadata Structure**
+#### **Referential Metadata Structure**
 
 **Definition**
 
@@ -2034,7 +2034,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Referential Metadata Subject**
+#### **Referential Metadata Subject**
 
 **Definition**
 
@@ -2048,7 +2048,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Referential Metadata Subject Item**
+#### **Referential Metadata Subject Item**
 
 **Definition**
 
@@ -2062,7 +2062,7 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-**Unit Data Structure**
+#### **Unit Data Structure**
 
 **Definition**
 
