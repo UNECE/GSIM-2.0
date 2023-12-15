@@ -36,7 +36,7 @@ This is the GitHub repository for version 2.0 of the Generic Statistical Informa
 
 The information classes defined within this group as as follows:
 
-**Administrative Details**
+#### **Administrative Details**
 
 **Definition**
 
@@ -59,7 +59,7 @@ The information classes defined within this group as as follows:
 | Valid From | The start date included in the period during which the classis effective or valid. It is effective or valid from that date. | 0..1 | Date |
 | Valid To | The end date included in the period during which the information classis effective or valid. It is no longer effective or valid after that date. | 0..1 | Date |
 
-**Agent**
+#### **Agent**
 
 **Definition**
 
