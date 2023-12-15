@@ -957,6 +957,18 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
+#### **Conceptual Variable**
+
+* **Definition**
+
+| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
+| --- | --- | --- | --- | --- |
+| Conceptual Variable | Concept | use of a Concept as a characteristic of_ Unit Type_ intended to be observed | The _Conceptual Variable_ combines the meaning of a _Concept_ with a _Unit Type_, to define the characteristic that is to be measured.Here are 3 examples:<br/>- Sex of person<br/>- Number of employees<br/>- Value of production
+
+* **Attributes**
+
+\* Attributes inherited from super-type(s) are not included here
+
 #### **Correspondence Table**
 
 * **Definition**
@@ -1064,11 +1076,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Instance Variable | Concept | use of a _Represented Variable_ within a _Data Set_     | The _Instance Variable_ is used to describe actual instances of data that have been acquired. Here are 3 examples:
- 1) Gender: Dan Gillman has gender \<m, male\>, Arofan Gregory has gender\<m, male\>, etc.
- 2) Number of employees: Microsoft has 90,000 employees; IBM has 433,000 employees, etc.
- 3) Endowment: Johns Hopkins has endowment of \<3, $1,000,000 and above\>,
- Yale has endowment of \<3, $1,000,000 and above\>, etc.It may include information about the source of the data.
+| Instance Variable | Concept | use of a _Represented Variable_ within a _Data Set_     | The _Instance Variable_ is used to describe actual instances of data that have been acquired. Here are 3 examples:<br/>1) Gender: Dan Gillman has gender \<m, male\>, Arofan Gregory has gender\<m, male\>, etc.<br/>2) Number of employees: Microsoft has 90,000 employees; IBM has 433,000 employees, etc.<br/>3) Endowment: Johns Hopkins has endowment of \<3, $1,000,000 and above\>, Yale has endowment of \<3, $1,000,000 and above\>, etc.It may include information about the source of the data.
 
 * **Attributes**
 
@@ -1162,16 +1170,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Node Set | Concept | set of _Nodes_     | _Node Set_ is a kind of _Concept System_. Here are 2 examples:
-
- 1) Sex _Categories_
-- Male
-- Female
-- Other
-2) Sex _Codes_
-- \<m, male\>
-- \<f, female\>
-- \<o, other\>
+| Node Set | Concept | set of _Nodes_     | _Node Set_ is a kind of _Concept System_. Here are 2 examples:<br/>1) Sex _Categories_<br/>- Male<br/>- Female<br/>- Other<br/>2) Sex _Codes_<br/>- \<m, male\><br/>- \<f, female\><br/>- \<o, other\>
 
 * **Attributes**
 
@@ -1183,10 +1182,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Measurement Unit | Concepts | total membership of a defined class of people, objects or events     | A _Population_ is used to describe the total membership of a group of people, objects or events based on characteristics, e.g. time and geographic boundaries.Here are 3 examples:
-- Adult persons in the Europe on 13 November 1956
-- Computer companies in the US at the end of 2012
-- Universities in the world on 1 January 2023
+| Measurement Unit | Concepts | total membership of a defined class of people, objects or events     | A _Population_ is used to describe the total membership of a group of people, objects or events based on characteristics, e.g. time and geographic boundaries.Here are 3 examples:<br/>- Adult persons in the Europe on 13 November 1956<br/>- Computer companies in the US at the end of 2012<br/>- Universities in the world on 1 January 2023
 
 * **Attributes**
 
@@ -1285,10 +1281,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Unit | Concept | entity for which information is sought and for which statistics are ultimately compiled | Here are 3 examples:
-- Individual US person (e.g., Arofan Gregory, Dan Gillman, Barack Obama, etc.)
-- Individual US computer companies (e.g., Microsoft, Apple, IBM, etc.)
-- Individual US universities (e.g., Johns Hopkins, University of Maryland, Yale, etc.)
+| Unit | Concept | entity for which information is sought and for which statistics are ultimately compiled | Here are 3 examples:<br/>- Individual US person (e.g., Arofan Gregory, Dan Gillman, Barack Obama, etc.)<br/>- Individual US computer companies (e.g., Microsoft, Apple, IBM, etc.)<br/>- Individual US universities (e.g., Johns Hopkins, University of Maryland, Yale, etc.)
 
 * **Attributes**
 
@@ -1332,20 +1325,6 @@ The information classes defined within this group as as follows:
 
 \* Attributes inherited from super-type(s) are not included here
 
-#### **Conceptual Variable**
-
-* **Definition**
-
-| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
-| --- | --- | --- | --- | --- |
-| Conceptual Variable | Concept | use of a Concept as a characteristic of_ Unit Type_ intended to be observed | The _Conceptual Variable_ combines the meaning of a _Concept_ with a _Unit Type_, to define the characteristic that is to be measured.Here are 3 examples:
-- Sex of person
-- Number of employees
-- Value of production
-
-* **Attributes**
-
-\* Attributes inherited from super-type(s) are not included here
 
 ## 4. Exchange Group
 ### 4.1 Group Diagram
@@ -1506,15 +1485,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Presentation | Exchange | way data and referential metadata are presented     | _Presentations _present data and referential metadata from _Information Sets_.  _Presentation_ can be used by an _Output Specification to specify how Information Set in Product is presented._
-
-_Presentation_ can be in different forms; e.g. tables, graphs, structured data files. Examples:
-- A table of data. Based on a _DataSet_, the related _Data Structure_ is used to label the column and row headings for the table. The _Data Set_ is used to populate the cells in the table. Reference metadata is used to populate footnotes and cell notes on the table. Confidentiality rules are applied to the _Data Set_ to suppress any disclosive cells.
-- A data file based on a standard (e.g. SDMX).
-- A PDF document describing a _Statistical Classification_.
-- Any structural metadata object expressed in a standard format (e.g. DDI 3.1 XML).
-- A list of _Products _or services (e.g. a product catalogue or a web services description language (WSDL) file).
-- A web page containing _Statistical Classifications_, descriptions of _Conceptual Variables_, etc.
+| Presentation | Exchange | way data and referential metadata are presented     | _Presentations_ present data and referential metadata from _Information Sets_.  _Presentation_ can be used by an _Output Specification to specify how Information Set in Product is presented._<br/>_Presentation_ can be in different forms; e.g. tables, graphs, structured data files. Examples:<br/>- A table of data. Based on a _DataSet_, the related _Data Structure_ is used to label the column and row headings for the table. The _Data Set_ is used to populate the cells in the table. Reference metadata is used to populate footnotes and cell notes on the table. Confidentiality rules are applied to the _Data Set_ to suppress any disclosive cells.<br/>- A data file based on a standard (e.g. SDMX).<br/>- A PDF document describing a _Statistical Classification_.<br/>- Any structural metadata object expressed in a standard format (e.g. DDI 3.1 XML).<br/>- A list of _Products _or services (e.g. a product catalogue or a web services description language (WSDL) file).<br/>- A web page containing _Statistical Classifications_, descriptions of _Conceptual Variables_, etc.
 
 * **Attributes**
 
@@ -1572,10 +1543,7 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Question Block | Exchange | set of _Questions, Statements_ or instructions which are used together | A Question Block should ideally be designed for reuse.  The _Question Block_ is a type of _Questionnaire Component_. A statistical organisation will often have a number of _Question Blocks_ which they reuse in a number of _Questionnaires_. Examples of_ Question Blocks_ include:
-- Household _Question Block_
-- Income _Question Block_
-- Employment _Question Block_
+| Question Block | Exchange | set of _Questions, Statements_ or instructions which are used together | A Question Block should ideally be designed for reuse.  The _Question Block_ is a type of _Questionnaire Component_. A statistical organisation will often have a number of _Question Blocks_ which they reuse in a number of _Questionnaires_. Examples of_ Question Blocks_ include:<br/>- Household _Question Block_<br/>- Income _Question Block_<br/>- Employment _Question Block_
 
 * **Attributes**
 
@@ -1653,12 +1621,7 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Register | Exchange | written and complete record containing regular entries of items and details on particular sets of objects | In official statistics, "statistical registers" and "adminisitrative registers" (registers maintained by other organisations, usually administrative data owners) are usually distinguished. In GSIM, the information class "Register" is used to describe both types because the attributes are more or less the same so from the information management point of view, they can be handled as one GSIM class.There is usually a purpose or authority for maintaining the _Register _and each object in the _Register _is described using a pre-defined set of characteristics. Examples include business and population registers as used by statistical organisations. Therefore, from statistical perspective, the _Register _can be interpreted as a set of objects for a given _Population_, updated on a regular basis, containing information on identification, accessibility of _Units _and other attributes. The _Register _contains the current and historical statuses of the _Population _and the causes, effects and sources of alterations in the _Population_.In order to better understand how the _Register _is used in GSIM, the use cases for the different scenarios are explained. These scenarios are:
-- _Register _as_ Information Set_ maintained and regularly updated by the statistical organisation.
-- _Register _as_ Information Set_ for survey frames/sample frames.
-- _Register _as_ Information Set_ for statistical _Products_.
-- _Register _as_ Information Set_ used as direct or auxiliary information for the production of statistics.
-- _Register _as_ Information Set_  as a source of administrative information obtained usually from external organisations.
+| Register | Exchange | written and complete record containing regular entries of items and details on particular sets of objects | In official statistics, "statistical registers" and "adminisitrative registers" (registers maintained by other organisations, usually administrative data owners) are usually distinguished. In GSIM, the information class "Register" is used to describe both types because the attributes are more or less the same so from the information management point of view, they can be handled as one GSIM class.There is usually a purpose or authority for maintaining the _Register _and each object in the _Register _is described using a pre-defined set of characteristics. Examples include business and population registers as used by statistical organisations. Therefore, from statistical perspective, the _Register _can be interpreted as a set of objects for a given _Population_, updated on a regular basis, containing information on identification, accessibility of _Units _and other attributes. The _Register _contains the current and historical statuses of the _Population _and the causes, effects and sources of alterations in the _Population_.In order to better understand how the _Register _is used in GSIM, the use cases for the different scenarios are explained. These scenarios are:<br/>- _Register _as_ Information Set_ maintained and regularly updated by the statistical organisation.<br/>- _Register _as_ Information Set_ for survey frames/sample frames.<br/>- _Register _as_ Information Set_ for statistical _Products_.<br/>- _Register _as_ Information Set_ used as direct or auxiliary information for the production of statistics.<br/>- _Register _as_ Information Set_  as a source of administrative information obtained usually from external organisations.
 
 * **Attributes**
 
@@ -1695,9 +1658,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Attribute Component | Structure | role given to a _Represented Variable_ in the context of a _Data Structure, _which supplies information other than identification or measures     | For example:
-- the embargo time (at which point the observation will be made publicly available)
-- the base period of the data in the series
+| Attribute Component | Structure | role given to a _Represented Variable_ in the context of a _Data Structure, _which supplies information other than identification or measures     | For example:<br/>- the embargo time (at which point the observation will be made publicly available)<br/>- the base period of the data in the series
 
 * **Attributes**
 
@@ -1782,10 +1743,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Data Structure Component | Structure | role of the _Represented Variable_ in the context of a _Data Structure_     | A _Data Structure Component_ can be an _Attribute Component, Measure Component_ or an _Identifier Component_.
-- Example of _Attribute Component_: publication status of an observation such as provisional, revised.
-- Example of _Measure Component_: age and height of a person in a _Unit Data Set_ or number of citizens and number of households in a country in a _Data Set_ for multiple countries (dimensional _Data Set_).
-- Example of _Identifier Component_: personal identification number of a Swedish citizen for unit data or the name of a country in the European Union for dimensional data.
+| Data Structure Component | Structure | role of the _Represented Variable_ in the context of a _Data Structure_     | A _Data Structure Component_ can be an _Attribute Component, Measure Component_ or an _Identifier Component_.<br/>- Example of _Attribute Component_: publication status of an observation such as provisional, revised.<br/>- Example of _Measure Component_: age and height of a person in a _Unit Data Set_ or number of citizens and number of households in a country in a _Data Set_ for multiple countries (dimensional _Data Set_).<br/>- Example of _Identifier Component_: personal identification number of a Swedish citizen for unit data or the name of a country in the European Union for dimensional data.
 
 * **Attributes**
 
