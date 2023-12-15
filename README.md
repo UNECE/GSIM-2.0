@@ -112,8 +112,6 @@ The information classes defined within this group as as follows:
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
 | Contact | Base | _Role_ in which Individual(s) is(are) responsible for providing additional information about an information class and/or its metadata, either directly or indirectly by linking to its source |
- |
- |
 
 * **Attributes**
 
@@ -148,8 +146,6 @@ The information classes defined within this group as as follows:
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
 | Individual | Base | person who acts, or is designated to act towards a specific purpose |
- |
- |
 
 * **Attributes**
 
@@ -307,8 +303,6 @@ The information classes defined within this group as as follows:
 | Business Service | Business | means of performing a _Business Function_ | A _Business_ _Service_ may provide one means of accessing a particular _Business Function_. The operation of a _Business Service_ will perform one or more _Business Processes_.The explicitly defined interface of a _Business Service_ can be seen as representing a "service contract". If particular inputs are provided then the service will deliver particular outputs in compliance within specific parameters (for example, within a particular period of time).Note: The interface of a _Business Service_ is not necessarily IT based. For example, a typical postal service will have a number of service interfaces:
 - Public letter box for posting letters
 - Counter at post office for interacting with postal workers
- |
- |
 
 * **Attributes**
 
@@ -537,8 +531,6 @@ The information classes defined within this group as as follows:
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
 | Process Output | Business | instance of an information class produced by a _Process Step Instance_ |
- |
- |
 
 * **Attributes**
 
@@ -612,8 +604,6 @@ The information classes defined within this group as as follows:
 - An auxiliary _Data Set_ which will influence imputation for, or editing of, a primary_ Data Set_ which has been submitted to the_ Process Step_ as the Core Input
 - A _Provision Agreement_ which can be used as a supporting document
 - A repository or inventory of _Process Methods_ or software system / architecture that are approved in the _Organisation _that could be used as reference
- |
- |
 
 * **Attributes**
 
@@ -667,8 +657,7 @@ The information classes defined within this group as as follows:
 | Statistical Need | Business | requirement, request or other notification that will be considered by a statistical organisation. | The _Statistical Need_ is a proposed or imposed requirement, request or other notification as it has been received by a statistical organisation. A _Statistical Need_ is an expression of a requirement, and is not necessarily well-defined. A related class - _Change Definition_ - is created when a _Statistical Need_ is analysed by the organisation. _Change Definition_ expresses the raw need in well-defined, structured terms.
  Once a _Statistical Need_ has been received, the first step is to do the conceptual work to establish what it is we are trying to measure. The final output of this conceptual work is the _Change Definition_.
 
- In some cases, the _Statistical Need_ can result from the _Assessment_ of the quality, efficiency, etc. of an existing process.A Statistical Need may be of a variety of types including Environment Change or Information Request. |
- |
+ In some cases, the _Statistical Need_ can result from the _Assessment_ of the quality, efficiency, etc. of an existing process.A Statistical Need may be of a variety of types including Environment Change or Information Request.
 
 * **Attributes**
 
@@ -690,8 +679,7 @@ The information classes defined within this group as as follows:
 - National Accounts
 - Demography
 - Overseas Arrivals and Departures
-Related to the _Statistical Programme_ class, there are _Statistical Programme Design_ and _Statistical Programme Cycle_ classes that hold the detailed information about the design and conduct of the _Business Process_. A _Statistical Programme_ could take as inputs other _Statistical Programmes'_ outputs, e.g. national accounts. These activities are all carried out to generate _Products_.In the case of the traditional approach, an organisation has received a _Statistical Need_ and produced a _Change Definition_ and an approved _Business Case_. The _Business Case_ will specify either a change to the design or methodology of an existing _Statistical Programme_, which will result in a new _Statistical Programme Design_; or a change to one or more existing _Statistical Programmes_ (for example, to add an additional objective to the _Statistical Programme_); or result in a new _Statistical Programme_ being created.This does not include statistical support functions such as metadata management, data management (and other overarching GSBPM processes) and design functions. These activities are conducted as part of _Statistical Support Activity_. |
- |
+Related to the _Statistical Programme_ class, there are _Statistical Programme Design_ and _Statistical Programme Cycle_ classes that hold the detailed information about the design and conduct of the _Business Process_. A _Statistical Programme_ could take as inputs other _Statistical Programmes'_ outputs, e.g. national accounts. These activities are all carried out to generate _Products_.In the case of the traditional approach, an organisation has received a _Statistical Need_ and produced a _Change Definition_ and an approved _Business Case_. The _Business Case_ will specify either a change to the design or methodology of an existing _Statistical Programme_, which will result in a new _Statistical Programme Design_; or a change to one or more existing _Statistical Programmes_ (for example, to add an additional objective to the _Statistical Programme_); or result in a new _Statistical Programme_ being created.This does not include statistical support functions such as metadata management, data management (and other overarching GSBPM processes) and design functions. These activities are conducted as part of _Statistical Support Activity_.
 
 * **Attributes**
 
@@ -935,8 +923,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Code List | Concept | type of _Node Set _for grouping pairs of _Categories _and their _Codes _via _Code Items _  | Similar _Code Lists_ can be grouped together (via the "relates to" relationship inherited from _Node Set_).A _Code List_ provides a predefined set of permissible values for an _Enumerated Value Domain_ |
- |
+| Code List | Concept | type of _Node Set _for grouping pairs of _Categories _and their _Codes _via _Code Items _  | Similar _Code Lists_ can be grouped together (via the "relates to" relationship inherited from _Node Set_).A _Code List_ provides a predefined set of permissible values for an _Enumerated Value Domain_
 
 * **Attributes**
 
@@ -949,8 +936,6 @@ The information classes defined within this group as as follows:
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
 | Concept | Concept | unit of thought differentiated by characteristics     |
- |
- |
 
 * **Attributes**
 
@@ -1101,8 +1086,7 @@ The information classes defined within this group as as follows:
  1) Gender: Dan Gillman has gender \<m, male\>, Arofan Gregory has gender\<m, male\>, etc.
  2) Number of employees: Microsoft has 90,000 employees; IBM has 433,000 employees, etc.
  3) Endowment: Johns Hopkins has endowment of \<3, $1,000,000 and above\>,
- Yale has endowment of \<3, $1,000,000 and above\>, etc.It may include information about the source of the data. |
- |
+ Yale has endowment of \<3, $1,000,000 and above\>, etc.It may include information about the source of the data.
 
 * **Attributes**
 
@@ -1206,8 +1190,6 @@ The information classes defined within this group as as follows:
 - \<m, male\>
 - \<f, female\>
 - \<o, other\>
- |
- |
 
 * **Attributes**
 
@@ -1223,8 +1205,6 @@ The information classes defined within this group as as follows:
 - Adult persons in the Europe on 13 November 1956
 - Computer companies in the US at the end of 2012
 - Universities in the world on 1 January 2023
- |
- |
 
 * **Attributes**
 
@@ -1327,8 +1307,6 @@ The information classes defined within this group as as follows:
 - Individual US person (e.g., Arofan Gregory, Dan Gillman, Barack Obama, etc.)
 - Individual US computer companies (e.g., Microsoft, Apple, IBM, etc.)
 - Individual US universities (e.g., Johns Hopkins, University of Maryland, Yale, etc.)
- |
- |
 
 * **Attributes**
 
@@ -1382,8 +1360,6 @@ The information classes defined within this group as as follows:
 - Sex of person
 - Number of employees
 - Value of production
- |
- |
 
 * **Attributes**
 
@@ -1557,8 +1533,6 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 - Any structural metadata object expressed in a standard format (e.g. DDI 3.1 XML).
 - A list of _Products _or services (e.g. a product catalogue or a web services description language (WSDL) file).
 - A web page containing _Statistical Classifications_, descriptions of _Conceptual Variables_, etc.
- |
- |
 
 * **Attributes**
 
@@ -1620,8 +1594,6 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 - Household _Question Block_
 - Income _Question Block_
 - Employment _Question Block_
- |
- |
 
 * **Attributes**
 
@@ -1705,8 +1677,6 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 - _Register _as_ Information Set_ for statistical _Products_.
 - _Register _as_ Information Set_ used as direct or auxiliary information for the production of statistics.
 - _Register _as_ Information Set_  as a source of administrative information obtained usually from external organisations.
- |
- |
 
 * **Attributes**
 
@@ -1716,8 +1686,6 @@ _Presentation_ can be in different forms; e.g. tables, graphs, structured data f
 
 * **Definition**
 
-| **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
-| --- | --- | --- | --- | --- |
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | Statement | Exchange | report of facts in a _Questionnaire_ | _Statements_ are often included to provide further explanation to respondents.Example: "The following questions are about your health".The class is also used to represent completion instructions for the interviewer or respondent. _Statement_ should be designed with re-use in mind as it can be used in numerous _Questionnaires_. | Interviewer InstructionInstruction |
 
@@ -1748,8 +1716,6 @@ The information classes defined within this group as as follows:
 | Attribute Component | Structure | role given to a _Represented Variable_ in the context of a _Data Structure, _which supplies information other than identification or measures     | For example:
 - the embargo time (at which point the observation will be made publicly available)
 - the base period of the data in the series
- |
- |
 
 * **Attributes**
 
@@ -1838,8 +1804,6 @@ The information classes defined within this group as as follows:
 - Example of _Attribute Component_: publication status of an observation such as provisional, revised.
 - Example of _Measure Component_: age and height of a person in a _Unit Data Set_ or number of citizens and number of households in a country in a _Data Set_ for multiple countries (dimensional _Data Set_).
 - Example of _Identifier Component_: personal identification number of a Swedish citizen for unit data or the name of a country in the European Union for dimensional data.
- |
- |
 
 * **Attributes**
 
@@ -1914,8 +1878,6 @@ The information classes defined within this group as as follows:
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
 | Information Structure | Structure | describes the structure of an _Information Set_ |
- |
- |
 
 * **Attributes**
 
