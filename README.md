@@ -3,24 +3,24 @@
 
 This is the GitHub repository for version 2.0 of the Generic Statistical Information Model (GSIM)
 
-[1. Base Group](#1-Base-Group)
-[1.1 Group Diagram](#11-Group-Diagram)
+[1. Base Group](#1-Base-Group) |
+[1.1 Group Diagram](#11-Group-Diagram) |
 [1.2 Descriptive Information](#12-Descriptive-Information)
 
-[2. Business Group](#2-Business-Group)
-[2.1 Group Diagram](#21-Group-Diagram)
+[2. Business Group](#2-Business-Group) |
+[2.1 Group Diagram](#21-Group-Diagram) |
 [2.2 Descriptive Information](#22-Descriptive-Information)
 
-[3. Concepts Group](#3-Concepts-Group)
-[3.1 Group Diagram](#31-Group-Diagram)
+[3. Concepts Group](#3-Concepts-Group) |
+[3.1 Group Diagram](#31-Group-Diagram) |
 [3.2 Descriptive Information](#32-Descriptive-Information)
 
-[4. Exchange Group](#4-Exchange-Group)
-[4.1 Group Diagram](#41-Group-Diagram)
+[4. Exchange Group](#4-Exchange-Group) |
+[4.1 Group Diagram](#41-Group-Diagram) |
 [4.2 Descriptive Information](#42-Descriptive-Information)
 
-[5. Structures Group](#5-structures-group)
-[5.1 Group Diagram](#51-Group-Diagram)
+[5. Structures Group](#5-structures-group) |
+[5.1 Group Diagram](#51-Group-Diagram) |
 [5.2 Descriptive Information](#52-Descriptive-Information)
 
 
@@ -95,7 +95,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Change Event | Base | indication of the occurrence of a change to an _Identifiable Artefact_ | A_ Change Event _relates to the information class(es) that has(have) been affected. It can be applied to only one _Identifiable Artefact_ and result in one or more _Identifiable Artefact(s)_. On the other hand, a _Change Event _can be applied to more than one _Identifiable Artefact_ and result in only one _Identifiable Artefact_. |
+| Change Event | Base | indication of the occurrence of a change to an _Identifiable Artefact_ | A _Change Event_ relates to the information class(es) that has(have) been affected. It can be applied to only one _Identifiable Artefact_ and result in one or more _Identifiable Artefact(s)_. On the other hand, a _Change Event_ can be applied to more than one _Identifiable Artefact_ and result in only one _Identifiable Artefact_. |
  |
 
 **Attributes**
