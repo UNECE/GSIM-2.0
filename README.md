@@ -15,7 +15,7 @@ This is the GitHub repository for version 2.0 of the Generic Statistical Informa
 [4. Exchange Group]()
 [4.1 Group Diagram]()
 [4.2 Descriptive Information]()
-[5. Structures Group](##5. Structures Group)
+[5. Structures Group](##5.StructuresGroup)
 [5.1 Group Diagram]()
 [5.2 Descriptive Information]()
 
