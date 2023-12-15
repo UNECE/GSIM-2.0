@@ -123,8 +123,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Change Event | Base | abstract class that comprises the basic attributes and associations needed for identification, naming and other documentation | All GSIM classes except _Administrative Details, Agent In Role, Change Event, Datum, Process Input_ (and its sub-types) and _Process Output_ (and its sub-types) are a sub-type of _Identifiable Artefact_. In SDMX, "Identifiable Artefact" is defined as "construct that contains structures capable of providing identity to an object". |
- |
+| Change Event | Base | abstract class that comprises the basic attributes and associations needed for identification, naming and other documentation | All GSIM classes except _Administrative Details, Agent In Role, Change Event, Datum, Process Input_ (and its sub-types) and _Process Output_ (and its sub-types) are a sub-type of _Identifiable Artefact_. In SDMX, "Identifiable Artefact" is defined as "construct that contains structures capable of providing identity to an object". | |
 
 **Attributes**
 
