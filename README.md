@@ -301,8 +301,8 @@ The information classes defined within this group as as follows:
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
 | Business Service | Business | means of performing a _Business Function_ | A _Business_ _Service_ may provide one means of accessing a particular _Business Function_. The operation of a _Business Service_ will perform one or more _Business Processes_.The explicitly defined interface of a _Business Service_ can be seen as representing a "service contract". If particular inputs are provided then the service will deliver particular outputs in compliance within specific parameters (for example, within a particular period of time).Note: The interface of a _Business Service_ is not necessarily IT based. For example, a typical postal service will have a number of service interfaces:
-- Public letter box for posting letters
-- Counter at post office for interacting with postal workers
+Public letter box for posting letters
+Counter at post office for interacting with postal workers
 
 * **Attributes**
 
