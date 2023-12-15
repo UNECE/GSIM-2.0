@@ -3,8 +3,8 @@
 
 
 This is the GitHub repository for version 2.0 of the Generic Statistical Information Model (GSIM)
-[1. Base Group](## 1. Base Group)
-[1.1 Group Diagram]()
+[1. Base Group](##1. Base Group)
+[1.1 Group Diagram](###1.1 Group Diagram)
 [1.2 Descriptive Information]()
 [2. Business Group]()
 [2.1 Group Diagram]()
