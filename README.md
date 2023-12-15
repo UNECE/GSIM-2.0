@@ -38,13 +38,13 @@ The information classes defined within this group as as follows:
 
 #### Administrative Details
 
-**Definition**
+* **Definition**
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
 | Administrative Details | Base | extensions to the model based on an organisation's administrative needs | The _Administrative Details_ is designed to act as a 'placeholder' to allow for future extensions to the existing model. It allows for further information to be added about the _Administrative Details_ required to maintain the other information classes outlined by GSIM. |   |
 
-**Attributes**
+* **Attributes**
 
 | **Name** | **Description** | **Cardinality** | **Value Type** |
 | --- | --- | --- | --- |
@@ -61,14 +61,13 @@ The information classes defined within this group as as follows:
 
 #### **Agent**
 
-1. **Definition**
+* **Definition**
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Agent | Base | someone or something that plays an active role in the lifecycle of an _Identifiable Artefact_ | An _Agent_ may be an _Individual_, an _Organisation_ (or part of it) or a _Software Agent_ that affects in some way an instance of a GSIM class. For example, an _Agent_ can play a role in the execution of a _Business Processes_ or in the way a _Statistical Classification_ (or a _Concept_) changes over time. |
- |
+| Agent | Base | someone or something that plays an active role in the lifecycle of an _Identifiable Artefact_ | An _Agent_ may be an _Individual_, an _Organisation_ (or part of it) or a _Software Agent_ that affects in some way an instance of a GSIM class. For example, an _Agent_ can play a role in the execution of a _Business Processes_ or in the way a _Statistical Classification_ (or a _Concept_) changes over time. | 
 
-1. **Attributes\***
+* **Attributes\***
 
 \* Attributes inherited from super-type(s) are not included here
 
@@ -79,7 +78,6 @@ The information classes defined within this group as as follows:
 | **Object** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
 | Agent In Role | Base | An _Agent_ acting in a specific _Role_. | In the Organization Ontology from W3C _Agent In Role_ is called a "Post". |
- |
 
 **Attributes**
 
