@@ -3,7 +3,7 @@
 [Defines](#defines)
 
 This is the GitHub repository for version 2.0 of the Generic Statistical Information Model (GSIM)
-[1. Base Group](##1.BaseGroup)
+[1. Base Group](##1. Base Group)
 [1.1 Group Diagram](###1.1 Group Diagram)
 [1.2 Descriptive Information]()
 [2. Business Group]()
@@ -15,7 +15,7 @@ This is the GitHub repository for version 2.0 of the Generic Statistical Informa
 [4. Exchange Group]()
 [4.1 Group Diagram]()
 [4.2 Descriptive Information]()
-[5. Structures Group]()
+[5. Structures Group](5. Structures Group)
 [5.1 Group Diagram]()
 [5.2 Descriptive Information]()
 
@@ -23,7 +23,7 @@ This is the GitHub repository for version 2.0 of the Generic Statistical Informa
 
 
 
-## 1.BaseGroup
+## 1. Base Group
 
 ### 1.1 Group Diagram
 
