@@ -266,7 +266,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Business Function | Business | activities undertaken by a statistical organisation to achieve its objectives | A _Business_ _Function_ delivers added value from a business point of view. It is delivered by bringing together people, processes and technology (resources), for a specific business purpose._Business Functions_ answer in a generic sense "What business purpose does this _Business Service _or_ Process Step_ serve?" (c.f. Business Process answers the question of "How?"). Through identifying the _Business Function_ associated with each _Business Service _or_ Process Step, _it increases the documentation of the use of the associated _Business Services_ and _Process Steps_, to enable future reuse.A _Business Function_ may be defined directly with descriptive text and/or through reference to an existing catalogue of _Business Functions_. The phases and sub-processes defined within GSBPM can be used as an internationally agreed basis for cataloguing high-level _Business Functions_. A catalogue might also include _Business Functions_ defined at a lower level than "sub-process". For example, "Identify and address outliers" might be catalogued as a lower level _Business Function_ with the "Review and validate" function (5.3) defined within GSBPM. | |
+| Business Function | Business | activities undertaken by a statistical organisation to achieve its objectives | A _Business_ _Function_ delivers added value from a business point of view. It is delivered by bringing together people, processes and technology (resources), for a specific business purpose._Business Functions_ answer in a generic sense "What business purpose does this _Business Service _or_ Process Step_ serve?" (c.f. Business Process answers the question of "How?"). Through identifying the _Business Function_ associated with each _Business Service_ or _Process Step_, it increases the documentation of the use of the associated _Business Services_ and _Process Steps_, to enable future reuse.A _Business Function_ may be defined directly with descriptive text and/or through reference to an existing catalogue of _Business Functions_. The phases and sub-processes defined within GSBPM can be used as an internationally agreed basis for cataloguing high-level _Business Functions_. A catalogue might also include _Business Functions_ defined at a lower level than "sub-process". For example, "Identify and address outliers" might be catalogued as a lower level _Business Function_ with the "Review and validate" function (5.3) defined within GSBPM. | |
 
 * **Attributes**
 
@@ -331,7 +331,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Core Output | Business | key output of the _Process Step Instance_ | A Core _Output_ is a sub-type of _Process Output_. Typically a Core _Output_ is either a _Process Input_ to a subsequent _Process Step_ or it represents the final product from a statistical _Business Process_.In many cases a Core _Output_ may be readily identified as an updated ("value added") version of one or more Core_Inputs_ supplied to the _Process Step Instance_. | |
+| Core Output | Business | key output of the _Process Step Instance_ | A Core _Output_ is a sub-type of _Process Output_. Typically a Core _Output_ is either a _Process Input_ to a subsequent _Process Step_ or it represents the final product from a statistical _Business Process_.In many cases a Core _Output_ may be readily identified as an updated ("value added") version of one or more _Core Inputs_ supplied to the _Process Step Instance_. | |
 
 * **Attributes**
 
@@ -360,7 +360,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Information Request | Business | _Statistical Need_ that is a request for new information for a particular purpose | An _Information Request_ is a special case of _Statistical Need_ that may come in an organised form, for example by specifying on which S_ubject Field_ the information is required. It may also be a more general request and require refinement by the statistical agency and formalised in a _Change Definition_. | |
+| Information Request | Business | _Statistical Need_ that is a request for new information for a particular purpose | An _Information Request_ is a special case of _Statistical Need_ that may come in an organised form, for example by specifying on which _Subject Field_ the information is required. It may also be a more general request and require refinement by the statistical agency and formalised in a _Change Definition_. | |
 
 * **Attributes**
 
@@ -492,7 +492,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Process Metric | Business | _Process Output_ summarising some aspect or property of the execution | A _Process Metric_ is a sub-type of _Process Output_ which records information about the execution of a _Process Step_. For example, how long it took to complete execution of the _Process Step_ and what percentage of records in the Core _Input_ was updated by the _Process Step_ to produce the Core_Output_.One purpose for a _Process Metric_ may be to provide a quality measure related to the Core_ Output_. For example, a _Process Step_ with the _Business Function_ of imputing missing values is likely to result, as its Core_Output_, in a _Data Set_ where values that were missing previously have been imputed. Statistical quality measures, captured as _Process Metrics_ for that _Process Step_ may include a measure of how many records were imputed, and a measure of how much difference, statistically, the imputed values make to the dataset overall which can be also used as a part of a quality report associated with the Data Set produced. Another purpose for a _Process Metric_ may be to measure an aspect of the _Process Step_ which is not directly related to the Core_Output_ it produced. For example, a _Process Metric_ may record the time taken to complete the _Process Step_ or other forms of resource utilisation (for example, human and/or IT).Often these two kinds of _Process Metrics_ will be used in combination when seeking to, for example, monitor and tune a statistical _Business Process_ so its statistical outputs achieve the highest level of quality possible based on the time, staff and/or IT resources that are available. | |
+| Process Metric | Business | _Process Output_ summarising some aspect or property of the execution | A _Process Metric_ is a sub-type of _Process Output_ which records information about the execution of a _Process Step_. For example, how long it took to complete execution of the _Process Step_ and what percentage of records in the _Core Input_ was updated by the _Process Step_ to produce the _Core Output_.One purpose for a _Process Metric_ may be to provide a quality measure related to the _Core Output_. For example, a _Process Step_ with the _Business Function_ of imputing missing values is likely to result, as its _Core Output_, in a _Data Set_ where values that were missing previously have been imputed. Statistical quality measures, captured as _Process Metrics_ for that _Process Step_ may include a measure of how many records were imputed, and a measure of how much difference, statistically, the imputed values make to the dataset overall which can be also used as a part of a quality report associated with the Data Set produced. Another purpose for a _Process Metric_ may be to measure an aspect of the _Process Step_ which is not directly related to the _Core Output_ it produced. For example, a _Process Metric_ may record the time taken to complete the _Process Step_ or other forms of resource utilisation (for example, human and/or IT). Often these two kinds of _Process Metrics_ will be used in combination when seeking to, for example, monitor and tune a statistical _Business Process_ so its statistical outputs achieve the highest level of quality possible based on the time, staff and/or IT resources that are available. | |
 
 * **Attributes**
 
@@ -516,7 +516,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Process Output Specification | Business | set of information classes that function as outputs of a _Process Design_ | The _Process Output Specification_ enumerates the _Process Outputs_ that are expected to be produced at the time a _Process Design_ is executed. For example, if five different _Process Outputs_ are expected, the _Process Output Specification_ will describe each of the five outputs. For each expected _Process Output_ the _Process Output Specification_ will record the type of information class (based on GSIM) which will be used as the _Process Output_ (Example types might be a _Data Set_ or a _Statistical Classification_).The _Process Output_ to be provided at the time of _Process Step_ execution will then be a specific instance of the type of information class specified by the _Process Output Specification_. For example, if a _Process Output Specification_ expects a _Data Set_ then the corresponding _Process Output _provided at the time of _Process Step_ execution will be a particular _Data Set_. | |
+| Process Output Specification | Business | set of information classes that function as outputs of a _Process Design_ | The _Process Output Specification_ enumerates the _Process Outputs_ that are expected to be produced at the time a _Process Design_ is executed. For example, if five different _Process Outputs_ are expected, the _Process Output Specification_ will describe each of the five outputs. For each expected _Process Output_ the _Process Output Specification_ will record the type of information class (based on GSIM) which will be used as the _Process Output_ (Example types might be a _Data Set_ or a _Statistical Classification_).The _Process Output_ to be provided at the time of _Process Step_ execution will then be a specific instance of the type of information class specified by the _Process Output Specification_. For example, if a _Process Output Specification_ expects a _Data Set_ then the corresponding _Process Output_ provided at the time of _Process Step_ execution will be a particular _Data Set_. | |
 
 * **Attributes**
 
@@ -528,7 +528,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Process Pattern | Business | recommended set of _Process Designs_ that is highlighted for possible reuse | In a particular _Business Process_, some _Process Steps_ may be unique to that _Business Process_ while others may be applicable to other _Business Processes_. A _Process_ _Pattern_ can be seen as a reusable template. It is a means to accelerate design processes and to achieve sharing and reuse of design patterns which have proved effective. Reuse of _Process Patterns _can indicate the possibility_ _to reuse related _Business Services._By deciding to reuse a _Process Pattern_, a designer is actually reusing the pattern of _Process Designs_ and _Process Control Designs_ associated with that _Process Pattern_. They will receive a new instance of the Proce_ss Designs_ and _Process Control Designs_. If they then tailor their "instance" of the _Process Designs_ and _Process Control Designs_ to better meet their needs they will not change the definition of the reusable _Process Pattern_. | |
+| Process Pattern | Business | recommended set of _Process Designs_ that is highlighted for possible reuse | In a particular _Business Process_, some _Process Steps_ may be unique to that _Business Process_ while others may be applicable to other _Business Processes_. A _Process Pattern_ can be seen as a reusable template. It is a means to accelerate design processes and to achieve sharing and reuse of design patterns which have proved effective. Reuse of _Process Patterns_ can indicate the possibility to reuse related _Business Services_. By deciding to reuse a _Process Pattern_, a designer is actually reusing the pattern of _Process Designs_ and _Process Control Designs_ associated with that _Process Pattern_. They will receive a new instance of the _Process Designs_ and _Process Control Designs_. If they then tailor their "instance" of the _Process Designs_ and _Process Control Designs_ to better meet their needs they will not change the definition of the reusable _Process Pattern_. | |
 
 * **Attributes**
 
@@ -689,7 +689,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Statistical Support Activity | Business | activity that supports statistical production | This type of activity will include such functions as metadata management, data management, methodological research, and design functions. These activities correspond to the overarching processes in the GSBPM, and Corporate Support in GAMSO, as well as activities to create new or change existing _Statistical Programmes_ which are covered by GSBPM phase 1-3, _thus creating or updating _Statistical Programme Designs._ | |
+| Statistical Support Activity | Business | activity that supports statistical production | This type of activity will include such functions as metadata management, data management, methodological research, and design functions. These activities correspond to the overarching processes in the GSBPM, and Corporate Support in GAMSO, as well as activities to create new or change existing _Statistical Programmes_ which are covered by GSBPM phase 1-3, thus creating or updating _Statistical Programme Designs_. | |
 
 * **Attributes**
 
@@ -853,7 +853,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Code Item | Concept | type of _Node _exclusive to a_ Code List _that combines a _Category _with a _Code _that represents it     | A _Code Item_ combines the meaning of the included _Category_ with a _Code_ representation._Codes _are unique within their _Code List._ Example: M (Male) F (Female). | |
+| Code Item | Concept | type of _Node_ exclusive to a _Code List_ that combines a _Category_ with a _Code_ that represents it     | A _Code Item_ combines the meaning of the included _Category_ with a _Code_ representation.<br/>_Codes_ are unique within their _Code List_. Example: M (Male) F (Female). | |
 
 * **Attributes**
 
@@ -933,7 +933,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Correspondence Table | Concept | set of _Maps _between the_ Classification Items _of two _Statistical Classifications_ | These are typically: two versions from the same _Classification Series_; _Statistical Classifications_ from different _Classification Series_; a variant and the version on which it is based; or, different versions of a variant. In the first and last examples, the _Correspondence Table_ facilitates comparability over time. Correspondence relationships are shown in both directions.A _Statistical Classification_ is a subtype of _Node Set_. The relationship between _Statistical Classification_ and _Correspondence Table_ can also be extended to include the other _Node Sets_ - _Code List_ and _Category Set_. | |
+| Correspondence Table | Concept | set of _Maps_ between the _Classification Items_ of two _Statistical Classifications_ | These are typically: two versions from the same _Classification Series_; _Statistical Classifications_ from different _Classification Series_; a variant and the version on which it is based; or, different versions of a variant. In the first and last examples, the _Correspondence Table_ facilitates comparability over time. Correspondence relationships are shown in both directions.A _Statistical Classification_ is a subtype of _Node Set_. The relationship between _Statistical Classification_ and _Correspondence Table_ can also be extended to include the other _Node Sets_ - _Code List_ and _Category Set_. | |
 
 * **Attributes**
 
@@ -1016,7 +1016,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Enumerated Value Domain | Concept | _Value Domain _expressed as a list of _Categories _and associated _Codes_ | Example - Sex Codes \<m, male\>; \<f, female\>; \<o, other\>. | |
+| Enumerated Value Domain | Concept | _Value Domain_ expressed as a list of _Categories_ and associated _Codes_ | Example - Sex Codes \<m, male\>; \<f, female\>; \<o, other\>. | |
 
 * **Attributes**
 
@@ -1041,7 +1041,7 @@ The information classes defined within this group as as follows:
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
 | Level | Concept |
- | set of _Nodes_ in a hierarchical _Node Set_ in which 1) each _Node _in the set is the same number of parent-child steps away from the root _Node_ in the hierarchy, and 2) the set is defined by a unifying _Concept_ | |
+ | set of _Nodes_ in a hierarchical _Node Set_ in which 1) each _Node_ in the set is the same number of parent-child steps away from the root _Node_ in the hierarchy, and 2) the set is defined by a unifying _Concept_ | |
 
 * **Attributes**
 
@@ -1213,7 +1213,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Substantive Value Domain | Concept | _Value Domain_ containing substantive values, where a substantive value is subject matter related       | A substantive value is one representing subject matter content, such as \<f, female\> in a gender classification.The scope and the meaning of the possible values are defined within the frame of the _Conceptual Domain_ that the_ Substantive Value Domain _is associated with.Example: \<0, Pre-primary\>, \<1, Primary\>, \<2, Lower secondary\>, \< 3, Upper secondary\>, \<4, Post-secondary non-tertiary\>, \<5, First stage of tertiary education\>, \<6, Second stage of tertiary education\> where the scope and meaning of the values are defined within _Categories_ for levels of education. | |
+| Substantive Value Domain | Concept | _Value Domain_ containing substantive values, where a substantive value is subject matter related       | A substantive value is one representing subject matter content, such as \<f, female\> in a gender classification.The scope and the meaning of the possible values are defined within the frame of the _Conceptual Domain_ that the _Substantive Value Domain_ is associated with.Example: \<0, Pre-primary\>, \<1, Primary\>, \<2, Lower secondary\>, \< 3, Upper secondary\>, \<4, Post-secondary non-tertiary\>, \<5, First stage of tertiary education\>, \<6, Second stage of tertiary education\> where the scope and meaning of the values are defined within _Categories_ for levels of education. | |
 
 * **Attributes**
 
@@ -1348,7 +1348,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Information Provider | Exchange | _Role _that entails providing data and information | An _Information Provider_ possesses sets of information (that it has acquired, for example by collecting or purchasing it) and is willing to supply that information (data or referential metadata) to the statistical organisation. The two parties use a _Provision Agreement_ to agree on the _Data Structure_ and _Referential Metadata Structure_ of the data to be exchanged via an _Exchange Instrument_. | |
+| Information Provider | Exchange | _Role_ that entails providing data and information | An _Information Provider_ possesses sets of information (that it has acquired, for example by collecting or purchasing it) and is willing to supply that information (data or referential metadata) to the statistical organisation. The two parties use a _Provision Agreement_ to agree on the _Data Structure_ and _Referential Metadata Structure_ of the data to be exchanged via an _Exchange Instrument_. | |
 
 * **Attributes**
 
@@ -1429,7 +1429,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Product | Exchange | package of content that can be disseminated as a whole      | A _Product_ packages _Information Sets_ for an _Information Consumer_. The _Product_ is generated according to _Output Specifications_, which define how the information from the_ Information Sets _are presented (via Presentations)  to the _Information Consumer_.A _Provision Agreement_ between the statistical organisation and the _Information Consumer_ governs the use of a _Product_ by the _Information Consumer_. The _Provision Agreement,_ which may be explicitly or implicitly agreed, provides the legal or other bases by which the two parties agree to exchange data. In many cases, dissemination _Provision Agreements_ are implicit in the terms of use published by the statistical organisation.For static _Products_ (e.g. paper publications), specifications are predetermined. For dynamic _Products_, aspects of specification could be determined by the_ Information Consumer_ at run time. Both cases result in _Output Specifications_ specifying _Information Set_ data or referential metadata that will be included within the _Product_. | |
+| Product | Exchange | package of content that can be disseminated as a whole      | A _Product_ packages _Information Sets_ for an _Information Consumer_. The _Product_ is generated according to _Output Specifications_, which define how the information from the _Information Sets_ are presented (via Presentations)  to the _Information Consumer_.A _Provision Agreement_ between the statistical organisation and the _Information Consumer_ governs the use of a _Product_ by the _Information Consumer_. The _Provision Agreement_, which may be explicitly or implicitly agreed, provides the legal or other bases by which the two parties agree to exchange data. In many cases, dissemination _Provision Agreements_ are implicit in the terms of use published by the statistical organisation.For static _Products_ (e.g. paper publications), specifications are predetermined. For dynamic _Products_, aspects of specification could be determined by the _Information Consumer_ at run time. Both cases result in _Output Specifications_ specifying _Information Set_ data or referential metadata that will be included within the _Product_. | |
 
 * **Attributes**
 
@@ -1441,7 +1441,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Provision Agreement | Exchange | legal or other basis by which two parties agree to exchange data | A _Provision Agreement_ between the statistical organisation and the _Information Provider_ (acquisition) or the _Information Consumer _(dissemination) governs the use of _Exchange Instrument_. The _Provision Agreement_, which may be explicitly or implicitly agreed, provides the legal or other basis by which the two parties agree to exchange data. The parties also use the _Provision Agreement_ to agree the Information _Structure_ of the information to be exchanged. | |
+| Provision Agreement | Exchange | legal or other basis by which two parties agree to exchange data | A _Provision Agreement_ between the statistical organisation and the _Information Provider_ (acquisition) or the _Information Consumer_ (dissemination) governs the use of _Exchange Instrument_. The _Provision Agreement_, which may be explicitly or implicitly agreed, provides the legal or other basis by which the two parties agree to exchange data. The parties also use the _Provision Agreement_ to agree the Information _Structure_ of the information to be exchanged. | |
 
 * **Attributes**
 
@@ -1453,7 +1453,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Question | Exchange | text used to elicit a response for a _Conceptual Variable_     | A _Question_ may be a single question used to obtain a response, or may be a multiple question, a construct which links multiple sub-questions, each with their own response.A _Question_ also includes a relationship to the _Value Domain_ to document the associated response criteria for the question. A single response question will have one _Value Domain_ associated with it, while a 'multiple question' may have more than one _Value Domain_.A _Question_ should be designed with re-use in mind, as it can be used in multiple _Questionnaires._In a national implementation,_ Question _could be further subtyped into_: _<br/>- QuestionGrid, useful to model questions as grids/tables. It is actually a cube-like structure providing dimension information, labelling options, and response domains attached to one or more cells within the grid. For instance, a two-way table requesting to provide turnovers broken down by affiliates.<br/>- QuestionItem, a simple question that is necessarily one dimensional. For example: "How old are you?" | Multiple Question |
+| Question | Exchange | text used to elicit a response for a _Conceptual Variable_     | A _Question_ may be a single question used to obtain a response, or may be a multiple question, a construct which links multiple sub-questions, each with their own response.A _Question_ also includes a relationship to the _Value Domain_ to document the associated response criteria for the question. A single response question will have one _Value Domain_ associated with it, while a 'multiple question' may have more than one _Value Domain_.A _Question_ should be designed with re-use in mind, as it can be used in multiple _Questionnaires_. In a national implementation, _Question_ could be further subtyped into: <br/>- QuestionGrid, useful to model questions as grids/tables. It is actually a cube-like structure providing dimension information, labelling options, and response domains attached to one or more cells within the grid. For instance, a two-way table requesting to provide turnovers broken down by affiliates.<br/>- QuestionItem, a simple question that is necessarily one dimensional. For example: "How old are you?" | Multiple Question |
 
 * **Attributes**
 
@@ -1500,7 +1500,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Questionnaire Component | Exchange | record of the flow of a _Questionnaire_ _Specification _and its use of _Questions, Question Blocks_ and _Statements_ | A _Questionnaire Component_ defines the structure of the _Questionnaire Specification_, as a combination of _Questions, Question Blocks_ and _Statements. _It is the class which groups together all the components of a_ Questionnaire.__A Questionnaire Component _is recursive, in that it can refer to other_ Questionnaire Components _and accompanying_ Questionnaire Logic _classes at a lower level. It is only at the top level where the_ Questionnaire Component _links to the_ Questionnaire Specification_. | |
+| Questionnaire Component | Exchange | record of the flow of a _Questionnaire_ _Specification _and its use of _Questions, Question Blocks_ and _Statements_ | A _Questionnaire Component_ defines the structure of the _Questionnaire Specification_, as a combination of _Questions_, _Question Blocks_ and _Statements_. It is the class which groups together all the components of a_ Questionnaire.__A Questionnaire Component _is recursive, in that it can refer to other_ Questionnaire Components _and accompanying_ Questionnaire Logic _classes at a lower level. It is only at the top level where the_ Questionnaire Component _links to the_ Questionnaire Specification_. | |
 
 * **Attributes**
 
@@ -1545,7 +1545,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Register | Exchange | written and complete record containing regular entries of items and details on particular sets of objects | In official statistics, "statistical registers" and "adminisitrative registers" (registers maintained by other organisations, usually administrative data owners) are usually distinguished. In GSIM, the information class "Register" is used to describe both types because the attributes are more or less the same so from the information management point of view, they can be handled as one GSIM class.There is usually a purpose or authority for maintaining the _Register _and each object in the _Register _is described using a pre-defined set of characteristics. Examples include business and population registers as used by statistical organisations. Therefore, from statistical perspective, the _Register _can be interpreted as a set of objects for a given _Population_, updated on a regular basis, containing information on identification, accessibility of _Units _and other attributes. The _Register _contains the current and historical statuses of the _Population _and the causes, effects and sources of alterations in the _Population_.In order to better understand how the _Register_ is used in GSIM, the use cases for the different scenarios are explained. These scenarios are:<br/>- _Register _as_ Information Set_ maintained and regularly updated by the statistical organisation.<br/>- _Register _as_ Information Set_ for survey frames/sample frames.<br/>- _Register _as_ Information Set_ for statistical _Products_.<br/>- _Register _as_ Information Set_ used as direct or auxiliary information for the production of statistics.<br/>- _Register _as_ Information Set_  as a source of administrative information obtained usually from external organisations.
+| Register | Exchange | written and complete record containing regular entries of items and details on particular sets of objects | In official statistics, "statistical registers" and "adminisitrative registers" (registers maintained by other organisations, usually administrative data owners) are usually distinguished. In GSIM, the information class "Register" is used to describe both types because the attributes are more or less the same so from the information management point of view, they can be handled as one GSIM class. There is usually a purpose or authority for maintaining the _Register_ and each object in the _Register_ is described using a pre-defined set of characteristics. Examples include business and population registers as used by statistical organisations. Therefore, from statistical perspective, the _Register_ can be interpreted as a set of objects for a given _Population_, updated on a regular basis, containing information on identification, accessibility of _Units_ and other attributes. The _Register_ contains the current and historical statuses of the _Population_ and the causes, effects and sources of alterations in the _Population_.In order to better understand how the _Register_ is used in GSIM, the use cases for the different scenarios are explained. These scenarios are:<br/>- _Register _as_ Information Set_ maintained and regularly updated by the statistical organisation.<br/>- _Register _as_ Information Set_ for survey frames/sample frames.<br/>- _Register _as_ Information Set_ for statistical _Products_.<br/>- _Register _as_ Information Set_ used as direct or auxiliary information for the production of statistics.<br/>- _Register _as_ Information Set_  as a source of administrative information obtained usually from external organisations.
 
 * **Attributes**
 
@@ -1636,7 +1636,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Data Set | Structure | organised collection of data     | _Data Sets_ could be used to organise a wide variety of content, including observation registers, time series, longitudinal data, survey data, rectangular data sets, event-history data, tables, data tables, registers, data cubes, data warehouses/marts and matrixes.An example of a population unit _Data Set_ (microdata) could be a collection of three Data Records (1212123, 48, American, United Kingdom), (1212111, 38, Hungarian, United Kingdom), and (1212317, 51, Canadian, Mexico), each containing the social security number, age, citizenship and country of birth of an individual. An example of a population dimensional_ Data Set _(aggregate) could be a collection of three entries (Mexico, 2021, 130.3), (United Kingdom, 2021, 67.33), and (Italy, 2022, 60.24), each containing the name of the country, year of interest and population of the country in millions. | Database, data file, file, table |
+| Data Set | Structure | organised collection of data     | _Data Sets_ could be used to organise a wide variety of content, including observation registers, time series, longitudinal data, survey data, rectangular data sets, event-history data, tables, data tables, registers, data cubes, data warehouses/marts and matrixes.An example of a population unit _Data Set_ (microdata) could be a collection of three Data Records (1212123, 48, American, United Kingdom), (1212111, 38, Hungarian, United Kingdom), and (1212317, 51, Canadian, Mexico), each containing the social security number, age, citizenship and country of birth of an individual. An example of a population dimensional _Data Set_ (aggregate) could be a collection of three entries (Mexico, 2021, 130.3), (United Kingdom, 2021, 67.33), and (Italy, 2022, 60.24), each containing the name of the country, year of interest and population of the country in millions. | Database, data file, file, table |
 
 * **Attributes**
 
@@ -1710,7 +1710,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Information Resource | Structure | abstract notion that is any organised collection of information     | Statistical activity uses Information Resources to produce information. There currently are only two concrete sub-classes: _Data Resource_ and_ Referential Metadata Resource_. The _Information Resource_ allows the model to be extended to other types of resource. | |
+| Information Resource | Structure | abstract notion that is any organised collection of information     | Statistical activity uses Information Resources to produce information. There currently are only two concrete sub-classes: _Data Resource_ and _Referential Metadata Resource_. The _Information Resource_ allows the model to be extended to other types of resource. | |
 
 * **Attributes**
 
@@ -1824,7 +1824,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Referential Metadata Set | Structure | organised collection of referential metadata for a given _Referential Metadata Subject Item_     |  Each _Referential Metadata Set _uses a_ Referential Metadata Structure _to define a structured list of_ Referential Metadata Attributes _for a given _Referential Metadata Subject Item_. | |
+| Referential Metadata Set | Structure | organised collection of referential metadata for a given _Referential Metadata Subject Item_     |  Each _Referential Metadata Set_ uses a _Referential Metadata Structure_ to define a structured list of _Referential Metadata Attributes_ for a given _Referential Metadata Subject Item_. | |
 
 
 * **Attributes**
@@ -1837,7 +1837,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Referential Metadata Structure | Structures | structure of an organised collection of referential metadata     | _A Referential Metadata Structure _defines a structured list of _Referential Metadata Attributes _for a given _Referential Metadata Subject_.Examples of _Referential Metadata Structure include structures for describing _quality information and methodologies information (e.g., ESS Standard for Quality Reports Structure) or characteristics of registers as well as a structure of documentation storing information necessarily for internal dataset management (e.g., GDPR status, existence of information on minor)).                | Metadata Structure Definition |
+| Referential Metadata Structure | Structures | structure of an organised collection of referential metadata     | _A Referential Metadata Structure_ defines a structured list of _Referential Metadata Attributes_ for a given _Referential Metadata Subject_. Examples of _Referential Metadata Structure_ include structures for describing quality information and methodologies information (e.g., ESS Standard for Quality Reports Structure) or characteristics of registers as well as a structure of documentation storing information necessarily for internal dataset management (e.g., GDPR status, existence of information on minor)).                | Metadata Structure Definition |
 
 
 * **Attributes**
@@ -1863,7 +1863,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Referential Metadata Subject Item | Structure | actual subject for which referential metadata is reported     | Examples are an actual _Product_ such as Balance of Payments and International Investment Position, Australia, June 2013, or a collection of_ Data Points _such_ _as_ _the _Data Points_ for a single region within a _Data Set_ covering all regions for a country. | |
+| Referential Metadata Subject Item | Structure | actual subject for which referential metadata is reported     | Examples are an actual _Product_ such as Balance of Payments and International Investment Position, Australia, June 2013, or a collection of _Data Points_ such as the _Data Points_ for a single region within a _Data Set_ covering all regions for a country. | |
 
 
 * **Attributes**
@@ -1876,7 +1876,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Unit Data Structure | Structure | structure of an organised collection of unit data     | For example (social security number, country of residence, age, citizenship, country of birth) where the social security number and the country of residence are the identifying components (_Identifier Component_) and the others are measured variables obtained directly or indirectly from the person (_Unit_) and are_ Measure Components_ of the _Logical Record_. | File description, dataset description |
+| Unit Data Structure | Structure | structure of an organised collection of unit data     | For example (social security number, country of residence, age, citizenship, country of birth) where the social security number and the country of residence are the identifying components (_Identifier Component_) and the others are measured variables obtained directly or indirectly from the person (_Unit_) and are _Measure Components_ of the _Logical Record_. | File description, dataset description |
 
 * **Attributes**
 
