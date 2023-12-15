@@ -155,7 +155,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Maintainer | Base | _Role _in which a_ _unit or group of persons within the _Organisation_ is responsible for managing an information class and its metadata | A unit or group of persons with the role of _Maintainer_ is responsible for all administrative and operational issues relating to one or a set of information classes and its metadata (e.g. adding, modifying or deleting metadata about an information class). It is answerable to all stakeholders for all issues related to the information classes under its responsibility. A _Maintainer_ is not a decision-making body. Decisions are made collaboratively among the owners of the artefact. | |
+| Maintainer | Base | _Role_ in which a _unit_ or group of persons within the _Organisation_ is responsible for managing an information class and its metadata | A unit or group of persons with the role of _Maintainer_ is responsible for all administrative and operational issues relating to one or a set of information classes and its metadata (e.g. adding, modifying or deleting metadata about an information class). It is answerable to all stakeholders for all issues related to the information classes under its responsibility. A _Maintainer_ is not a decision-making body. Decisions are made collaboratively among the owners of the artefact. | |
 
 * **Attributes**
 
@@ -167,7 +167,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Organisation | Base | unique framework of authority within which a person or persons act, or are designated to act, towards some purpose | _Organisation _represents a collection of people organised together, often with hierarchical structures. Examples of _Organisation_: national statistics office, international agency | |
+| Organisation | Base | unique framework of authority within which a person or persons act, or are designated to act, towards some purpose | _Organisation_ represents a collection of people organised together, often with hierarchical structures. Examples of _Organisation_: national statistics office, international agency | |
 
 * **Attributes**
 
@@ -179,7 +179,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Owner | Base | _Role _in which a statistical office, authority or other organisation is responsible for defining, specifying, creating and making decisions about the maintenance of a class and/or its metadata | Some information classes may have several _Owners_. | |
+| Owner | Base | _Role_ in which a statistical office, authority or other organisation is responsible for defining, specifying, creating and making decisions about the maintenance of a class and/or its metadata | Some information classes may have several _Owners_. | |
 
 * **Attributes**
 
@@ -204,7 +204,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Software Agent | Base | software that carries out _Process Step _based on _Process Control_ | Examples: google bot | PROV "Software Agent", DDI "Machine" |
+| Software Agent | Base | software that carries out _Process Step_ based on _Process Control_ | Examples: google bot | PROV "Software Agent", DDI "Machine" |
 
 
 * **Attributes**
@@ -227,7 +227,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Assessment | Business | result of the analysis of the quality and effectiveness of any activity undertaken by a statistical organisation and recommendations on how these can be improved | An _Assessmen_t can be of a variety of types. One example may include a gap analysis, where a current state is determined along with what is needed to reach its target state. Alternatively, an _Assessment_ may compare current processes against a set of requirements, for example a new _Statistical Need_ or change in the operating environment.An _Assessment_ can use various classes as inputs, whether they are the main classes that the _Assessment_ is about or auxiliary classes that help accomplish the _Assessment_. | |
+| Assessment | Business | result of the analysis of the quality and effectiveness of any activity undertaken by a statistical organisation and recommendations on how these can be improved | An _Assessment_ can be of a variety of types. One example may include a gap analysis, where a current state is determined along with what is needed to reach its target state. Alternatively, an _Assessment_ may compare current processes against a set of requirements, for example a new _Statistical Need_ or change in the operating environment.An _Assessment_ can use various classes as inputs, whether they are the main classes that the _Assessment_ is about or auxiliary classes that help accomplish the _Assessment_. | |
 
 * **Attributes**
 
@@ -246,7 +246,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Business Case | Business | proposal for a body of work that will deliver outputs designed to achieve outcomes | A _Business Case_ is produced as a result of a detailed consideration of a _Change Definition_. It sets out a plan for how the change described by the _Change Definition_ can be achieved. A _Business Case_ usually comprises various evaluations. The _Business Case_ will specify the stakeholders that are impacted by the _Statistical Need_ or by the different solutions that are required to implement it.A _Business Case_ will provide the reasoning for undertaking a_ Statistical Support Activity _to initiate a new _Statistical Programme Design_ for an existing _Statistical Programme,_ or an entirely new _Statistical Programme_, as well as the details of the change proposed. | |
+| Business Case | Business | proposal for a body of work that will deliver outputs designed to achieve outcomes | A _Business Case_ is produced as a result of a detailed consideration of a _Change Definition_. It sets out a plan for how the change described by the _Change Definition_ can be achieved. A _Business Case_ usually comprises various evaluations. The _Business Case_ will specify the stakeholders that are impacted by the _Statistical Need_ or by the different solutions that are required to implement it.A _Business Case_ will provide the reasoning for undertaking a _Statistical Support Activity_ to initiate a new _Statistical Programme Design_ for an existing _Statistical Programme,_ or an entirely new _Statistical Programme_, as well as the details of the change proposed. | |
 
 * **Attributes**
 
@@ -254,7 +254,7 @@ The information classes defined within this group as as follows:
 | --- | --- | --- | --- |
 | Date Approved | Date when the _Business Case_ was approved | 0..1 | Date |
 | Date Initiated | Date when the _Business Case_ was initiated | 0..1 | Date |
-| Outcomes (objectives) | Outcomes (objectives) that the proposed work in the _Business Case _would achieve | 1..\* | String |
+| Outcomes (objectives) | Outcomes (objectives) that the proposed work in the _Business Case_ would achieve | 1..\* | String |
 | Outputs (deliverables) | Outputs (deliverables) that the proposed work in the _Business Case_ would deliver | 1..\* | String |
 | Type | E.g. new programme, permanent (indefinite) change to existing programme, temporary change to existing programme, cease programme. | 1..\* | ControlledVocabulary |
 
@@ -307,7 +307,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Change Definition | Business | structured, well-defined specification for a proposed change | A related class - the _Statistical Need_ - is a change expression as it has been received by an organisation. A _Statistical Need_ is a raw expression of a proposed change, and is not necessarily well-defined. A _Change Definition_ is created when a _Statistical Need_ is analysed by an organisation, and expresses the raw need in well-defined, structured terms.A _Change Definition_ does not assess the feasibility of the change or propose solutions to deliver the change - this role is satisfied by the _Business Case_ class. The precise structure or organisation of a _Change Definition_ can be further specified by rules or standards local to a given organisation. It also includes the specific_ Concepts_ to be measured and the _Population_ that is under consideration.Once a _Statistical Need_ has been received, the first step is to do the conceptual work to establish what it is we are trying to measure. The final output of this conceptual work is the _Change Definition._The next step is to assess how we are going to make the measurements - to design a solution and put forward a proposal for a body of work that will deliver on the requirements of the original _Statistical Need_. | |
+| Change Definition | Business | structured, well-defined specification for a proposed change | A related class - the _Statistical Need_ - is a change expression as it has been received by an organisation. A _Statistical Need_ is a raw expression of a proposed change, and is not necessarily well-defined. A _Change Definition_ is created when a _Statistical Need_ is analysed by an organisation, and expresses the raw need in well-defined, structured terms.A _Change Definition_ does not assess the feasibility of the change or propose solutions to deliver the change - this role is satisfied by the _Business Case_ class. The precise structure or organisation of a _Change Definition_ can be further specified by rules or standards local to a given organisation. It also includes the specific _Concepts_ to be measured and the _Population_ that is under consideration.Once a _Statistical Need_ has been received, the first step is to do the conceptual work to establish what it is we are trying to measure. The final output of this conceptual work is the _Change Definition_. The next step is to assess how we are going to make the measurements - to design a solution and put forward a proposal for a body of work that will deliver on the requirements of the original _Statistical Need_. | |
 
 * **Attributes**
 
@@ -407,7 +407,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Process Control Design | Business | specification of the decision points required during the execution of a _Business Process_ | The design of a _Process Control_ typically takes place as part of the design of the process itself. This involves determining the conditional routing between the various sub-processes and services used by the executing process associated with the _Process_ _Control _and specified by the _Process Control Design._It is possible to define a _Process Control_ where the next step in the_ Process Step_ that will be executed is a fixed value rather than a "choice" between two or more possibilities. Where such a design would be appropriate, this feature allows, for example, initiation of a step in the  _Process Step_ representing the GSBPM Process Phase (5) to always lead to initiation of GSBPM sub-process Integrate Data (5.1) as the next step.This allows a process designer to divide a _Business Process_ into logical steps (for example, where each step performs a specific _Business Function_ through re-use of a _Business Service_) even if these Process Steps will always follow each other in the same order. In all cases, the _Process Control_ _Design_ defines and the _Process Control_ manages the flow between _Process Steps_, even where the flow is "trivial". _Process Design _is left to focus entirely on the design of the process itself, not sequencing between steps. | |
+| Process Control Design | Business | specification of the decision points required during the execution of a _Business Process_ | The design of a _Process Control_ typically takes place as part of the design of the process itself. This involves determining the conditional routing between the various sub-processes and services used by the executing process associated with the _Process Control_ and specified by the _Process Control Design._It is possible to define a _Process Control_ where the next step in the_ Process Step_ that will be executed is a fixed value rather than a "choice" between two or more possibilities. Where such a design would be appropriate, this feature allows, for example, initiation of a step in the  _Process Step_ representing the GSBPM Process Phase (5) to always lead to initiation of GSBPM sub-process Integrate Data (5.1) as the next step.This allows a process designer to divide a _Business Process_ into logical steps (for example, where each step performs a specific _Business Function_ through re-use of a _Business Service_) even if these Process Steps will always follow each other in the same order. In all cases, the _Process Control_ _Design_ defines and the _Process Control_ manages the flow between _Process Steps_, even where the flow is "trivial". _Process Design_ is left to focus entirely on the design of the process itself, not sequencing between steps. | |
 
 * **Attributes**
 
@@ -419,7 +419,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Process Design | Business | specification of each _Process Step_ and description of their arrangement in a _Business Process_ needed to perform a _Business Function_ | A _Process Design_ is the design time specification of a _Process Step_ that is performed as part of a run-time _Business Service_. A _Process Step_ can be as big or small as the designer of a particular _Business Service_ chooses. From a design perspective, one _Process Step_ can contain "sub-steps", each of which is conceptualised as a (smaller) _Process Step_ in its own right. Each of those "sub-steps" may contain "sub-steps" within them and so on. It is a decision for the process designer to what extent to subdivide steps. At some level it will be appropriate to consider a _Process Step_ to be a discrete task without warranting further subdivision. At that level the _Process Step_ is designed to process particular _Process Inputs,_ according to a particular_ Process Method_, to produce particular _Process Output_s. The flow between a _Process Step _and any sub steps is managed via _Process Control_. | |
+| Process Design | Business | specification of each _Process Step_ and description of their arrangement in a _Business Process_ needed to perform a _Business Function_ | A _Process Design_ is the design time specification of a _Process Step_ that is performed as part of a run-time _Business Service_. A _Process Step_ can be as big or small as the designer of a particular _Business Service_ chooses. From a design perspective, one _Process Step_ can contain "sub-steps", each of which is conceptualised as a (smaller) _Process Step_ in its own right. Each of those "sub-steps" may contain "sub-steps" within them and so on. It is a decision for the process designer to what extent to subdivide steps. At some level it will be appropriate to consider a _Process Step_ to be a discrete task without warranting further subdivision. At that level the _Process Step_ is designed to process particular _Process Inputs,_ according to a particular _Process Method_, to produce particular _Process Outputs_. The flow between a _Process Step_ and any sub steps is managed via _Process Control_. | |
 
 * **Attributes**
 
@@ -464,7 +464,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Process Input Specification | Business | set of information classes that function as inputs to a_ Process Design_ | The _Process Input Specification_ enumerates the _Process Inputs_ required at the time a _Process Design_ is executed. For example, if five different _Process Inputs_ are required, the _Process Input Specification_ will describe each of the five inputs. For each required _Process Input_ the _Process Input Specification_ will record the type of information class (based on GSIM) which will be used as the _Process Input_ (example types might be a _Data Set_ or a _Statistical Classification_).The _Process Input_ to be provided at the time of _Process Step_ execution will then be a specific instance of the type of information classspecified by the _Process Input Specification_. For example, if a _Process Input Specification_ requires a _Data Set_ then the corresponding _Process Input_ provided at the time of _Process Step_ execution will be a particular _Data Set__ **.** _ | |
+| Process Input Specification | Business | set of information classes that function as inputs to a _Process Design_ | The _Process Input Specification_ enumerates the _Process Inputs_ required at the time a _Process Design_ is executed. For example, if five different _Process Inputs_ are required, the _Process Input Specification_ will describe each of the five inputs. For each required _Process Input_ the _Process Input Specification_ will record the type of information class (based on GSIM) which will be used as the _Process Input_ (example types might be a _Data Set_ or a _Statistical Classification_).The _Process Input_ to be provided at the time of _Process Step_ execution will then be a specific instance of the type of information classspecified by the _Process Input Specification_. For example, if a _Process Input Specification_ requires a _Data Set_ then the corresponding _Process Input_ provided at the time of _Process Step_ execution will be a particular _Data Set_. | |
 
 * **Attributes**
 
@@ -546,7 +546,7 @@ The information classes defined within this group as as follows:
 
 | **Name** | **Description** | **Cardinality** | **Value Type** |
 | --- | --- | --- | --- |
-| Is Comprehensive | Used to indicate whether this_ Process Step _has sub-_Process Steps_. | 0..1 | Boolean |
+| Is Comprehensive | Used to indicate whether this _Process Step_ has sub-_Process Steps_. | 0..1 | Boolean |
 
 \* Attributes inherited from super-type(s) are not included here
 
@@ -568,7 +568,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Process Support Input | Business | _Process Input_ that influences the work performed by the _Process Step Instance_ by providing additional information that affects the way _Core Input _is used | _Process Support Input_ is a sub-type of _Process Input_.<br/>- Examples of _Process Support Inputs_ could include: A technical or methodological handbook which can be used as a reference to assist the work performed (e.g. data editing, coding and classification)<br/>- An auxiliary _Data Set_ which will influence imputation for, or editing of, a primary_ Data Set_ which has been submitted to the_ Process Step_ as the Core Input<br/>- A _Provision Agreement_ which can be used as a supporting document<br/>- A repository or inventory of _Process Methods_ or software system / architecture that are approved in the _Organisation _that could be used as reference
+| Process Support Input | Business | _Process Input_ that influences the work performed by the _Process Step Instance_ by providing additional information that affects the way _Core Input_ is used | _Process Support Input_ is a sub-type of _Process Input_.<br/>- Examples of _Process Support Inputs_ could include: A technical or methodological handbook which can be used as a reference to assist the work performed (e.g. data editing, coding and classification)<br/>- An auxiliary _Data Set_ which will influence imputation for, or editing of, a primary _Data Set_ which has been submitted to the _Process Step_ as the Core Input<br/>- A _Provision Agreement_ which can be used as a supporting document<br/>- A repository or inventory of _Process Methods_ or software system / architecture that are approved in the _Organisation_ that could be used as reference
 
 * **Attributes**
 
@@ -585,7 +585,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Reference Document | Business | document that is used to support, inform and guide the _Business Processes_ | The examples of _Reference Documents_ include: methodological handbooks, standards, legislation, corporate policies/guideline and best practices. _Reference Documents_ are often unstructured and can be translated into _Rules _(e.g., quality requirements set by legislation can be written as a Rule). Note that documents can be physical (e.g., books) or electronical. The documents can be formal in terms of content (e.g., laws) or in terms of format (e.g., XML). | |
+| Reference Document | Business | document that is used to support, inform and guide the _Business Processes_ | The examples of _Reference Documents_ include: methodological handbooks, standards, legislation, corporate policies/guideline and best practices. _Reference Documents_ are often unstructured and can be translated into _Rules_ (e.g., quality requirements set by legislation can be written as a Rule). Note that documents can be physical (e.g., books) or electronical. The documents can be formal in terms of content (e.g., laws) or in terms of format (e.g., XML). | |
 
 * **Attributes**
 
@@ -633,7 +633,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Statistical Programme | Business | set of activities to produce statistics on a given_ Universe_ within the context of_ Subject Fields_ | The _Statistical Programme_ provides the environmental context in which activities to produce statistics within a statistical organisation are conducted. _Statistical Programme_ will usually correspond to an ongoing activity such as a survey or output series covered by GSBPM phase 4-7. Some examples of _Statistical Programme_ are:<br/>- Labour Force Survey<br/>- Multipurpose Household Survey<br/>- National Accounts<br/>- Demography<br/>- Overseas Arrivals and Departures<br/>Related to the _Statistical Programme_ class, there are _Statistical Programme Design_ and _Statistical Programme Cycle_ classes that hold the detailed information about the design and conduct of the _Business Process_. A _Statistical Programme_ could take as inputs other _Statistical Programmes'_ outputs, e.g. national accounts. These activities are all carried out to generate _Products_.In the case of the traditional approach, an organisation has received a _Statistical Need_ and produced a _Change Definition_ and an approved _Business Case_. The _Business Case_ will specify either a change to the design or methodology of an existing _Statistical Programme_, which will result in a new _Statistical Programme Design_; or a change to one or more existing _Statistical Programmes_ (for example, to add an additional objective to the _Statistical Programme_); or result in a new _Statistical Programme_ being created.This does not include statistical support functions such as metadata management, data management (and other overarching GSBPM processes) and design functions. These activities are conducted as part of _Statistical Support Activity_.
+| Statistical Programme | Business | set of activities to produce statistics on a given _Universe_ within the context of _Subject Fields_ | The _Statistical Programme_ provides the environmental context in which activities to produce statistics within a statistical organisation are conducted. _Statistical Programme_ will usually correspond to an ongoing activity such as a survey or output series covered by GSBPM phase 4-7. Some examples of _Statistical Programme_ are:<br/>- Labour Force Survey<br/>- Multipurpose Household Survey<br/>- National Accounts<br/>- Demography<br/>- Overseas Arrivals and Departures<br/>Related to the _Statistical Programme_ class, there are _Statistical Programme Design_ and _Statistical Programme Cycle_ classes that hold the detailed information about the design and conduct of the _Business Process_. A _Statistical Programme_ could take as inputs other _Statistical Programmes'_ outputs, e.g. national accounts. These activities are all carried out to generate _Products_.In the case of the traditional approach, an organisation has received a _Statistical Need_ and produced a _Change Definition_ and an approved _Business Case_. The _Business Case_ will specify either a change to the design or methodology of an existing _Statistical Programme_, which will result in a new _Statistical Programme Design_; or a change to one or more existing _Statistical Programmes_ (for example, to add an additional objective to the _Statistical Programme_); or result in a new _Statistical Programme_ being created.This does not include statistical support functions such as metadata management, data management (and other overarching GSBPM processes) and design functions. These activities are conducted as part of _Statistical Support Activity_.
 
 * **Attributes**
 
@@ -655,7 +655,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Statistical Programme Cycle | Business | iteration of a _Statistical Programme_ for a given _Population_ | A _Statistical Programme Cycle_ documents the execution of an iteration of a _Statistical Programme_ according to the associated _Statistical Programme Design_ for a given _Population _(e.g., certain reference period, geography). It identifies the activities that are undertaken as a part of the cycle and the specific resources required and processes used and description of relevant methodological information used in this cycle defined by the _Statistical Programme Design_. | |
+| Statistical Programme Cycle | Business | iteration of a _Statistical Programme_ for a given _Population_ | A _Statistical Programme Cycle_ documents the execution of an iteration of a _Statistical Programme_ according to the associated _Statistical Programme Design_ for a given _Population_ (e.g., certain reference period, geography). It identifies the activities that are undertaken as a part of the cycle and the specific resources required and processes used and description of relevant methodological information used in this cycle defined by the _Statistical Programme Design_. | |
 
 * **Attributes**
 
@@ -672,13 +672,13 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Statistical Programme Design | Business | specification of the set of activities undertaken to investigate characteristics of a given _Population_ | The _Statistical Programme Design _takes into account requirements such as resource, policy and compliance, specifies new processes, the use of existing ones and the description of relevant methodological information about that set of activities. It is a series of classes that provide the operational context in which a set of _Business Processes_ is conducted. A simple example is where a _Statistical Programme _relates to a single survey, for example, the Labour Force Survey. The _Statistical Programme _will have a series of _Statistical Programme Design _classes that describe the methodology and design used throughout the life of the survey. When a methodological change is made to the survey, a new _Statistical Programme Design_ is created to record the details of the new design. | |
+| Statistical Programme Design | Business | specification of the set of activities undertaken to investigate characteristics of a given _Population_ | The _Statistical Programme Design_ takes into account requirements such as resource, policy and compliance, specifies new processes, the use of existing ones and the description of relevant methodological information about that set of activities. It is a series of classes that provide the operational context in which a set of _Business Processes_ is conducted. A simple example is where a _Statistical Programme_ relates to a single survey, for example, the Labour Force Survey. The _Statistical Programme_ will have a series of _Statistical Programme Design_ classes that describe the methodology and design used throughout the life of the survey. When a methodological change is made to the survey, a new _Statistical Programme Design_ is created to record the details of the new design. | |
 
 * **Attributes**
 
 | **Name** | **Description** | **Cardinality** | **Value Type** |
 | --- | --- | --- | --- |
-| Conceptual Framework | Description of the conceptual framework for the _Statistical Programme _(e.g., SNA). | 0..\* | String |
+| Conceptual Framework | Description of the conceptual framework for the _Statistical Programme_ (e.g., SNA). | 0..\* | String |
 | Status | Extensible redefined list (e.g., New Proposal, Under Development, Current, Completed, Cancelled, Transferred to Another Organisation). | 1..1 | ControlledVocabulary |
 
 \* Attributes inherited from super-type(s) are not included here
@@ -689,7 +689,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Statistical Support Activity | Business | activity that supports statistical production | This type of activity will include such functions as metadata management, data management, methodological research, and design functions. These activities correspond to the overarching processes in the GSBPM, and Corporate Support in GAMSO, as well as activities to create new or change existing _Statistical Programmes which are covered by GSBPM phase 1-3, _thus creating or updating _Statistical Programme Designs._ | |
+| Statistical Support Activity | Business | activity that supports statistical production | This type of activity will include such functions as metadata management, data management, methodological research, and design functions. These activities correspond to the overarching processes in the GSBPM, and Corporate Support in GAMSO, as well as activities to create new or change existing _Statistical Programmes_ which are covered by GSBPM phase 1-3, _thus creating or updating _Statistical Programme Designs._ | |
 
 * **Attributes**
 
@@ -718,7 +718,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Category | Concept | _Concept_ whose role is to extensionally define and measure a characteristic     | _Categories _for the _Concept_ of sex include: Male, FemaleNote: An extensional definition is a description of a _Concept_ by enumerating all of its subordinate _Concepts_ under one criterion or sub-division.For example - the Noble Gases (in the periodic table) are extensionally defined by the set of elements including Helium, Neon, Argon, Krypton, Xenon, Radon. (ISO 1087-1) | class |
+| Category | Concept | _Concept_ whose role is to extensionally define and measure a characteristic     | _Categories_ for the _Concept_ of sex include: Male, FemaleNote: An extensional definition is a description of a _Concept_ by enumerating all of its subordinate _Concepts_ under one criterion or sub-division.For example - the Noble Gases (in the periodic table) are extensionally defined by the set of elements including Helium, Neon, Argon, Krypton, Xenon, Radon. (ISO 1087-1) | class |
 
 * **Attributes**
 
@@ -730,7 +730,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Category Item | Concept | type of _Node _exclusive to a_ Category Set _that contains a single _Category  _ | A _Category Item_ contains the meaning of a _Category_ without any associated representation. (For example: "Male") | |
+| Category Item | Concept | type of _Node_ exclusive to a _Category Set_ that contains a single _Category_ | A _Category Item_ contains the meaning of a _Category_ without any associated representation. (For example: "Male") | |
 
 * **Attributes**
 
@@ -742,7 +742,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Category Set | Concept | type of _Node Set _for grouping _Categories _via _Category Items_ | The _Categories_ in a _Category Set_ typically have no assigned _Designations_ (_Codes_).For example: Male, Female | |
+| Category Set | Concept | type of _Node Set_ for grouping _Categories_ via _Category Items_ | The _Categories_ in a _Category Set_ typically have no assigned _Designations_ (_Codes_).For example: Male, Female | |
 
 * **Attributes**
 
@@ -754,7 +754,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Classification Family | Concept | group of _Classification Series _based on a common Concept (e.g. economic activity)      | Different classification databases may use different types of _Classification Families_ and have different names for the families, as no standard has been agreed upon. | |
+| Classification Family | Concept | group of _Classification Series_ based on a common Concept (e.g. economic activity)      | Different classification databases may use different types of _Classification Families_ and have different names for the families, as no standard has been agreed upon. | |
 
 * **Attributes**
 
@@ -785,7 +785,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Classification Index Entry | Concept | word or a short text (e.g. the name of a locality, an economic activity or an occupational title) describing a type of object/unit or object property to which a _Classification Item _applies, together with the code of the corresponding_ Classification Item_ | A _Classification Item_ is a subtype of _Node_. The relationship between _Classification Item_ and _Classification Index Entry_ can also be extended to include the other _Node_ types - _Code Item_ and _Category Item_.Each _Classification Index Entry_ typically refers to one item of the _Statistical Classification_. Although a _Classification Index Entry _may be associated with a _Classification Item_ at any _Level_ of a _Statistical Classification_, _Classification Index Entries_ are normally associated with items at the lowest _Level_. | |
+| Classification Index Entry | Concept | word or a short text (e.g. the name of a locality, an economic activity or an occupational title) describing a type of object/unit or object property to which a _Classification Item _applies, together with the code of the corresponding_ Classification Item_ | A _Classification Item_ is a subtype of _Node_. The relationship between _Classification Item_ and _Classification Index Entry_ can also be extended to include the other _Node_ types - _Code Item_ and _Category Item_.Each _Classification Index Entry_ typically refers to one item of the _Statistical Classification_. Although a _Classification Index Entry_ may be associated with a _Classification Item_ at any _Level_ of a _Statistical Classification_, _Classification Index Entries_ are normally associated with items at the lowest _Level_. | |
 
 * **Attributes**
 
@@ -802,7 +802,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Classification Item | Concept | type of _Node _exclusive to a _Statistical Classification_ that combines a _Category _at a certain _Level _with a _Code _that represents it.      | A _Classification Item _defines the content and borders of the associated _Category_.A _Unit _can be classified to one and only one item at each _Level _of a _Statistical Classification_._Categories _are used to create sub-populations and must be mutually exclusive when contained into a _Statistical Classification._ | |
+| Classification Item | Concept | type of _Node_ exclusive to a _Statistical Classification_ that combines a _Category_ at a certain _Level_ with a _Code_ that represents it.      | A _Classification Item_ defines the content and borders of the associated _Category_. A _Unit_ can be classified to one and only one item at each _Level_ of a _Statistical Classification_._Categories_ are used to create sub-populations and must be mutually exclusive when contained into a _Statistical Classification._ | |
 
 * **Attributes**
 
@@ -822,7 +822,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Classification Series | Concept | ensemble of one or more _Statistical Classifications_, based on the same concept, and related to each other as versions or updates | Typically, these_ Statistical Classifications_ have the same name (e.g., ISIC or ISCO). | |
+| Classification Series | Concept | ensemble of one or more _Statistical Classifications_, based on the same concept, and related to each other as versions or updates | Typically, these _Statistical Classifications_ have the same name (e.g., ISIC or ISCO). | |
 
 * **Attributes**
 
@@ -865,7 +865,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Code List | Concept | type of _Node Set _for grouping pairs of _Categories _and their _Codes _via _Code Items _  | Similar _Code Lists_ can be grouped together (via the "relates to" relationship inherited from _Node Set_).A _Code List_ provides a predefined set of permissible values for an _Enumerated Value Domain_
+| Code List | Concept | type of _Node Set_ for grouping pairs of _Categories_ and their _Codes_ via _Code Items_  | Similar _Code Lists_ can be grouped together (via the "relates to" relationship inherited from _Node Set_).A _Code List_ provides a predefined set of permissible values for an _Enumerated Value Domain_
 
 * **Attributes**
 
@@ -921,7 +921,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Conceptual Variable | Concept | use of a Concept as a characteristic of_ Unit Type_ intended to be observed | The _Conceptual Variable_ combines the meaning of a _Concept_ with a _Unit Type_, to define the characteristic that is to be measured.Here are 3 examples:<br/>- Sex of person<br/>- Number of employees<br/>- Value of production
+| Conceptual Variable | Concept | use of a Concept as a characteristic of _Unit Type_ intended to be observed | The _Conceptual Variable_ combines the meaning of a _Concept_ with a _Unit Type_, to define the characteristic that is to be measured.Here are 3 examples:<br/>- Sex of person<br/>- Number of employees<br/>- Value of production
 
 * **Attributes**
 
@@ -933,7 +933,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Correspondence Table | Concept | set of _Maps _between the_ Classification Items _of two _Statistical Classifications_ | These are typically: two versions from the same _Classification Series_; _Statistical Classifications_ from different_ Classification Series_; a variant and the version on which it is based; or, different versions of a variant. In the first and last examples, the _Correspondence Table_ facilitates comparability over time. Correspondence relationships are shown in both directions.A _Statistical Classification_ is a subtype of _Node Set_. The relationship between _Statistical Classification_ and _Correspondence Table_ can also be extended to include the other _Node Sets_ - _Code List_ and _Category Set_. | |
+| Correspondence Table | Concept | set of _Maps _between the_ Classification Items _of two _Statistical Classifications_ | These are typically: two versions from the same _Classification Series_; _Statistical Classifications_ from different _Classification Series_; a variant and the version on which it is based; or, different versions of a variant. In the first and last examples, the _Correspondence Table_ facilitates comparability over time. Correspondence relationships are shown in both directions.A _Statistical Classification_ is a subtype of _Node Set_. The relationship between _Statistical Classification_ and _Correspondence Table_ can also be extended to include the other _Node Sets_ - _Code List_ and _Category Set_. | |
 
 * **Attributes**
 
@@ -976,7 +976,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Described Value Domain | Concept | _Value Domain _defined by an expression | For example: all real decimal numbers between 0 and 1. Described Value Domain is a synonym for non-enumerated value domain (source: GSIM) | |
+| Described Value Domain | Concept | _Value Domain_ defined by an expression | For example: all real decimal numbers between 0 and 1. Described Value Domain is a synonym for non-enumerated value domain (source: GSIM) | |
 
 * **Attributes**
 
@@ -992,7 +992,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Designation | Concept | association of a _Concept _with a sign that denotes it     | _Designation _is the name given to an object for identification.     . | |
+| Designation | Concept | association of a _Concept_ with a sign that denotes it     | _Designation_ is the name given to an object for identification.     . | |
 
 * **Attributes**
 
@@ -1004,7 +1004,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Enumerated Conceptual Domain | Concept | _Conceptual Domain_ expressed as a list of _Categories_     | For example, the Sex _Categorie_s: 'Male' and 'Female' | |
+| Enumerated Conceptual Domain | Concept | _Conceptual Domain_ expressed as a list of _Categories_     | For example, the Sex _Categories_: 'Male' and 'Female' | |
 
 * **Attributes**
 
@@ -1016,7 +1016,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Enumerated Value Domain | Concept | _Value Domain _expressed as a list of _Categories _and associated _Codes     _ | Example - Sex Codes \<m, male\>; \<f, female\>; \<o, other\>. | |
+| Enumerated Value Domain | Concept | _Value Domain _expressed as a list of _Categories _and associated _Codes_ | Example - Sex Codes \<m, male\>; \<f, female\>; \<o, other\>. | |
 
 * **Attributes**
 
@@ -1041,7 +1041,7 @@ The information classes defined within this group as as follows:
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
 | Level | Concept |
- | set of _Nodes _in a hierarchical _Node Set_ in which 1) each _Node _in the set is the same number of parent-child steps away from the root _Node_ in the hierarchy, and 2) the set is defined by a unifying _Concept_ | |
+ | set of _Nodes_ in a hierarchical _Node Set_ in which 1) each _Node _in the set is the same number of parent-child steps away from the root _Node_ in the hierarchy, and 2) the set is defined by a unifying _Concept_ | |
 
 * **Attributes**
 
@@ -1148,7 +1148,7 @@ The information classes defined within this group as as follows:
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
 | Represented Variable | Concepts |      combination of a characteristic of a population to be measured and how that measure will be represented     | The measure applies to quantitative, categorical, and descriptive _Conceptual Variable_.Examples:
- The pair (Number of Employees, Integer), where "Number of Employees" is the characteristic of the population (_Conceptual Variable)_ and "Integer" is how that measure will be represented (_Substantive_ _Value Domain). _If the _Conceptual Variable_ is "Industry" and the_ Substantive Value Domain_ is "Level 1 of NACE 2007", the pair is (Industry, NACE 2007 - Level 1).The _Represented Variable _"Sex of Person [1,2,3]", has the _Conceptual Variable_ (Sex of Person) and the representation (1=Male, 2=Female, 3=Other). | |
+ The pair (Number of Employees, Integer), where "Number of Employees" is the characteristic of the population (_Conceptual Variable)_ and "Integer" is how that measure will be represented (_Substantive_ _Value Domain). _If the _Conceptual Variable_ is "Industry" and the_ Substantive Value Domain_ is "Level 1 of NACE 2007", the pair is (Industry, NACE 2007 - Level 1).The _Represented Variable_ "Sex of Person [1,2,3]", has the _Conceptual Variable_ (Sex of Person) and the representation (1=Male, 2=Female, 3=Other). | |
 
 * **Attributes**
 
@@ -1160,7 +1160,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Sentinel Value Domain | Concepts | _Value Domain _containing sentinel values, i.e. processing-related special values       | A sentinel value is one used for processing and with no subject matter content, such as missing or refused._Sentinel Value Domains_ can be enumerated (listed) or described. A _Value Domain _expressed as a list of _Categories _for sentinel values or a description thereof. The scope and the meaning of the possible values are defined within the frame of the_ Conceptual Domain_ that the _Sentinel Value Domain_ is associated with.Separating the sentinel values from the substantive ones allows a large reduction in the number of _Value Domains_, and thus _Represented Variables_ and _Instance Variables_, that need to be maintained.Use of generic codes is recommended for _Concepts_ which appear in many, if not, all _Code Lists_, e.g. \<S\_X, Unspecified\>, \<S\_Z, Not applicable\>, \< S\_R, Refusal\>, \<S\_U, Unknown\> | |
+| Sentinel Value Domain | Concepts | _Value Domain_ containing sentinel values, i.e. processing-related special values       | A sentinel value is one used for processing and with no subject matter content, such as missing or refused._Sentinel Value Domains_ can be enumerated (listed) or described. A _Value Domain_ expressed as a list of _Categories _for sentinel values or a description thereof. The scope and the meaning of the possible values are defined within the frame of the_ Conceptual Domain_ that the _Sentinel Value Domain_ is associated with.Separating the sentinel values from the substantive ones allows a large reduction in the number of _Value Domains_, and thus _Represented Variables_ and _Instance Variables_, that need to be maintained.Use of generic codes is recommended for _Concepts_ which appear in many, if not, all _Code Lists_, e.g. \<S\_X, Unspecified\>, \<S\_Z, Not applicable\>, \< S\_R, Refusal\>, \<S\_U, Unknown\> | |
 
 * **Attributes**
 
@@ -1172,7 +1172,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Statistical Classification  | Concept | hierarchically organised set of mutually exclusive and jointly exhaustive _Categories _that share the same or similar characteristics, used for meaningfully grouping the objects or units in the population of interest       | The _Categories_ are defined with reference to one or more characteristics of a particular population of units of observation. A _Statistical Classification_ may have a flat, linear structure or may be hierarchically structured, such that all _Categories_ at lower _Levels_ are sub-_Categories_ of _Categories_ at the next _Level_ up. _Categories_ in _Statistical Classifications_ are represented in the information model as _Classification Items_. | |
+| Statistical Classification  | Concept | hierarchically organised set of mutually exclusive and jointly exhaustive _Categories_ that share the same or similar characteristics, used for meaningfully grouping the objects or units in the population of interest       | The _Categories_ are defined with reference to one or more characteristics of a particular population of units of observation. A _Statistical Classification_ may have a flat, linear structure or may be hierarchically structured, such that all _Categories_ at lower _Levels_ are sub-_Categories_ of _Categories_ at the next _Level_ up. _Categories_ in _Statistical Classifications_ are represented in the information model as _Classification Items_. | |
 
 * **Attributes**
 
@@ -1201,7 +1201,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Subject Field | Concept | field of knowledge under which a set of _Concepts _and their _Designations_ is used | For example, labour market, environmental expenditure, tourism, etc. | subject area, theme |
+| Subject Field | Concept | field of knowledge under which a set of _Concepts_ and their _Designations_ is used | For example, labour market, environmental expenditure, tourism, etc. | subject area, theme |
 
 * **Attributes**
 
@@ -1213,7 +1213,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Substantive Value Domain | Concept | _Value Domain _containing substantive values, where a substantive value is subject matter related       | A substantive value is one representing subject matter content, such as \<f, female\> in a gender classification.The scope and the meaning of the possible values are defined within the frame of the _Conceptual Domain_ that the_ Substantive Value Domain _is associated with.Example: \<0, Pre-primary\>, \<1, Primary\>, \<2, Lower secondary\>, \< 3, Upper secondary\>, \<4, Post-secondary non-tertiary\>, \<5, First stage of tertiary education\>, \<6, Second stage of tertiary education\> where the scope and meaning of the values are defined within _Categories_ for levels of education. | |
+| Substantive Value Domain | Concept | _Value Domain_ containing substantive values, where a substantive value is subject matter related       | A substantive value is one representing subject matter content, such as \<f, female\> in a gender classification.The scope and the meaning of the possible values are defined within the frame of the _Conceptual Domain_ that the_ Substantive Value Domain _is associated with.Example: \<0, Pre-primary\>, \<1, Primary\>, \<2, Lower secondary\>, \< 3, Upper secondary\>, \<4, Post-secondary non-tertiary\>, \<5, First stage of tertiary education\>, \<6, Second stage of tertiary education\> where the scope and meaning of the values are defined within _Categories_ for levels of education. | |
 
 * **Attributes**
 
@@ -1237,7 +1237,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Unit Type | Concept | class or group of _Units _based on a single characteristic | A _Unit Type_ is used to describe a class or group of _Units_ based on a single characteristic, but with no specification of time and geography. For example, the _Unit Type_ of "Person" groups together a set of _Units_ based on the characteristic that they are 'Persons'.It concerns not only _Unit Types_ used in dissemination, but anywhere in the statistical process. E.g. using administrative data might involve the use of a fiscal unit. | Object class (ISO 11179) |
+| Unit Type | Concept | class or group of _Units_ based on a single characteristic | A _Unit Type_ is used to describe a class or group of _Units_ based on a single characteristic, but with no specification of time and geography. For example, the _Unit Type_ of "Person" groups together a set of _Units_ based on the characteristic that they are 'Persons'.It concerns not only _Unit Types_ used in dissemination, but anywhere in the statistical process. E.g. using administrative data might involve the use of a fiscal unit. | Object class (ISO 11179) |
 
 * **Attributes**
 
@@ -1308,7 +1308,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Exchange Instrument | Exchange | concrete and usable tool to exchange information  | The _Exchange Instrument_ is a tool to receive or send information and is used for external and internal purposes.Different _Exchange Instruments _are used for data acquisition and dissemination. An example of E_xchange instrument _for receiving information is _Questionnaire_. An example of _Exchange Instrument _for sending information is _Dissemination Instrument_. Additional _Exchange Instruments _can be added to the model as needed by individual organisations. | |
+| Exchange Instrument | Exchange | concrete and usable tool to exchange information  | The _Exchange Instrument_ is a tool to receive or send information and is used for external and internal purposes.Different _Exchange Instruments_ are used for data acquisition and dissemination. An example of _Exchange instrument_ for receiving information is _Questionnaire_. An example of _Exchange Instrument_ for sending information is _Dissemination Instrument_. Additional _Exchange Instruments_ can be added to the model as needed by individual organisations. | |
 
 * **Attributes**
 
@@ -1336,7 +1336,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Information Consumer | Exchange | _Role _that entails consuming data and information | The _Information Consumer_ accesses a set of information in a _Product _that is made available via a _Dissemination Instrument_. The _Information Consumer_ subscribes to the _Provision Agreement_, which sets out conditions of access. The _Information Consumer_ can be defined in a broad sense with a persona concept (group of Individuals) without specific details. | |
+| Information Consumer | Exchange | _Role_ that entails consuming data and information | The _Information Consumer_ accesses a set of information in a _Product_ that is made available via a _Dissemination Instrument_. The _Information Consumer_ subscribes to the _Provision Agreement_, which sets out conditions of access. The _Information Consumer_ can be defined in a broad sense with a persona concept (group of Individuals) without specific details. | |
 
 * **Attributes**
 
@@ -1405,7 +1405,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Output Specification | Exchange | outline or description of how _Information Sets _are presented and arranged in _Products _for _Information Consumers_ | The _Output Specification_ specifies _Products_ and uses the _Presentations_ they contain. The _Output Specification_ may be fully defined during the design process (such as in a paper publication or a predefined web report), or may be a combination of designed specifications supplemented by user selections (such as in an online data query tool). | |
+| Output Specification | Exchange | outline or description of how _Information Sets_ are presented and arranged in _Products_ for _Information Consumers_ | The _Output Specification_ specifies _Products_ and uses the _Presentations_ they contain. The _Output Specification_ may be fully defined during the design process (such as in a paper publication or a predefined web report), or may be a combination of designed specifications supplemented by user selections (such as in an online data query tool). | |
 
 * **Attributes**
 
@@ -1417,7 +1417,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Presentation | Exchange | way data and referential metadata are presented     | _Presentations_ present data and referential metadata from _Information Sets_.  _Presentation_ can be used by an _Output Specification to specify how Information Set in Product is presented._<br/>_Presentation_ can be in different forms; e.g. tables, graphs, structured data files. Examples:<br/>- A table of data. Based on a _DataSet_, the related _Data Structure_ is used to label the column and row headings for the table. The _Data Set_ is used to populate the cells in the table. Reference metadata is used to populate footnotes and cell notes on the table. Confidentiality rules are applied to the _Data Set_ to suppress any disclosive cells.<br/>- A data file based on a standard (e.g. SDMX).<br/>- A PDF document describing a _Statistical Classification_.<br/>- Any structural metadata object expressed in a standard format (e.g. DDI 3.1 XML).<br/>- A list of _Products _or services (e.g. a product catalogue or a web services description language (WSDL) file).<br/>- A web page containing _Statistical Classifications_, descriptions of _Conceptual Variables_, etc.
+| Presentation | Exchange | way data and referential metadata are presented     | _Presentations_ present data and referential metadata from _Information Sets_.  _Presentation_ can be used by an _Output Specification to specify how Information Set in Product is presented._<br/>_Presentation_ can be in different forms; e.g. tables, graphs, structured data files. Examples:<br/>- A table of data. Based on a _DataSet_, the related _Data Structure_ is used to label the column and row headings for the table. The _Data Set_ is used to populate the cells in the table. Reference metadata is used to populate footnotes and cell notes on the table. Confidentiality rules are applied to the _Data Set_ to suppress any disclosive cells.<br/>- A data file based on a standard (e.g. SDMX).<br/>- A PDF document describing a _Statistical Classification_.<br/>- Any structural metadata object expressed in a standard format (e.g. DDI 3.1 XML).<br/>- A list of _Products_ or services (e.g. a product catalogue or a web services description language (WSDL) file).<br/>- A web page containing _Statistical Classifications_, descriptions of _Conceptual Variables_, etc.
 
 * **Attributes**
 
@@ -1470,7 +1470,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Question Block | Exchange | set of _Questions, Statements_ or instructions which are used together | A Question Block should ideally be designed for reuse.  The _Question Block_ is a type of _Questionnaire Component_. A statistical organisation will often have a number of _Question Blocks_ which they reuse in a number of _Questionnaires_. Examples of_ Question Blocks_ include:<br/>- Household _Question Block_<br/>- Income _Question Block_<br/>- Employment _Question Block_
+| Question Block | Exchange | set of _Questions, Statements_ or instructions which are used together | A Question Block should ideally be designed for reuse.  The _Question Block_ is a type of _Questionnaire Component_. A statistical organisation will often have a number of _Question Blocks_ which they reuse in a number of _Questionnaires_. Examples of _Question Blocks_ include:<br/>- Household _Question Block_<br/>- Income _Question Block_<br/>- Employment _Question Block_
 
 * **Attributes**
 
@@ -1482,7 +1482,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Questionnaire | Exchange | _Exchange Instrument _to elicit information from observation _Units_ | This is an example of a way statistical organisations acquire information (an _Exchange Instrument_). Each collection mode (e.g. in-person, CAPI (Computer-assisted personal interviewing), online Questionnaire) should be interpreted as a new _Questionnaire_ derived from the _Questionnaire Specification_. The _Questionnaire_ is a tool in which data is obtained. | |
+| Questionnaire | Exchange | _Exchange Instrument_ to elicit information from observation _Units_ | This is an example of a way statistical organisations acquire information (an _Exchange Instrument_). Each collection mode (e.g. in-person, CAPI (Computer-assisted personal interviewing), online Questionnaire) should be interpreted as a new _Questionnaire_ derived from the _Questionnaire Specification_. The _Questionnaire_ is a tool in which data is obtained. | |
 
 * **Attributes**
 
@@ -1545,7 +1545,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Register | Exchange | written and complete record containing regular entries of items and details on particular sets of objects | In official statistics, "statistical registers" and "adminisitrative registers" (registers maintained by other organisations, usually administrative data owners) are usually distinguished. In GSIM, the information class "Register" is used to describe both types because the attributes are more or less the same so from the information management point of view, they can be handled as one GSIM class.There is usually a purpose or authority for maintaining the _Register _and each object in the _Register _is described using a pre-defined set of characteristics. Examples include business and population registers as used by statistical organisations. Therefore, from statistical perspective, the _Register _can be interpreted as a set of objects for a given _Population_, updated on a regular basis, containing information on identification, accessibility of _Units _and other attributes. The _Register _contains the current and historical statuses of the _Population _and the causes, effects and sources of alterations in the _Population_.In order to better understand how the _Register _is used in GSIM, the use cases for the different scenarios are explained. These scenarios are:<br/>- _Register _as_ Information Set_ maintained and regularly updated by the statistical organisation.<br/>- _Register _as_ Information Set_ for survey frames/sample frames.<br/>- _Register _as_ Information Set_ for statistical _Products_.<br/>- _Register _as_ Information Set_ used as direct or auxiliary information for the production of statistics.<br/>- _Register _as_ Information Set_  as a source of administrative information obtained usually from external organisations.
+| Register | Exchange | written and complete record containing regular entries of items and details on particular sets of objects | In official statistics, "statistical registers" and "adminisitrative registers" (registers maintained by other organisations, usually administrative data owners) are usually distinguished. In GSIM, the information class "Register" is used to describe both types because the attributes are more or less the same so from the information management point of view, they can be handled as one GSIM class.There is usually a purpose or authority for maintaining the _Register _and each object in the _Register _is described using a pre-defined set of characteristics. Examples include business and population registers as used by statistical organisations. Therefore, from statistical perspective, the _Register _can be interpreted as a set of objects for a given _Population_, updated on a regular basis, containing information on identification, accessibility of _Units _and other attributes. The _Register _contains the current and historical statuses of the _Population _and the causes, effects and sources of alterations in the _Population_.In order to better understand how the _Register_ is used in GSIM, the use cases for the different scenarios are explained. These scenarios are:<br/>- _Register _as_ Information Set_ maintained and regularly updated by the statistical organisation.<br/>- _Register _as_ Information Set_ for survey frames/sample frames.<br/>- _Register _as_ Information Set_ for statistical _Products_.<br/>- _Register _as_ Information Set_ used as direct or auxiliary information for the production of statistics.<br/>- _Register _as_ Information Set_  as a source of administrative information obtained usually from external organisations.
 
 * **Attributes**
 
@@ -1583,7 +1583,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Attribute Component | Structure | role given to a _Represented Variable_ in the context of a _Data Structure, _which supplies information other than identification or measures     | For example:<br/>- the embargo time (at which point the observation will be made publicly available)<br/>- the base period of the data in the series
+| Attribute Component | Structure | role given to a _Represented Variable_ in the context of a _Data Structure_, which supplies information other than identification or measures     | For example:<br/>- the embargo time (at which point the observation will be made publicly available)<br/>- the base period of the data in the series
 
 * **Attributes**
 
@@ -1642,7 +1642,7 @@ The information classes defined within this group as as follows:
 
 | **Name** | **Description** | **Cardinality** | **Value Type** |
 | --- | --- | --- | --- |
-| Type | Type of_ Data Set_ (e.g., unit _Data Set_, dimensional _Data Set_) | 0..1 | ControlledVocabulary |
+| Type | Type of _Data Set_ (e.g., unit _Data Set_, dimensional _Data Set_) | 0..1 | ControlledVocabulary |
 
 \* Attributes inherited from super-type(s) are not included here
 
@@ -1692,7 +1692,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Identifier Component | Structure | role given to a _Represented Variable_ in the context of a _Data Structure _to identify the _Units_      | An _Identifier Component_ is a sub-class of _Data Structure Component_. The personal identification number of a Swedish citizen for unit data or the name of a country in the European Union for dimensional data. | |
+| Identifier Component | Structure | role given to a _Represented Variable_ in the context of a _Data Structure_ to identify the _Units_      | An _Identifier Component_ is a sub-class of _Data Structure Component_. The personal identification number of a Swedish citizen for unit data or the name of a country in the European Union for dimensional data. | |
 
 * **Attributes**
 
@@ -1770,7 +1770,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Record Relationship | Structure | description of relationships between _Logical Records_ within a _Unit Data Structure_     | _Record Relationship_ must have both a source _Logical Record_ and a target _Logical Record _in order to define the relationship. Example: Relationship between a person and household _Logical Records_ within a unit _Data Set_. | |
+| Record Relationship | Structure | description of relationships between _Logical Records_ within a _Unit Data Structure_     | _Record Relationship_ must have both a source _Logical Record_ and a target _Logical Record_ in order to define the relationship. Example: Relationship between a person and household _Logical Records_ within a unit _Data Set_. | |
 
 * **Attributes**
 
@@ -1782,7 +1782,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Referential Metadata Attribute | Structure | characteristic that describes or qualifies _Referential Metadata Subject    _ | A set of _Referential Metadata Attributes_ is structured by _Referential Metadata Structure_ to describe _Referential Metadata Subject_. Examples of _Referential Metadata Attributes_ can be _Represented Variables_ (e.g., "Accuracy", "Timeliness" when describing quality information) or other GSIM class (e.g., _Statistical Classification, Contact, Owner_).     | |
+| Referential Metadata Attribute | Structure | characteristic that describes or qualifies _Referential Metadata Subject_ | A set of _Referential Metadata Attributes_ is structured by _Referential Metadata Structure_ to describe _Referential Metadata Subject_. Examples of _Referential Metadata Attributes_ can be _Represented Variables_ (e.g., "Accuracy", "Timeliness" when describing quality information) or other GSIM class (e.g., _Statistical Classification, Contact, Owner_).     | |
 
 * **Attributes**
 
@@ -1798,7 +1798,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Referential Metadata Content Item | Structure | actual content for_ Referential Metadata Attribute  _   | _Referential Metadata Content Item_ can take different formats (e.g., text, number, value from a predefined codelist, table). | |
+| Referential Metadata Content Item | Structure | actual content for _Referential Metadata Attribute_   | _Referential Metadata Content Item_ can take different formats (e.g., text, number, value from a predefined codelist, table). | |
 
 
 * **Attributes**
