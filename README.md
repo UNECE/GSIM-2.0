@@ -1,9 +1,11 @@
 # GSIM-2.0
 
-This is the GitHub repository for version 2.0 of the Generic Statistical Information Model (GSIM). You can use the button to navigate different sections of this page.
+This is the GitHub repository for version 2.0 of the Generic Statistical Information Model (GSIM). You can use the ![Alt text here](Misc/navigation.png)  button to navigate different sections of this page.
+
 **For a summary of changes to GSIM since version 1.2, please refer to this page [refer to this page](https://github.com/UNECE/GSIM-2.0/blob/42b3f8ea173fd31a451e25b110ba7979a6064e40/Changes%20since%20GSIM%20v1.2/Introduction.md)**
 
 **Quick Links**
+
 [1. Base Group](#1-Base-Group) |
 [1.1 Group Diagram](#11-Group-Diagram) |
 [1.2 Descriptive Information](#12-Descriptive-Information)
