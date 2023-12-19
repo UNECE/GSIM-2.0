@@ -6,7 +6,7 @@
 
 # 1. Base Group
 ## 1.1 Main changes since GSIM version 1.2
-![Alt text here](Changes%20since%20GSIM%20v1.2/UML%20Diagrams%20with%20changes/GSIM%20Base%20change%20v2.drawio.png) 
+![Alt text here](UML%20Diagrams%20with%20changes/GSIM%20Base%20change%20v2.drawio.png) 
 
 # 2. Business Group
 ## 2.1 Main changes since GSIM version 1.2
