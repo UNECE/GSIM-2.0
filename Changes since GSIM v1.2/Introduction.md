@@ -1,6 +1,8 @@
 **For a detailed list of specific changes, please view the excel version of the change log [refer to this page](https://github.com/UNECE/GSIM-2.0/blob/42b3f8ea173fd31a451e25b110ba7979a6064e40/Changes%20since%20GSIM%20v1.2/Introduction.md)**
 Changes since GSIM v1.2/GSIM change log 2023 for v2_0 (updated 2023-12-22).xlsx
 
+[refer to this page2](https://github.com/UNECE/GSIM-2.0/raw/main/Changes%20since%20GSIM%20v1.2/GSIM%20change%20log%202023%20for%20v2_0%20(updated%202023-12-22).xlsx)
+
 [refer to this page3](../GSIM%20change%20log%202023%20for%20v2_0%20(updated%202023-12-22).xlsx)
 
 [refer to this page4](../Changes%20since%20GSIM%20v1.2/GSIM%20change%20log%202023%20for%20v2_0%20(updated%202023-12-22).xlsx)
