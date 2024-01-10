@@ -1,6 +1,6 @@
 **For a detailed list of specific changes, please view the excel version of the change log [here](https://github.com/UNECE/GSIM-2.0/raw/main/Changes%20since%20GSIM%20v1.2/GSIM%20change%20log%202023%20for%20v2_0%20(updated%202023-12-22).xlsx)**
 
-**The rest of this pages gives an overview of the main changes to GSIM, from v1.2 to v2.0**
+**The rest of this pages gives an overview of the main changes to GSIM, from v1.2 to v2.0...**
 
 [1. Base Group](#1-Base-Group) |
 [2. Business Group](#2-Business-Group) |
