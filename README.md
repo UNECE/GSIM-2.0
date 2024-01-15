@@ -50,7 +50,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Administrative Details | Base | extensions to the model based on an organisation's administrative needs | The _Administrative Details_ is designed to act as a 'placeholder' to allow for future extensions to the existing model. It allows for further information to be added about the _Administrative Details_ required to maintain the other information classes outlined by GSIM. |   |
+| Administrative Details | Base | extensions to the model based on an organization's administrative needs | The _Administrative Details_ is designed to act as a 'placeholder' to allow for future extensions to the existing model. It allows for further information to be added about the _Administrative Details_ required to maintain the other information classes outlined by GSIM. |   |
 
 * ***Attributes***
 
@@ -60,7 +60,7 @@ The information classes defined within this group as as follows:
 | Alias | The alias or alia associated with the information class. | 0..\* | String |
 | Annotation | A comment or instruction which provides additional explanations about the information class and how to use it. | 0..\* | String |
 | Created Date | The date on which the information class was created. | 0..1 | Date |
-| Documentation | An official document or paper that has been published by an organisation. | 0..\* | String |
+| Documentation | An official document or paper that has been published by an organization. | 0..\* | String |
 | Last Updated Date | The date on which the information class was last changed. | 0..1 | Date |
 | Life Cycle Status | Indicator for the quality of an item: incomplete, valid, superseded, or retired. | 0..1 | ControlledVocabulary |
 | Url | Allows location of the information class. Distinct from the identification of the class as handled by the identifier attribute in _Identifiable Artefact_. | 0..\* | String |
@@ -73,7 +73,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Agent | Base | someone or something that plays an active role in the lifecycle of an _Identifiable Artefact_ | An _Agent_ may be an _Individual_, an _Organisation_ (or part of it) or a _Software Agent_ that affects in some way an instance of a GSIM class. For example, an _Agent_ can play a role in the execution of a _Business Processes_ or in the way a _Statistical Classification_ (or a _Concept_) changes over time. | 
+| Agent | Base | someone or something that plays an active role in the lifecycle of an _Identifiable Artefact_ | An _Agent_ may be an _Individual_, an _Organization_ (or part of it) or a _Software Agent_ that affects in some way an instance of a GSIM class. For example, an _Agent_ can play a role in the execution of a _Business Processes_ or in the way a _Statistical Classification_ (or a _Concept_) changes over time. | 
 
 * ***Attributes***
 
@@ -160,19 +160,19 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Maintainer | Base | _Role_ in which a _unit_ or group of persons within the _Organisation_ is responsible for managing an information class and its metadata | A unit or group of persons with the role of _Maintainer_ is responsible for all administrative and operational issues relating to one or a set of information classes and its metadata (e.g. adding, modifying or deleting metadata about an information class). It is answerable to all stakeholders for all issues related to the information classes under its responsibility. A _Maintainer_ is not a decision-making body. Decisions are made collaboratively among the owners of the artefact. | |
+| Maintainer | Base | _Role_ in which a _unit_ or group of persons within the _Organization_ is responsible for managing an information class and its metadata | A unit or group of persons with the role of _Maintainer_ is responsible for all administrative and operational issues relating to one or a set of information classes and its metadata (e.g. adding, modifying or deleting metadata about an information class). It is answerable to all stakeholders for all issues related to the information classes under its responsibility. A _Maintainer_ is not a decision-making body. Decisions are made collaboratively among the owners of the artefact. | |
 
 * ***Attributes***
 
 \* Attributes inherited from super-type(s) are not included here
 
-### **Organisation**
+### **Organization**
 
 * ***Definition***
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Organisation | Base | unique framework of authority within which a person or persons act, or are designated to act, towards some purpose | _Organisation_ represents a collection of people organised together, often with hierarchical structures. Examples of _Organisation_: national statistics office, international agency | |
+| Organization | Base | unique framework of authority within which a person or persons act, or are designated to act, towards some purpose | _Organization_ represents a collection of people organized together, often with hierarchical structures. Examples of _Organization_: national statistics office, international agency | |
 
 * ***Attributes***
 
@@ -184,7 +184,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Owner | Base | _Role_ in which a statistical office, authority or other organisation is responsible for defining, specifying, creating and making decisions about the maintenance of a class and/or its metadata | Some information classes may have several _Owners_. | |
+| Owner | Base | _Role_ in which a statistical office, authority or other organization is responsible for defining, specifying, creating and making decisions about the maintenance of a class and/or its metadata | Some information classes may have several _Owners_. | |
 
 * ***Attributes***
 
@@ -196,7 +196,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Role | Base | function assumed by an _Agent_ | Part played by an _Individual_, an _Organisation_ (or part of it) or a _Software Agent_ in a particular situation. Examples: _Contact_, data steward, scheduler. _Role_ can be maintained by a controlled vocabulary (e.g. RASCI). | |
+| Role | Base | function assumed by an _Agent_ | Part played by an _Individual_, an _Organization_ (or part of it) or a _Software Agent_ in a particular situation. Examples: _Contact_, data steward, scheduler. _Role_ can be maintained by a controlled vocabulary (e.g. RASCI). | |
 
 
 * ***Attributes***
@@ -233,7 +233,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Assessment | Business | result of the analysis of the quality and effectiveness of any activity undertaken by a statistical organisation and recommendations on how these can be improved | An _Assessment_ can be of a variety of types. One example may include a gap analysis, where a current state is determined along with what is needed to reach its target state. Alternatively, an _Assessment_ may compare current processes against a set of requirements, for example a new _Statistical Need_ or change in the operating environment. An _Assessment_ can use various classes as inputs, whether they are the main classes that the _Assessment_ is about or auxiliary classes that help accomplish the _Assessment_. | |
+| Assessment | Business | result of the analysis of the quality and effectiveness of any activity undertaken by a statistical organization and recommendations on how these can be improved | An _Assessment_ can be of a variety of types. One example may include a gap analysis, where a current state is determined along with what is needed to reach its target state. Alternatively, an _Assessment_ may compare current processes against a set of requirements, for example a new _Statistical Need_ or change in the operating environment. An _Assessment_ can use various classes as inputs, whether they are the main classes that the _Assessment_ is about or auxiliary classes that help accomplish the _Assessment_. | |
 
 * ***Attributes***
 
@@ -272,7 +272,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Business Function | Business | activities undertaken by a statistical organisation to achieve its objectives | A _Business_ _Function_ delivers added value from a business point of view. It is delivered by bringing together people, processes and technology (resources), for a specific business purpose. _Business Functions_ answer in a generic sense "What business purpose does this _Business Service _or_ Process Step_ serve?" (c.f. Business Process answers the question of "How?"). Through identifying the _Business Function_ associated with each _Business Service_ or _Process Step_, it increases the documentation of the use of the associated _Business Services_ and _Process Steps_, to enable future reuse. A _Business Function_ may be defined directly with descriptive text and/or through reference to an existing catalogue of _Business Functions_. The phases and sub-processes defined within GSBPM can be used as an internationally agreed basis for cataloguing high-level _Business Functions_. A catalogue might also include _Business Functions_ defined at a lower level than "sub-process". For example, "Identify and address outliers" might be catalogued as a lower level _Business Function_ with the "Review and validate" function (5.3) defined within GSBPM. | |
+| Business Function | Business | activities undertaken by a statistical organization to achieve its objectives | A _Business_ _Function_ delivers added value from a business point of view. It is delivered by bringing together people, processes and technology (resources), for a specific business purpose. _Business Functions_ answer in a generic sense "What business purpose does this _Business Service _or_ Process Step_ serve?" (c.f. Business Process answers the question of "How?"). Through identifying the _Business Function_ associated with each _Business Service_ or _Process Step_, it increases the documentation of the use of the associated _Business Services_ and _Process Steps_, to enable future reuse. A _Business Function_ may be defined directly with descriptive text and/or through reference to an existing catalogue of _Business Functions_. The phases and sub-processes defined within GSBPM can be used as an internationally agreed basis for cataloguing high-level _Business Functions_. A catalogue might also include _Business Functions_ defined at a lower level than "sub-process". For example, "Identify and address outliers" might be catalogued as a lower level _Business Function_ with the "Review and validate" function (5.3) defined within GSBPM. | |
 
 * ***Attributes***
 
@@ -313,7 +313,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Change Definition | Business | structured, well-defined specification for a proposed change | A related class - the _Statistical Need_ - is a change expression as it has been received by an organisation. A _Statistical Need_ is a raw expression of a proposed change, and is not necessarily well-defined. A _Change Definition_ is created when a _Statistical Need_ is analysed by an organisation, and expresses the raw need in well-defined, structured terms. A _Change Definition_ does not assess the feasibility of the change or propose solutions to deliver the change - this role is satisfied by the _Business Case_ class. The precise structure or organisation of a _Change Definition_ can be further specified by rules or standards local to a given organisation. It also includes the specific _Concepts_ to be measured and the _Population_ that is under consideration. Once a _Statistical Need_ has been received, the first step is to do the conceptual work to establish what it is we are trying to measure. The final output of this conceptual work is the _Change Definition_. The next step is to assess how we are going to make the measurements - to design a solution and put forward a proposal for a body of work that will deliver on the requirements of the original _Statistical Need_. | |
+| Change Definition | Business | structured, well-defined specification for a proposed change | A related class - the _Statistical Need_ - is a change expression as it has been received by an organization. A _Statistical Need_ is a raw expression of a proposed change, and is not necessarily well-defined. A _Change Definition_ is created when a _Statistical Need_ is analysed by an organization, and expresses the raw need in well-defined, structured terms. A _Change Definition_ does not assess the feasibility of the change or propose solutions to deliver the change - this role is satisfied by the _Business Case_ class. The precise structure or organization of a _Change Definition_ can be further specified by rules or standards local to a given organization. It also includes the specific _Concepts_ to be measured and the _Population_ that is under consideration. Once a _Statistical Need_ has been received, the first step is to do the conceptual work to establish what it is we are trying to measure. The final output of this conceptual work is the _Change Definition_. The next step is to assess how we are going to make the measurements - to design a solution and put forward a proposal for a body of work that will deliver on the requirements of the original _Statistical Need_. | |
 
 * ***Attributes***
 
@@ -349,7 +349,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Environment Change | Business | requirement for change  that originates from a change in the operating environment of the statistical organisation | An _Environment Change_ reflects change in the context in which a statistical organisation operates. _Environment Changes_ can be of different origins and also take different forms. They can result from a precise event (budget cut, new legislation enforced) or from a progressive process (technical or methodological progress, application or tool obsolescence). Other examples of _Environment Changes_ include the availability of a new _Information Resource_, the opportunity for new collaboration between organisations, etc. | |
+| Environment Change | Business | requirement for change  that originates from a change in the operating environment of the statistical organization | An _Environment Change_ reflects change in the context in which a statistical organization operates. _Environment Changes_ can be of different origins and also take different forms. They can result from a precise event (budget cut, new legislation enforced) or from a progressive process (technical or methodological progress, application or tool obsolescence). Other examples of _Environment Changes_ include the availability of a new _Information Resource_, the opportunity for new collaboration between organizations, etc. | |
 
 * ***Attributes***
 
@@ -366,7 +366,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Information Request | Business | _Statistical Need_ that is a request for new information for a particular purpose | An _Information Request_ is a special case of _Statistical Need_ that may come in an organised form, for example by specifying on which _Subject Field_ the information is required. It may also be a more general request and require refinement by the statistical agency and formalised in a _Change Definition_. | |
+| Information Request | Business | _Statistical Need_ that is a request for new information for a particular purpose | An _Information Request_ is a special case of _Statistical Need_ that may come in an organized form, for example by specifying on which _Subject Field_ the information is required. It may also be a more general request and require refinement by the statistical agency and formalised in a _Change Definition_. | |
 
 * ***Attributes***
 
@@ -574,7 +574,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Process Support Input | Business | _Process Input_ that influences the work performed by the _Process Step Instance_ by providing additional information that affects the way _Core Input_ is used | _Process Support Input_ is a sub-type of _Process Input_.<br/>- Examples of _Process Support Inputs_ could include: A technical or methodological handbook which can be used as a reference to assist the work performed (e.g. data editing, coding and classification)<br/>- An auxiliary _Data Set_ which will influence imputation for, or editing of, a primary _Data Set_ which has been submitted to the _Process Step_ as the Core Input<br/>- A _Provision Agreement_ which can be used as a supporting document<br/>- A repository or inventory of _Process Methods_ or software system / architecture that are approved in the _Organisation_ that could be used as reference
+| Process Support Input | Business | _Process Input_ that influences the work performed by the _Process Step Instance_ by providing additional information that affects the way _Core Input_ is used | _Process Support Input_ is a sub-type of _Process Input_.<br/>- Examples of _Process Support Inputs_ could include: A technical or methodological handbook which can be used as a reference to assist the work performed (e.g. data editing, coding and classification)<br/>- An auxiliary _Data Set_ which will influence imputation for, or editing of, a primary _Data Set_ which has been submitted to the _Process Step_ as the Core Input<br/>- A _Provision Agreement_ which can be used as a supporting document<br/>- A repository or inventory of _Process Methods_ or software system / architecture that are approved in the _Organization_ that could be used as reference
 
 * ***Attributes***
 
@@ -623,7 +623,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Statistical Need | Business | requirement, request or other notification that will be considered by a statistical organisation. | The _Statistical Need_ is a proposed or imposed requirement, request or other notification as it has been received by a statistical organisation. A _Statistical Need_ is an expression of a requirement, and is not necessarily well-defined. A related class - _Change Definition_ - is created when a _Statistical Need_ is analysed by the organisation. _Change Definition_ expresses the raw need in well-defined, structured terms.<br/>Once a _Statistical Need_ has been received, the first step is to do the conceptual work to establish what it is we are trying to measure. The final output of this conceptual work is the _Change Definition_.<br/>In some cases, the _Statistical Need_ can result from the _Assessment_ of the quality, efficiency, etc. of an existing process. A Statistical Need may be of a variety of types including Environment Change or Information Request.
+| Statistical Need | Business | requirement, request or other notification that will be considered by a statistical organization. | The _Statistical Need_ is a proposed or imposed requirement, request or other notification as it has been received by a statistical organization. A _Statistical Need_ is an expression of a requirement, and is not necessarily well-defined. A related class - _Change Definition_ - is created when a _Statistical Need_ is analysed by the organization. _Change Definition_ expresses the raw need in well-defined, structured terms.<br/>Once a _Statistical Need_ has been received, the first step is to do the conceptual work to establish what it is we are trying to measure. The final output of this conceptual work is the _Change Definition_.<br/>In some cases, the _Statistical Need_ can result from the _Assessment_ of the quality, efficiency, etc. of an existing process. A Statistical Need may be of a variety of types including Environment Change or Information Request.
 
 * ***Attributes***
 
@@ -639,7 +639,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Statistical Programme | Business | set of activities to produce statistics on a given _Universe_ within the context of _Subject Fields_ | The _Statistical Programme_ provides the environmental context in which activities to produce statistics within a statistical organisation are conducted. _Statistical Programme_ will usually correspond to an ongoing activity such as a survey or output series covered by GSBPM phase 4-7. Some examples of _Statistical Programme_ are:<br/>- Labour Force Survey<br/>- Multipurpose Household Survey<br/>- National Accounts<br/>- Demography<br/>- Overseas Arrivals and Departures<br/>Related to the _Statistical Programme_ class, there are _Statistical Programme Design_ and _Statistical Programme Cycle_ classes that hold the detailed information about the design and conduct of the _Business Process_. A _Statistical Programme_ could take as inputs other _Statistical Programmes'_ outputs, e.g. national accounts. These activities are all carried out to generate _Products_. In the case of the traditional approach, an organisation has received a _Statistical Need_ and produced a _Change Definition_ and an approved _Business Case_. The _Business Case_ will specify either a change to the design or methodology of an existing _Statistical Programme_, which will result in a new _Statistical Programme Design_; or a change to one or more existing _Statistical Programmes_ (for example, to add an additional objective to the _Statistical Programme_); or result in a new _Statistical Programme_ being created. This does not include statistical support functions such as metadata management, data management (and other overarching GSBPM processes) and design functions. These activities are conducted as part of _Statistical Support Activity_.
+| Statistical Programme | Business | set of activities to produce statistics on a given _Universe_ within the context of _Subject Fields_ | The _Statistical Programme_ provides the environmental context in which activities to produce statistics within a statistical organization are conducted. _Statistical Programme_ will usually correspond to an ongoing activity such as a survey or output series covered by GSBPM phase 4-7. Some examples of _Statistical Programme_ are:<br/>- Labour Force Survey<br/>- Multipurpose Household Survey<br/>- National Accounts<br/>- Demography<br/>- Overseas Arrivals and Departures<br/>Related to the _Statistical Programme_ class, there are _Statistical Programme Design_ and _Statistical Programme Cycle_ classes that hold the detailed information about the design and conduct of the _Business Process_. A _Statistical Programme_ could take as inputs other _Statistical Programmes'_ outputs, e.g. national accounts. These activities are all carried out to generate _Products_. In the case of the traditional approach, an organization has received a _Statistical Need_ and produced a _Change Definition_ and an approved _Business Case_. The _Business Case_ will specify either a change to the design or methodology of an existing _Statistical Programme_, which will result in a new _Statistical Programme Design_; or a change to one or more existing _Statistical Programmes_ (for example, to add an additional objective to the _Statistical Programme_); or result in a new _Statistical Programme_ being created. This does not include statistical support functions such as metadata management, data management (and other overarching GSBPM processes) and design functions. These activities are conducted as part of _Statistical Support Activity_.
 
 * ***Attributes***
 
@@ -651,7 +651,7 @@ The information classes defined within this group as as follows:
 | Legal Framework | Any legal framework (e.g., legal basis for the statistics to be produced by _Statistical Programme_) | 0..\* | String |
 | Legislative Reference | Any legislative materials, (e.g., parliamentary tabling documents) | 0..\* | String |
 | Source of Funding | Source of funding | 0..1 | String |
-| Programme Status | The current condition of the programme (e.g., New Proposal, Under Development, Current, Completed, Cancelled, Transferred to Another Organisation) | 1..1 | ControlledVocabulary |
+| Programme Status | The current condition of the programme (e.g., New Proposal, Under Development, Current, Completed, Cancelled, Transferred to Another Organization) | 1..1 | ControlledVocabulary |
 
 \* Attributes inherited from super-type(s) are not included here
 
@@ -685,7 +685,7 @@ The information classes defined within this group as as follows:
 | **Name** | **Description** | **Cardinality** | **Value Type** |
 | --- | --- | --- | --- |
 | Conceptual Framework | Description of the conceptual framework for the _Statistical Programme_ (e.g., SNA). | 0..\* | String |
-| Status | Extensible redefined list (e.g., New Proposal, Under Development, Current, Completed, Cancelled, Transferred to Another Organisation). | 1..1 | ControlledVocabulary |
+| Status | Extensible redefined list (e.g., New Proposal, Under Development, Current, Completed, Cancelled, Transferred to Another Organization). | 1..1 | ControlledVocabulary |
 
 \* Attributes inherited from super-type(s) are not included here
 
@@ -704,7 +704,7 @@ The information classes defined within this group as as follows:
 | Date Ended | Date when the _Statistical Support Activity_ was ended. | 0..1 | Date |
 | Date Initiated | Date when the _Statistical Support Activity_ was initiated. | 0..1 | Date |
 | Significant Events | A description of the real-world events which lead to the creation of the _Statistical Support Activity_. | 0..1 | String |
-| Status | The current condition of the programme (e.g., New Proposal, Under Development, Current, Completed, Cancelled, Transferred to Another Organisation). | 1..1 | ControlledVocabulary |
+| Status | The current condition of the programme (e.g., New Proposal, Under Development, Current, Completed, Cancelled, Transferred to Another Organization). | 1..1 | ControlledVocabulary |
 
 \* Attributes inherited from super-type(s) are not included here
 
