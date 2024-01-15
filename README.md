@@ -4,7 +4,8 @@ This is the GitHub repository for version 2.0 of the Generic Statistical Informa
 
 **For a summary of changes to GSIM since version 1.2, please refer to this page [refer to this page](https://github.com/UNECE/GSIM-2.0/blob/42b3f8ea173fd31a451e25b110ba7979a6064e40/Changes%20since%20GSIM%20v1.2/Introduction.md)**
 
-For information about previous versions of GSIM, you may consult the UNECE Statistics Wiki site [wiki site](https://statswiki.unece.org/display/gsim/GSIM+version+1.2)
+For information about _previous versions_ of GSIM, you may consult the UNECE Statistics Wiki site [wiki site](https://statswiki.unece.org/display/gsim/GSIM+version+1.2)
+
 
 
 **Quick Links**
