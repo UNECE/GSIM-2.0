@@ -64,8 +64,8 @@ The information classes defined within this group as as follows:
 | Last Updated Date | The date on which the information class was last changed. | 0..1 | Date |
 | Life Cycle Status | Indicator for the quality of an item: incomplete, valid, superseded, or retired. | 0..1 | ControlledVocabulary |
 | Url | Allows location of the information class. Distinct from the identification of the class as handled by the identifier attribute in _Identifiable Artefact_. | 0..\* | String |
-| Valid From | The start date included in the period during which the classis effective or valid. It is effective or valid from that date. | 0..1 | Date |
-| Valid To | The end date included in the period during which the information classis effective or valid. It is no longer effective or valid after that date. | 0..1 | Date |
+| Valid From | The start date included in the period during which the class is effective or valid. It is effective or valid from that date. | 0..1 | Date |
+| Valid To | The end date included in the period during which the information class is effective or valid. It is no longer effective or valid after that date. | 0..1 | Date |
 
 ### **Agent**
 
@@ -128,7 +128,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Change Event | Base | abstract class that comprises the basic attributes and associations needed for identification, naming and other documentation | All GSIM classes except _Administrative Details, Agent In Role, Change Event, Datum, Process Input_ (and its sub-types) and _Process Output_ (and its sub-types) are a sub-type of _Identifiable Artefact_. In SDMX, "Identifiable Artefact" is defined as "construct that contains structures capable of providing identity to an object". | |
+| Identifiable Artefact | Base | abstract class that comprises the basic attributes and associations needed for identification, naming and other documentation | All GSIM classes except _Administrative Details, Agent In Role, Change Event, Datum, Process Input_ (and its sub-types) and _Process Output_ (and its sub-types) are a sub-type of _Identifiable Artefact_. In SDMX, "Identifiable Artefact" is defined as "construct that contains structures capable of providing identity to an object". | |
 
 * ***Attributes***
 
@@ -982,7 +982,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Described Value Domain | Concept | _Value Domain_ defined by an expression | For example: all real decimal numbers between 0 and 1. Described Value Domain is a synonym for non-enumerated value domain (source: GSIM) | |
+| Described Value Domain | Concept | _Value Domain_ defined by an expression | For example: all real decimal numbers between 0 and 1. Described Value Domain is a synonym for non-enumerated value domain (source: GSIM) | Non-enumerated value domain |
 
 * ***Attributes***
 
@@ -998,7 +998,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Designation | Concept | association of a _Concept_ with a sign that denotes it     | _Designation_ is the name given to an object for identification.     . | |
+| Designation | Concept | association of a _Concept_ with a sign that denotes it     | _Designation_ is the name given to an object for identification. | |
 
 * ***Attributes***
 
@@ -1135,7 +1135,7 @@ The information classes defined within this group as as follows:
 
 | **Class** | **Group** | **Definition** | **Explanatory Text** | **Synonyms** |
 | --- | --- | --- | --- | --- |
-| Measurement Unit | Concepts | total membership of a defined class of people, objects or events     | A _Population_ is used to describe the total membership of a group of people, objects or events based on characteristics, e.g. time and geographic boundaries. Here are 3 examples:<br/>- Adult persons in the Europe on 13 November 1956<br/>- Computer companies in the US at the end of 2012<br/>- Universities in the world on 1 January 2023
+| Population | Concepts | total membership of a defined class of people, objects or events     | A _Population_ is used to describe the total membership of a group of people, objects or events based on characteristics, e.g. time and geographic boundaries. Here are 3 examples:<br/>- Adult persons in Europe on 13 November 1956<br/>- Computer companies in the US at the end of 2012<br/>- Universities in the world on 1 January 2023
 
 * ***Attributes***
 
