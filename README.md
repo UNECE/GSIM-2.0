@@ -16,9 +16,10 @@ While we have already made available some interactive UML diagrams to allow user
 
 
 **Test**
-[//]: #  ![Test Image Renamed](img/GSIM_2_0_Base_Group.drawio.png)
-[//]: #  ![Test Image Ink](https://user-images.githubusercontent.com/10498769/175003336-e65d63ac-180c-4eb4-b686-32aca25d57e6.jpeg)
-
+<!---
+![Test Image Renamed](img/GSIM_2_0_Base_Group.drawio.png)
+![Test Image Ink](https://user-images.githubusercontent.com/10498769/175003336-e65d63ac-180c-4eb4-b686-32aca25d57e6.jpeg)
+--->
 
 [<img src="img/GSIM_2_0_Base_Group.drawio.png">](https://app.diagrams.net/?lightbox=1&p=ex&#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FUNECE%2FGSIM-2.0%2Fmain%2FUML%20Model%20Files%2FGSIM_2_0_Base_Group.drawio#%7B%22pageId%22%3A%220%22%7D),
 
