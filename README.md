@@ -19,6 +19,6 @@ While we have already made available some interactive UML diagrams to allow user
 
 
 
-![Test Image 4]([GSIM_2_0_Base_Group.drawio.svg](https://app.diagrams.net/?lightbox=1&p=ex&#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FUNECE%2FGSIM-2.0%2Fmain%2FUML%20Model%20Files%2FGSIM_2_0_Base_Group.drawio#%7B%22pageId%22%3A%220%22%7D))
+![Test Image 4](https://app.diagrams.net/?lightbox=1&p=ex&#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FUNECE%2FGSIM-2.0%2Fmain%2FUML%20Model%20Files%2FGSIM_2_0_Base_Group.drawio#%7B%22pageId%22%3A%220%22%7D)
 
 
