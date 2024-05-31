@@ -12,7 +12,7 @@ For information about _previous versions_ of GSIM, you may consult the [UNECE St
 
 **Help us to make learning GSIM 2.0 a more immersive experience!**
 
-While we have already made available some interactive UML diagrams to allow users to navigate across the relationships between information classes, we would like to augment this with extra information on class definitions built into the diagrams. - Please help us to achieve this by upvoting this feature request on our UML diagram plugin: [Feature request](https://github.com/jgraph/drawio/discussions/4094)
+While we have already made available some interactive UML diagrams to allow users to navigate across the relationships between information classes, we would like to augment this with extra information on class definitions built into the diagrams. - Please help us to achieve this by upvoting this feature request on our UML diagram plugin: [Feature request](https://github.com/jgraph/drawio/discussions/4440)
 
 
 
