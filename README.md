@@ -2,9 +2,9 @@
 
 This is the GitHub repository for version 2.0 of the Generic Statistical Information Model (GSIM). 
 
-**Please [visit this page to see the model](https://unece.github.io/GSIM-2.0/GSIMv2.html)**
+**Please [visit this page to see the model](https://unece.github.io/GSIM-2.0/)**
 
-The revision for GSIM 2.0 was possible thanks for the contributions of many colleagues in national and international statistics organiation ( https://unece.github.io/GSIM-2.0/GSIMv2.html#acknowledgements).
+The revision for GSIM 2.0 was possible thanks for the contributions of many colleagues in national and international statistics organiation ( https://unece.github.io/GSIM-2.0/#acknowledgements).
 
 For a summary of changes to GSIM since version 1.2, please refer to this page [refer to this page](https://github.com/UNECE/GSIM-2.0/blob/42b3f8ea173fd31a451e25b110ba7979a6064e40/Changes%20since%20GSIM%20v1.2/Introduction.md)
 
