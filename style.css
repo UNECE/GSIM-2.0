@@ -1,0 +1,151 @@
+/* Reset and basics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+
+/* Layout container */
+.container {
+  display: flex;
+  min-height: 100vh;
+  max-width: 1500px;
+  flex-wrap: wrap;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  min-width: 0; 
+  padding: 40px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.main-content h1 {
+  font-size: 2.5rem;     
+  color: #2c3e50;        
+  margin-bottom: 0px;   
+  font-weight: bold;     
+}
+
+#header-paragraph {
+  font-size: 1.5rem;    
+  color: #2c3e50;      
+margin-top: 0px;
+}
+
+.main-content h2,
+.main-content h3,
+.main-content h4 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px 0; 
+}
+
+.main-content p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.main-content ul,
+.main-content ol {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+.main-content li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+
+
+/* Sidebar */
+.sidebar {
+  width: 300px;
+  background-color: #f3f3f3 ; 
+  color: white;
+  padding: 20px;
+  flex-shrink: 0;
+  height: 100vh;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar h2,
+.sidebar h3,
+.sidebar h4 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+  color: #000000;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding-bottom: 30px;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+
+.sidebar ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+  color: #828282;
+}
+
+
+/* Indentation for nested levels */
+.sidebar ul li.indent-h2 {
+  margin-left: 15px;
+  font-size: 0.95em;
+}
+
+.sidebar ul li.indent-h3 {
+  margin-left: 30px;
+  font-size: 0.9em;
+}
+
+.sidebar ul li.indent-h4 {
+  margin-left: 45px;
+  font-size: 0.85em;
+}
+
+
+#resizer {
+  width: 5px;
+  background: #ccc;
+  cursor: ew-resize;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1000; /* Ensure the footer is above other elements */
+  height: 50px; /* Set a specific height for the footer */
+  box-sizing: border-box;
+}
+
+.footer img {
+  max-height: 100%; /* Ensure the image fits within the footer height */
+  width: auto; /* Maintain aspect ratio */
+}
